@@ -1,11 +1,17 @@
 //GLOBALES
 
+// la idea de esto es que en otros casos se pueda cambiar el contenido (value) pero no la key para no tener que cambiar el codigo
 var COSTOS = {
   BAJO: "barato",
-  MEDIO: "hola"
+  MEDIO: "normal",
+  ALTO: "caro"
 };
-// la idea de esto es que en otros casos se pueda cambiar el contenido (value) pero no la key para no tener que cambiar el codigo
 
+var NIVEL = {
+  BAJO: "facil",
+  MEDIO: "normal",
+  ALTO: "dificil"
+};
 
 //MI RECETA
 
