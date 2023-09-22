@@ -34,6 +34,3 @@ var pasoPaso = {
   recomendacion2:
     'Lava y esteriliza adecuadamente los frascos antes de verter la mermelada para garantizar su conservación.',
 };
-
-console.log(ingredientes, typeof ingredientes);
-console.log(pasoPaso, typeof pasoPaso);
