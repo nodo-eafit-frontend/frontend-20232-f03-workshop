@@ -11,7 +11,7 @@ var NIVEL = {
 };
 
 //Receta
-var titulo = 'Mermelada de tomate';
+var titulo = 'Mermelada de tomate!!';
 
 var cantidadPersonas = {
   min: 6,
