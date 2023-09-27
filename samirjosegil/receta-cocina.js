@@ -7,7 +7,7 @@ ALTO: 'carisimo',
 var NIVEL = {
 BAJO: 'facilito',
 MEDIO: 'moderadito',
-ALTo: 'altico',
+ALTO: 'altico',
 };
 
 // Mi receta
