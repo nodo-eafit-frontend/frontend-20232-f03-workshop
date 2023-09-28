@@ -1,6 +1,10 @@
-## News Paper with HTML and CSS
+## Cooking Recipe with HTML and CSS
 
 You can choose a cooking recipe and turn it into a web page using HTML and CSS. Please note the following acceptance criteria and resources.
+
+## Tasks
+
+- Create HTML tags with semantics
 
 ### Acceptance Criteria
 
