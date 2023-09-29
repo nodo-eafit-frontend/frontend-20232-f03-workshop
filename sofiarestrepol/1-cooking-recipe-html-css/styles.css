@@ -1,0 +1,87 @@
+:root {
+
+}
+
+/* GLOBALES */
+html {
+
+}
+
+body {
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: 200;
+  background-color: white;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cont-ingredientes {
+  background-color: rgb(233, 202, 124);
+  height: 500px;
+  margin: 40px 40px;
+
+}
+.cont-lista-ingredientes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 80px;
+}
+.cont-preparacion {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.steps {
+  background-color: blanchedalmond;
+  margin: 10px
+}
+
+
+/* UTILIDADES */
+.bold {
+  font-weight: bold;
+}
+
+
+/* TIPOGRAFIA */
+h1 {
+  color: black;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 100;
+  margin: 0;
+  margin-top: 40px;
+}
+span {
+  font-weight: bold;
+}
+
+
+#ingredientes {
+  color: white;
+  text-align: center;
+  margin: 40px
+}
+header p {
+  text-align: center;
+}
+#prep {
+  margin: 40px;
+  text-decoration: underline;
+}
+
+/* TITULO */
+#pan {
+  color:coral;
+  margin-top: 0;
+} /* h1 pan de cerveza */
+.cont-pan {
+  text-align: center;
+} /* contenedor de imagen */
+.titulo {
+  text-align: center;
+  margin-left: 10px
+}
