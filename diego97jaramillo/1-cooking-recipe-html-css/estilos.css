@@ -1,0 +1,21 @@
+
+h2#white-title {
+    border-style: solid;
+    border-width: 0;
+    font-style: ;
+}
+
+img#principal-image {
+    width: 250px;
+    height: 200px;
+}
+
+
+.process-images {
+    width: 100px;
+    height: 100px;
+}
+
+i.symbols {
+    color: #680747;
+}
