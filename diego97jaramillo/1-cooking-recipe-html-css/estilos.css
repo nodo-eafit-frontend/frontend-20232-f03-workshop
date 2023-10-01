@@ -1,3 +1,43 @@
+:root {
+    --brown-red: #680747;
+    --light-pink: rgba(255, 192, 203, 0.612);
+    --dark-pink: rgba(175, 39, 61, 0.929);
+}
+
+
+body {
+    width:100vw;
+    height: 100vw;
+}
+
+main {
+    position: relative;
+}
+
+header {
+    position: relative;
+}
+
+aside {
+    position: absolute;
+}
+
+section {
+    position: absolute;
+}
+
+.steps-images {
+    position: relative;
+}
+
+.process-images {
+    position:absolute;
+}
+
+img#company-brand-logo {
+    width: 80px;
+    height: 80px;
+}
 
 h2#white-title {
     border-style: solid;
