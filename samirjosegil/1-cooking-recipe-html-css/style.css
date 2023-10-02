@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Dancing";
+    src: url(./Dancing.ttf);
+}
+@font-face {
+    font-family: "Pacifico-Regular";
+    src: url(./Pacifico-Regular.ttf);
+}
+
+body {background: bisque;}
+
+.logo {width: 220px; border-radius: 22px;}
+
+.Postres {
+font-size: 55px;
+position:absolute; 
+top: -40px; 
+left: 260px;
+font-weight:900;
+font-family: "Pacifico-Regular";
+color:#591700;
+}
+
+.CASEROS {
+font-size: 62px;
+position: absolute;
+top: 30px;
+left: 370px;
+font-family: fantasy;
+font-weight:initial;
+color: #591700;
+}
+
+.heladodenesquik {
+font-size: 50px;
+position: relative;
+top: -20px;
+left: 5px;
+font-family: "Dancing";
+font-weight: bold;
+color: #F5EEF8;
+}
+
+.Ingredientes h2{
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+position: absolute;
+top: 180px;
+left: 40px;
+}
+
+.Ingredientes ul {
+font-size: 15px;
+position: relative;
+left: 15px;
+}
+
+.iconos {
+display: flex;
+justify-content:flex-start;
+flex-direction: row;
+position: relative;
+
+
+
+
+top: 50px; 
+}
+
+.elemento {
+position: relative;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+
+
+
+
+}
+
+.icono-img {
+height: 30px;
+
+}
+
+
+.preparacion {
+display:grid;
+position: relative;
+top: 70px;
+
+
+
+}
+
+
+
+
+.preparacion-1 {
+    width: 200px;
+    
+}
+.preparacion-2 {
+    width: 219px;
+}
+.preparacion-3 {
+    width: 200px;
+}
+.preparacion-4 {
+    width: 200px;
+}
+
