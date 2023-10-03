@@ -4,9 +4,9 @@ You can choose a cooking recipe and turn it into a web page using HTML and CSS. 
 
 ### Acceptance Criteria
 
-- It must be a responsive page [Mobile, Tablet, Desktop].
-- If you can use a SASS preprocessor or others (Recommended)
-- You must use good semantics in the HTML tags.
+- [ ] It must be a responsive page [Mobile, Tablet, Desktop].
+- [ ] If you can use a SASS preprocessor or others (Recommended)
+- [ ] You must use good semantics in the HTML tags.
 
 ### Resources
 
