@@ -2,6 +2,12 @@
 
 You can choose a cooking recipe and turn it into a web page using HTML and CSS. Please note the following acceptance criteria and resources.
 
+## Tasks
+
+- Create HTML tags with semantics
+- Find out the assets:
+  -
+  
 ### Acceptance Criteria
 
 - It must be a responsive page [Mobile, Tablet, Desktop].
