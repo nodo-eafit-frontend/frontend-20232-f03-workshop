@@ -39,6 +39,15 @@ left: 5px;
 font-family: "Dancing";
 font-weight: bold;
 color: #F5EEF8;
+background-color: #9B59B6 ;
+border-radius: 22px;
+padding-left:27px;
+
+
+
+
+
+
 }
 
 .Ingredientes h2{
@@ -55,15 +64,23 @@ position: relative;
 left: 15px;
 }
 
+h6 {
+margin: 0;
+
+
+
+
+}
+
+
+
+
+
 .iconos {
 display: flex;
 justify-content:flex-start;
 flex-direction: row;
 position: relative;
-
-
-
-
 top: 50px; 
 }
 
@@ -88,12 +105,13 @@ height: 30px;
 display:grid;
 position: relative;
 top: 70px;
-
-
-
 }
 
+.Textomedio {
+display: grid;
+grid-template-columns: 1fr 2fr;
 
+}
 
 
 .preparacion-1 {
@@ -110,3 +128,20 @@ top: 70px;
     width: 200px;
 }
 
+
+
+
+.abuelaimg {
+width: 300px;
+
+
+
+
+}
+
+.linkyou {
+font-family: "Pacifico-Regular";
+font-size: 35px;
+color: #591700;
+text-decoration: none;
+}
