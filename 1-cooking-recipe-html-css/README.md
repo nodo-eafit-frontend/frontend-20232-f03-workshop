@@ -38,4 +38,3 @@ You can choose a cooking recipe and turn it into a web page using HTML and CSS. 
     - [CSS Grid Garden](https://cssgridgarden.com/#es)
     - [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
   - [Learn CSS Positioning Quickly With A Real World Example](https://www.youtube.com/watch?v=MxEtxo_AaZ4)
-
