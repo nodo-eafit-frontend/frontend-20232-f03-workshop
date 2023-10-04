@@ -3,34 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Receta conica</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="estilos.css" />
   </head>
   <body>
-    <header>
-      <img src="./img/logo-mas-recipe.png" ="" />
-      <h1>Platos calientes</h1>
-      <h2>Mermelada de tomate</h2>
-    </header>
-
-    <main>
-        <aside></aside>
+    <div class="backgroung-recipe"></div>
+    <main class="cooking-recipe">
+      <header>
+        <img src="./img/logo-mas-recipe.png" alt="Receta de tomate" />
+        <h1>Platos fríos</h1>
+        <h2>Mermelada de tomate</h2>
+      </header>
+      <main class="backgroung-recipe-instructions">
+        <aside>
+          <article>
+            <h3>ingredientes</h3>
+            <ul>
+              <li>1kg. Tomamtes maduros</li>
+              <li>500gr. Azucar</li>
+              <li>1 vaina de vainilla</li>
+              <li>Rumo de medio limón</li>
+            </ul>
+            <div class="recipe-property-container">
+              <div class="recipe-property">
+                <img src="./img/hombre.png" alt=""> <span>6 - 12</span>
+              </div>
+              <div class="recipe-property">
+                <img src="./img/reloj-de-pared.png" alt=""> <span>60 min</span>
+              </div>
+              <div class="recipe-property">
+                <img src="./img/euro.png" alt=""> <span>Bajo</span>
+              </div>
+              <div class="recipe-property">
+                <img src="./img/cocinero.png" alt=""> <span>Fácil</span>
+              </div>
+            </div>
+          </article>
+          <div >
+            <img src="./img/img-cooking-recipe-1.jpg" alt="" />
+            <img src="./img/img-cooking-recipe-2.jpg" alt="" />
+            <img src="./img/img-cooking-recipe-3.jpg" alt="" />
+            <img src="./img/img-cooking-recipe-4.jpg" alt="" />
+          </div>
+        </aside>
         <section>
-            <img src="./img/merm-tomate.jpg" alt="">
+          <img src="./img/merm-tomate.jpg" alt="" class="cualquier-clase" />
+          <article>
+            <h3>Paso a paso</h3>
+            <p>
+              Lava los tomates maduros y retira los tallos.
+              Haz una cruz en la parte inferior de cada tomate con un cuchillo afilado.
+              Hierve agua en una olla grande y sumerge los tomates en agua hirviendo durante aproximadamente 1 minuto.
+              Luego, sumérgelos en agua fría para detener la cocción.
+              La piel debería ser fácil de pelar ahora. Pela los tomates y córtalos en trozos pequeños.
+            </p>
+            <p>
+              Coloca los tomates picados en una olla grande y añade el azúcar y el jugo de limón.
+              Si lo deseas, también puedes añadir la canela, la nuez moscada y el jengibre en este punto para darle un toque de sabor extra.
+              Cocina a fuego medio-alto, revolviendo ocasionalmente, hasta que los tomates se hayan deshecho y la mezcla haya espesado. Esto puede tomar alrededor de 45 minutos a 1 hora.
+            </p>
+            <p>
+              Para verificar si la mermelada está lista, toma una cucharadita de la mezcla y colócala en un plato frío. Deja que se enfríe durante unos segundos y luego desliza tu dedo sobre la mermelada. Debería arrugarse y tener una consistencia espesa.
+              Si la mermelada aún está líquida, continúa cocinándola y repite la prueba de consistencia cada pocos minutos.
+            </p>
+            <p>
+              Lava y esteriliza frascos de vidrio y sus tapas sumergiéndolos en agua hirviendo durante unos minutos.
+              Llena los frascos calientes con la mermelada caliente hasta dejar aproximadamente 1 cm de espacio en la parte superior.
+              Cierra los frascos herméticamente.
+            </p>
+          </article>
         </section>
-    </main>
-    <footer>
-        <article>
-            <h2>Sabias que...</h2>
-            <p>texto relacionado con el sabias que, 
-                texto de respuesta</p>
-            <img src="./img/girl-cook.avif" alt="">
+      </main>
+      <footer>
+        <article class="tips">
+          <h2>Sabía que...</h2>
+          <p>
+            A pesar de su sabor dulce y su apariencia similar a la de otras mermeladas, el tomate es botánicamente una fruta. 
+            Esto significa que la mermelada de tomate está técnicamente hecha de fruta, no de vegetales, a pesar de que generalmente se asocia más con productos de tomate salados como salsas y ketchup. 
+            Este hecho puede sorprender a algunas personas que consideran al tomate como un vegetal en su dieta diaria.
+          </p>
+          <img src="./img/girl-cook.avif" alt="" class="cualquier-clase" />
         </article>
         <article>
-            <h6></h6>
-            <div></div>
-        </article> 
-    </footer>
+          <h6>Siguenos en:</h6>
+          <div>
+            <i>facebook</i>
+            <i>twitter</i>
+            <a href="https://www.google.com/" target="_blank">www.essuperfamiliar.com/blog</a>
+          </div>
+        </article>
+      </footer>
+    </main>
   </body>
 </html>
