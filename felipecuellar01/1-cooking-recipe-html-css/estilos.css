@@ -1,5 +1,6 @@
 body{
-    background: rgba(255, 255, 0, 0.815);
+    background-image: url(./img/fondo-receta-2.jpg);
+    background-size: cover;
 }
 img {
     width: 100px;
@@ -9,4 +10,7 @@ h1{
 }
 img.img-varias {
     width: 100px;
+}
+img.recipe-property{
+    width: 20px;
 }
