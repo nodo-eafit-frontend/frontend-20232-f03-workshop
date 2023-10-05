@@ -2,6 +2,15 @@ body{
     background-image: url(./img/fondo-receta-2.jpg);
     background-size: cover;
 }
+.recipe-instrutions{
+    display: flex;
+}
+.recipe-instrutions > aside{
+    width: 30%;
+}
+.recipe-instrutions > section{
+    width: 70%;
+}
 img {
     width: 100px;
 }
@@ -13,4 +22,10 @@ img.img-varias {
 }
 img.recipe-property{
     width: 20px;
+}
+h1{
+    font-family:'Young Serif', serif;
+}
+p {
+    font-family:  'Gabarito', cursive;
 }
