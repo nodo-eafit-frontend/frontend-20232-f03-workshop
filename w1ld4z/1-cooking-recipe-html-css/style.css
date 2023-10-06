@@ -1,5 +1,5 @@
 body{
-    background-image: url(/imagenes/fondopepas.jpg);
+    background-image: url(./imagenes/fondopepas.jpg);
 }
 header.header1{
     display: flex;
