@@ -2,13 +2,11 @@
 html {
   font-size: 62.5%;
 }
-
 * {
   outline: red dashed 1px;
-}
-
+} 
 body {
-  font-size: 2rem;
+  font-size: 10rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
   background-color: rgb(253, 250, 243);
@@ -109,7 +107,7 @@ h1 {
   margin: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4) 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   margin-bottom: 5rem;
 }
 
@@ -128,9 +126,6 @@ h1 {
   margin: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .steps h2 {
@@ -157,7 +152,7 @@ h1 {
   position: absolute;
   width: 9rem;
   height: 9rem;
-  background-color: rgb(253, 250, 243);
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,5 +171,17 @@ h1 {
   margin-right: 7.5rem;
   grid-column: 2;
 }
+
+/* MEDIA QUERIES */
+@media (min-width: 460px) {
+  
+}
+
+
+
+
+
+
+
 
 /*# sourceMappingURL=styles.css.map */
