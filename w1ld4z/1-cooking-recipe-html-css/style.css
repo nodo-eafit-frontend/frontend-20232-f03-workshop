@@ -1,34 +1,71 @@
 body{
     background-image: url(./imagenes/fondopepas.jpg);
+    width: 100vw;
+    height: 100vw;
+    position: relative;
+
 }
 header.header1{
-    display: flex;
+    display:flex;
+    height: 300px;
 }
+.background-recipe{
+    position:absolute;
+    opacity: 90%;
+    width: 1500px;
+    height: 1300px;
+    background-color: bisque;
+    border-radius: 60px ;
+    clip-path: polygon(33% 4%, 76% 9%, 100% 16%, 100% 100%, 50% 95%, 22% 90%, 0 80%, 0 42%, 0 0);
+    z-index: -1;
+}
+
 h1.titulo1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Great Vibes', cursive;
     text-align: left;
     font-size: xx-large;
+    color: #20343e;
 }
 h2.titulo2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/*MAIN SECTION*/
 main.main1{
+    width: 80vw;
+    
     display: flex;
-    margin-top: 10px;
 }
+
+.main1 > aside_contenedor{
+    background-color: red;
+    width: 70%;
+}
+.main1 > section_contenedor{
+    background-color: blue;
+    margin-left: 1000px;
+}
+
 .recipe-property-container{
     width: 100%;
     height: 30px;
-
+    background-color:red ;
 }
 img.img1{
     width: 200px ;
 }
 .img2{
     width: 400px ;
+    border-radius: 10px;
+    border-color: brown;
+    border: 100px;
 }
 
 img.img3{
     width: 300px;
     border-radius: 10px;
+}
+
+section{
+    width: 500px;
+    height: 100%;
 }
