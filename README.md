@@ -24,4 +24,4 @@ As a software developer, you have to support the creation of a product that fits
 - Continually communicate your progress, your bottlenecks, and your findings.
 ### 20% Nodo *(Individual)*
 In this educational experience, we will learn Data Structure I, HTML, CSS Javascript, and Typescript. This course is designed to take you from the general to the specific, providing you with a deep and comprehensive understanding. Each concept you study will serve as crucial support for the workshops and the Challenge. Every line of code you write will bring you one step closer to mastering these topics.
-[Nodo EAFIT](https://nodoeafit.com/)https://nodoeafit.com/
+[Nodo EAFIT](https://nodoeafit.com/)
