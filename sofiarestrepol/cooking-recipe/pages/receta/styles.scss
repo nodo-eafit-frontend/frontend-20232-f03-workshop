@@ -1,47 +1,53 @@
+// @import '/./sofiarestrepol/cooking-recipe/sass/'; 
+/* importar la carpeta sass -> incluye index + variables + reset*/
+
+$color-fondo: rgb(253, 250, 243);
+$color-ingredientes: rgb(233, 202, 124);
+$color-pasos: blanchedalmond;
+$index1: 1;
+$index1: 10;
+$index1: 20;
+$index1: 30;
+
 /* GLOBALES */
 html {
-  font-size: 62.5%;
+  font-size: 62.5%
 }
 * {
   outline: red dashed 1px;
-} 
-body {
-  font-size: 10rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 200;
-  background-color: rgb(253, 250, 243);
 }
-
+body {
+  font-size: 2rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  background-color: $color-fondo;
+}
 header {
   display: grid;
   grid-template-columns: 40% 60%;
 }
-
 main {
   font-size: 3rem;
 }
-
 span {
   font-weight: bold;
 }
+
 
 /* UTILIDADES */
 .bold {
   font-weight: bold;
 }
-
 .title-font {
-  font-family: "Glass Antiqua", cursive;
+  font-family: 'Glass Antiqua', cursive;
   letter-spacing: 17px;
   line-height: 8rem;
   font-weight: 100;
 }
-
 .right-align {
   grid-column: 2;
-  margin: 2.5rem;
+  margin: 2.5rem
 }
-
 .left-align {
   grid-column: 1;
   margin: 2.5rem;
@@ -62,9 +68,8 @@ h1 {
   margin-top: 4rem;
   margin-left: 25rem;
 }
-
 #pan-nombre {
-  color: coral;
+  color:coral;
   margin-top: 0;
 } /* h1 pan de cerveza */
 .cont-pan {
@@ -75,6 +80,7 @@ h1 {
   text-align: center;
   margin-left: 1rem;
 } /* subir ligeramente "prep" hacia el pan */
+
 /* INGREDIENTES */
 #ingredientes {
   color: white;
@@ -85,32 +91,29 @@ h1 {
   text-decoration: underline;
   font-size: 5rem;
 }
-
 .cont-ingredientes {
-  background-color: rgb(233, 202, 124);
+  background-color: $color-ingredientes;
   height: 50rem;
   margin: 4rem 4rem;
 }
-
 .cont-lista-ingredientes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
 .cont-lista-ingredientes p {
   margin: 20px;
   font-size: 2.5rem;
 }
+
 
 /* PREPARACION */
 .cont-preparacion {
   margin: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4) 1fr ;
   margin-bottom: 5rem;
 }
-
 #prep {
   font-size: 5.5rem;
   font-weight: normal;
@@ -120,68 +123,52 @@ h1 {
   letter-spacing: 6px;
   text-decoration: underline;
 }
-
 .steps {
-  background-color: blanchedalmond;
+  background-color: $color-pasos;
   margin: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-
 .steps h2 {
-  color: rgb(233, 202, 124);
-  background-color: blanchedalmond;
+  color: $color-ingredientes;
+  background-color: $color-pasos;
   margin-top: 3rem;
   font-size: 7rem;
   font-weight: 100;
 }
-
 .steps:nth-of-type(odd) h2 {
   position: absolute;
   margin-left: -3.5rem;
   width: 9rem;
   height: 9rem;
-  background-color: rgb(253, 250, 243);
+  background-color: $color-fondo;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
-
 .steps:nth-of-type(even) h2 {
   position: absolute;
   width: 9rem;
   height: 9rem;
-  background-color: white;
+  background-color: $color-fondo;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  right: -5px;
+  right: -5px
 }
-
-.steps.steps:nth-of-type(odd) p {
+.steps.steps:nth-of-type(odd) p{
   text-align: left;
   margin-left: 7.5rem;
   grid-column: 1;
 }
-
-.steps.steps:nth-of-type(even) p {
+.steps.steps:nth-of-type(even) p{
   text-align: right;
   margin-right: 7.5rem;
   grid-column: 2;
 }
 
-/* MEDIA QUERIES */
-@media (min-width: 460px) {
-  
-}
-
-
-
-
-
-
-
-
-/*# sourceMappingURL=styles.css.map */
