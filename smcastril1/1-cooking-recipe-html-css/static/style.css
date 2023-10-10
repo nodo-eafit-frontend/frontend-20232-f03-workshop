@@ -1,3 +1,10 @@
+@import "./reset.css";
+@font-face {
+  font-family: cursive-title;
+  src: url("./DancingScript-Regular.otf") format(truetype);
+  font-weight: 200;
+  font-display: swap;
+}
 html {
   font-size: 100%;
 }
@@ -26,6 +33,7 @@ body {
 
 .title-recipe {
   position: absolute;
+  font-family: cursive-title Arial, Helvetica, sans-serif;
   clip-path: inset(0 0 0 0);
   background-color: #930166;
   width: 70%;
