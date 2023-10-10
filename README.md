@@ -6,7 +6,7 @@ To develop frontend workshops.
   - Cooking Recipe Project
     - **Static Recipe:** HTML & CSS + SASS
     - **Create Recipe:** Forms, A11y, CSS Architecture *BEM* & JS validation
-    - **Cooking timer + Mini-game:**: JS
+    - **Mini-game:**:  HTML & CSS + SASS & JS + DOM eventlistener
     - **Server Recipe:**: API + Node
     - **Frameworks:**
 - 50% Project Challenge *(Team)*
