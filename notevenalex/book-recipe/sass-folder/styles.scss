@@ -1,8 +1,15 @@
+$lightred: rgb(218, 55, 95);
+
 :root {
     --beige: #dedeb4; /* Beige */
-    --red: #d33b3b; /* Beige */
+    --red: #b93737; /* Beige */
   }
-  
+
+  header{
+    h2{background-color: $lightred;
+      width: 40%;
+  }
+}
   body {
     position: relative;
     background-image: url(./img/Red-background.jpg);
@@ -17,21 +24,7 @@
     width: 1380px;
     height: 1900px;
     background-color: var(--beige);
-    clip-path: polygon(
-      -4% 3%,
-      -2% -3%,
-      12% -5%,
-      23% -6%,
-      88% 15%,
-      93% 29%,
-      96% 40%,
-      92% 84%,
-      86% 92%,
-      74% 92%,
-      14% 89%,
-      -3% 88%,
-      -5% 70%
-    );
+    clip-path: polygon(-4% 3%, -2% -3%, 12% -5%, 23% -6%, 88% 15%, 93% 29%, 96% 40%, 92% 84%, 86% 92%, 74% 92%, 14% 89%, -3% 88%, -5% 70%);
     z-index: -2;
   }
   
@@ -57,7 +50,7 @@
   }
   
   h1 {
-    font-family: 'Lobster', cursive;
+    font-family: "Lobster", cursive;
   }
   
   .recipe-property-container {
@@ -67,9 +60,12 @@
   }
   
   img {
-    width: 200px;
+    width: 100px;
   }
   
   .tips > h2 {
     color: brown;
   }
+  
+  /*# sourceMappingURL=styles.css.map */
+  
