@@ -10,10 +10,32 @@
 </head>
 <body>
   <form action="../receta/receta.html">
-    <label for="title"></label>
+    <label for="title">Titulo de la Receta</label>
     <input id="title" type="text">
+    <hr>
+    <label for="portions">Numero de Porciones</label>
+    <input id="portions" type="number">
+    <hr>
+    <label for="prep-time">Tiempo de preparacion</label>
+    <input id="prep-time" type="number">
+    <hr>
+    <fieldset>
+      <legend>Dificultad</legend>
+      <input id="alto" name="alto" type="radio" value="alto">
+      <label for="alto">Alto</label>
+      <input id="medio" name="medio" type="radio" value="medio">
+      <label for="medio">Medio</label>
+      <input id="bajo" name="bajo" type="radio" value="bajo">
+      <label for="bajo">Bajo</label>
+    </fieldset>
+    <br>
+    <legend>Pasos</legend>
+    <textarea id="steps" name="steps" rows="2" cols="20"></textarea>
+    <br>
+    <br>
+    <label for=""></label>
     <input id="button" type="submit" value="Crear receta">
-    <button>Crear Receta</button>
   </form>
 </body>
+<script src="./create-receta.js"></script>
 </html>

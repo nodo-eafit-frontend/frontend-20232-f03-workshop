@@ -1,20 +1,12 @@
-// @import '/./sofiarestrepol/cooking-recipe/sass/'; 
-/* importar la carpeta sass -> incluye index + variables + reset*/
-
-$color-fondo: rgb(253, 250, 243);
-$color-ingredientes: rgb(233, 202, 124);
-$color-pasos: blanchedalmond;
-$index1: 1;
-$index1: 10;
-$index1: 20;
-$index1: 30;
+@import "../../sass/index.scss";
 
 /* GLOBALES */
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
 }
 * {
   outline: red dashed 1px;
+  box-sizing: border-box;
 }
 body {
   font-size: 2rem;
@@ -113,6 +105,7 @@ h1 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4) 1fr ;
   margin-bottom: 5rem;
+  box-sizing: border-box;
 }
 #prep {
   font-size: 5.5rem;
@@ -131,6 +124,7 @@ h1 {
   grid-template-rows: 1fr 1fr;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  box-sizing: border-box;
 }
 .steps h2 {
   color: $color-ingredientes;
@@ -165,10 +159,30 @@ h1 {
   text-align: left;
   margin-left: 7.5rem;
   grid-column: 1;
+  // z-index: $index1;
 }
 .steps.steps:nth-of-type(even) p{
   text-align: right;
   margin-right: 7.5rem;
   grid-column: 2;
+  // z-index: $index1;
+}
+.cont-flag {
+  z-index: 100;
+  width: 10rem;
+  height: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.flag {
+  background-color: blue;
+  width: 30rem;
+  height: 30rem;
+  clip-path: polygon(100% 65%, 100% 100%, 0% 100%);
+  // position: relative;
+  // bottom: 30rem;
+  // left: 69.5rem;
+  // grid-column: 2;
+  // z-index: $index4;
 }
 
