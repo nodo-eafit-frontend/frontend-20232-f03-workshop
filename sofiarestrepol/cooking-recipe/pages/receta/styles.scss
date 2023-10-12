@@ -5,7 +5,7 @@ html {
   font-size: 62.5%;
 }
 * {
-  outline: red dashed 1px;
+  // outline: red dashed 1px;
   box-sizing: border-box;
 }
 body {
@@ -13,10 +13,11 @@ body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
   background-color: $color-fondo;
+  margin: 3rem 30rem;
 }
 header {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 50% 50%;
 }
 main {
   font-size: 3rem;
@@ -44,6 +45,14 @@ span {
   grid-column: 1;
   margin: 2.5rem;
 }
+.imagenes {
+  position: absolute;
+  display: flex;
+  z-index: $index4;
+}
+.invertir {
+  transform: scaleX(-1);
+}
 
 /* TIPOGRAFIA */
 header p {
@@ -59,6 +68,9 @@ h1 {
   margin: 0;
   margin-top: 4rem;
   margin-left: 25rem;
+}
+#pan-img {
+  width: 70rem
 }
 #pan-nombre {
   color:coral;
@@ -78,24 +90,57 @@ h1 {
   color: white;
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 1px;
   letter-spacing: 6px;
   text-decoration: underline;
   font-size: 5rem;
+  z-index: $index2;
 }
 .cont-ingredientes {
   background-color: $color-ingredientes;
   height: 50rem;
   margin: 4rem 4rem;
+  z-index: $index2;
 }
 .cont-lista-ingredientes {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 40% 60%;
+  position: relative;
+  z-index: $index2;
+  p {
+    margin: 20px;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 4rem;
+    margin-top: 2.5rem;
+  }
+  .bold {
+    text-align: right;
+  }
+  
 }
-.cont-lista-ingredientes p {
-  margin: 20px;
-  font-size: 2.5rem;
+/* Imagenes */
+#harina {
+  height: 15rem;
+  width: 12rem;
+  margin-top: -13rem;
+  margin-left: 2rem;
 }
+#cerveza {
+  height: 14rem;
+  margin-top: 3.5rem;
+  margin-left: 5rem;
+}
+#levadura {
+  height: 10rem;
+  margin-top: 20rem;
+  margin-left: 4rem;
+}
+#sal {
+  height: 10rem;
+  margin-top: 32.5rem;
+  margin-left: 6rem;
+}
+
 
 
 /* PREPARACION */
@@ -119,12 +164,14 @@ h1 {
 .steps {
   background-color: $color-pasos;
   margin: 10px;
+  height: 32rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
   padding-top: 2rem;
   padding-bottom: 2rem;
   box-sizing: border-box;
+  position: relative;
 }
 .steps h2 {
   color: $color-ingredientes;
@@ -153,7 +200,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  right: -5px
+  right: -7rem
 }
 .steps.steps:nth-of-type(odd) p{
   text-align: left;
@@ -167,6 +214,45 @@ h1 {
   grid-column: 2;
   // z-index: $index1;
 }
+#reposar-txt {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+/* Imagenes */
+#mezclar {
+  height: 30rem;
+  margin-left: 70rem;
+}
+#amasar {
+  height: 30rem;
+  margin-left: 7rem;
+}
+#amasar-2 {
+  height: 38rem;
+  margin-left: 65rem;
+}
+#reposar {
+  height: 30rem;
+  margin-left: 7rem;
+}
+#horno {
+  height: 20rem;
+  margin-left: 72rem;
+  margin-top: 5rem;
+}
+#horno-2 {
+  height: 20rem;
+  margin-left: 13rem;
+  margin-top: 5rem;
+}
+#pan-final {
+  height: 60rem;
+  margin-left: 90rem;
+  margin-top: -15rem;
+}
+
+/* Bandera azul */
 .cont-flag {
   z-index: 100;
   width: 10rem;
@@ -186,3 +272,14 @@ h1 {
   // z-index: $index4;
 }
 
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  .imagenes {}
+}
+
+/* TO DO */
+
+/* DUDAS */
+//nesting con sass
+//todas las imagenes se sobreponen cuando se pone peque la pantalla
+//

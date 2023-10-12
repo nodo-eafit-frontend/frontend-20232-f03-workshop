@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -60,7 +61,6 @@ html {
 }
 
 * {
-  outline: red dashed 1px;
   box-sizing: border-box;
 }
 
@@ -69,11 +69,12 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
   background-color: rgb(253, 250, 243);
+  margin: 3rem 30rem;
 }
 
 header {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 50% 50%;
 }
 
 main {
@@ -106,6 +107,16 @@ span {
   margin: 2.5rem;
 }
 
+.imagenes {
+  position: absolute;
+  display: flex;
+  z-index: 30;
+}
+
+.invertir {
+  transform: scaleX(-1);
+}
+
 /* TIPOGRAFIA */
 header p {
   text-align: center;
@@ -120,6 +131,10 @@ h1 {
   margin: 0;
   margin-top: 4rem;
   margin-left: 25rem;
+}
+
+#pan-img {
+  width: 70rem;
 }
 
 #pan-nombre {
@@ -139,26 +154,60 @@ h1 {
   color: white;
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 1px;
   letter-spacing: 6px;
   text-decoration: underline;
   font-size: 5rem;
+  z-index: 10;
 }
 
 .cont-ingredientes {
   background-color: rgb(233, 202, 124);
   height: 50rem;
   margin: 4rem 4rem;
+  z-index: 10;
 }
 
 .cont-lista-ingredientes {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 40% 60%;
+  position: relative;
+  z-index: 10;
 }
-
 .cont-lista-ingredientes p {
   margin: 20px;
   font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 4rem;
+  margin-top: 2.5rem;
+}
+.cont-lista-ingredientes .bold {
+  text-align: right;
+}
+
+/* Imagenes */
+#harina {
+  height: 15rem;
+  width: 12rem;
+  margin-top: -13rem;
+  margin-left: 2rem;
+}
+
+#cerveza {
+  height: 14rem;
+  margin-top: 3.5rem;
+  margin-left: 5rem;
+}
+
+#levadura {
+  height: 10rem;
+  margin-top: 20rem;
+  margin-left: 4rem;
+}
+
+#sal {
+  height: 10rem;
+  margin-top: 32.5rem;
+  margin-left: 6rem;
 }
 
 /* PREPARACION */
@@ -184,12 +233,13 @@ h1 {
 .steps {
   background-color: blanchedalmond;
   margin: 10px;
+  height: 32rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   padding-top: 2rem;
   padding-bottom: 2rem;
   box-sizing: border-box;
+  position: relative;
 }
 
 .steps h2 {
@@ -221,7 +271,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  right: -5px;
+  right: -7rem;
 }
 
 .steps.steps:nth-of-type(odd) p {
@@ -236,6 +286,52 @@ h1 {
   grid-column: 2;
 }
 
+#reposar-txt {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+/* Imagenes */
+#mezclar {
+  height: 30rem;
+  margin-left: 70rem;
+}
+
+#amasar {
+  height: 30rem;
+  margin-left: 7rem;
+}
+
+#amasar-2 {
+  height: 38rem;
+  margin-left: 65rem;
+}
+
+#reposar {
+  height: 30rem;
+  margin-left: 7rem;
+}
+
+#horno {
+  height: 20rem;
+  margin-left: 72rem;
+  margin-top: 5rem;
+}
+
+#horno-2 {
+  height: 20rem;
+  margin-left: 13rem;
+  margin-top: 5rem;
+}
+
+#pan-final {
+  height: 60rem;
+  margin-left: 90rem;
+  margin-top: -15rem;
+}
+
+/* Bandera azul */
 .cont-flag {
   z-index: 100;
   width: 10rem;
@@ -250,5 +346,9 @@ h1 {
   height: 30rem;
   clip-path: polygon(100% 65%, 100% 100%, 0% 100%);
 }
+
+/* MEDIA QUERIES */
+/* TO DO */
+/* DUDAS */
 
 /*# sourceMappingURL=styles.css.map */
