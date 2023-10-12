@@ -1,0 +1,147 @@
+@import "./variables.scss";
+@import "./base.scss";
+@import "./font.scss";
+
+hmtl {
+    font-size: 62.5%;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vw;
+    display:flex;
+    justify-content: center;
+    color: $brown-red;
+    background-color: $light-pink;
+    background-image: radial-gradient(circle, $middle-pink 1px, transparent 70%);
+    background-size: 3rem 3rem;
+    position: relative;
+
+    #info-beige-background {
+        width:60%;
+        height: 70%;
+        position: absolute;
+        z-index: -1;
+        background-color: $light-gray;
+        top: 7rem;
+        border-radius: 3rem;
+    }
+
+    .info-cooking-recipe{
+        width: 70vw;
+        height: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+
+
+        header {
+            position: relative;
+
+            .cursive-title {
+                font-family: satisfy;
+                position:absolute;
+                bottom: 3.5rem;
+                right: 14rem;
+            }
+
+            h1 {
+                font-size: 70px;
+                font-weight: 600;
+                font-family: arial narrow;
+                position: absolute;
+                left: 30rem;
+                top: 6rem;
+            }
+
+            img {
+                width:200px;
+                height: 100px;
+                margin: 2rem;
+                border-radius: 20px;
+            }
+
+            > h2 {
+                background-color: $dark-pink;
+                line-height: 5.3rem;
+                padding-left: 3rem;
+                color: $white;
+                font-size: 3rem;
+                font-family: satisfy;
+                font-weight: 1300;
+                width: 70%;
+                height: 3rem;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                -webkit-text-stroke: .7px $dark-pink;
+
+            }
+        }
+
+        main.blocks-controller {
+            display: flex;
+            margin-top: 3rem;
+            margin-left: 3rem;
+
+
+            aside {
+                width: 30%;
+                top:2rem;
+
+                .steps-icons {
+                    display: flex;
+                    justify-content: space-around;
+
+                    i {
+                        font-size: 11px;
+                    }
+                }
+                .steps-images {
+                    display: flex;
+                    flex-direction: column;
+
+                    .process-images {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+            }
+
+            section {
+                width: 40%;
+            }
+        }
+
+        footer {
+            display: flex;
+            width: 80%;
+            position: relative;
+
+
+
+            #follow-information {
+                width: 10%;
+                div {
+                    a {
+                        font-size: 30px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 350px;
+                    }
+                }
+            }
+
+            .tips {
+                width: 60%;
+                .tips-title {
+                    font-size: 60px;
+                    position: absolute;
+                    top: -130px;
+                    left: 400px;
+                }
+            }
+        }
+    }
+}
