@@ -9,18 +9,18 @@
   </head>
   <body>
     <h1>Crear Receta</h1>
-    <form action="../cooking-recipe/cooking-recipe.html" method="post">
+    <form onsubmit="onSubmit(event)" action="../cooking-recipe/cooking-recipe.html" method="post">
       <label for="title-recipe">Titulo Receta</label>
       <input id="title-recipe" type="text" name="title" />
       <hr />
       <label for="min-people">Mínimo personas</label>
-      <input id="min-people" type="number" />
+      <input id="min-people" type="number" min="1" />
       <br />
       <label for="max-people">Máximo personas</label>
-      <input id="max-people" type="number" />
+      <input id="max-people" type="number" max="10" />
       <hr />
       <label for="time-for-cooking">Tiempo de preparación</label>
-      <input id="time-for-cooking" type="number" />
+      <input id="time-for-cooking" type="number" min="1" max="120" />
 
       <fieldset>
         <legend>Costo</legend>
@@ -51,7 +51,7 @@
       </fieldset>
       <fieldset>
         <legend>Paso a paso</legend>
-        <textarea name="steps"></textarea>
+        <textarea name="steps" required></textarea>
       </fieldset>
 
       <input type="submit" value="Crear Receta" />

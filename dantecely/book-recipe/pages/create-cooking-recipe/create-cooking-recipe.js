@@ -1,19 +1,32 @@
-// const titleRecipe = document.querySelector('#title-recipe').value;
-
-// sumar 2 numeros dinámicos
-
-function sum(param1, param2) {
-  return param1 + param2;
+function getRadioResult(element, name) {
+  return element.querySelector(`input[name="${name}"]:checked`)?.value;
 }
 
-const substract = function (param1, param2) {
-  return param1 - param2;
+const recipe = {
+  title: undefined,
+  peopleAmount: {
+    max: undefined,
+    min: undefined,
+  },
+  time: undefined,
+  cost: undefined,
+  level: undefined,
+  steps: undefined,
 };
 
-(param1, param2) => {
-  return param1 * param2;
-};
+function onSubmit(event) {
+  event.preventDefault();
+  const formEl = event.target;
 
-const result = multiply(10, 10);
+  recipe.title = formEl.querySelector('#title-recipe').value;
+  recipe.steps = formEl.querySelector('textarea[name="steps"]').value;
+  recipe.time = Number(formEl.querySelector('#time-for-cooking').value);
+  recipe.cost = getRadioResult(formEl, 'cost');
+  recipe.level = getRadioResult(formEl, 'level');
+  recipe.peopleAmount.min = +formEl.querySelector('#min-people').value;
+  recipe.peopleAmount.max = +formEl.querySelector('#max-people').value;
 
-console.log(result);
+  // Condicionales
+
+  console.log(recipe);
+}
