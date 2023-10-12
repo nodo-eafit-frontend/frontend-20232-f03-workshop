@@ -1,25 +1,10 @@
-:root {
-   --dark-blue: 
-   --navy-blue:
-   --beige: 
-
-}
-
-.recipe-property-container {
-width: 200px;
-height: 200px;
-background-color: var(ligthsalmon);
-}
-
-
 
 body  {
     background-color: lightsalmon;
-    width: 100px;
-    height: 100px;
+  
 
 header {
-    font-size: 10px;
+    font-size: 300px;
 }
 
 img {
