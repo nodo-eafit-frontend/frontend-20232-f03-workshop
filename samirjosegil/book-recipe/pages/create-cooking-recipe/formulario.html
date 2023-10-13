@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Crear Receta Cocina</title>
 </head>
 <body>
     <header>
@@ -12,17 +11,64 @@
     </header>
 
     <main>
-        <form class="recipe-form" action="cooking_recipe.html" method="post">
-            <h2 class="form-title">Formulario de Receta</h2>
-            <label for="recipe-name" class="form-label">Nombre de la Receta:</label>
-            <input type="text" id="recipe-name" class="form-input" name="recipeName" required>
+        <form class="recipe-form" action="../cooking-recipe/coocking-recipe.html" method="post">
+
+            <label for="recipe-name" class="titles">Titulo de la Receta:</label>
+            <input type="text" id="recipe-name" class="title-input" name="recipeName" required>
+
             
-            <label for="ingredients" class="form-label">Ingredientes:</label>
-            <textarea id="ingredients" class="form-textarea" name="ingredients" required></textarea>
+
+            <label for="ingredients" class="titles">Ingredientes:</label>
+            <textarea id="ingredients" class="textarea" name="ingredients" required></textarea>
+
             
-            <label for="instructions" class="form-label">Instrucciones:</label>
-            <textarea id="instructions" class="form-textarea" name="instructions" required></textarea>
+
+            <fieldset class="people-max-min">
+                <legend class="titles">Cantidad de Personas</legend>
+                <label for="min-people">Mín.</label>
+                <input id="min-people" type="number"/>
+                <br />
+                <label for="max-people">Máx.</label>
+                <input id="max-people" type="number"/>
+            </fieldset>
+
             
+            
+            <fieldset class="cost">
+                <legend class="titles">Costo</legend>
+                <div>
+                    <input type="radio" name="cost" id="cost-high" value="high" />
+                    <label for="cost-high">Alto</label>
+  
+                    <input type="radio" name="cost" id="cost-medium" value="medium" />
+                    <label for="cost-medium">Medio</label>
+  
+                    <input type="radio" name="cost" id="cost-low" value="low" />
+                    <label for="cost-low">Bajo</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="dificulty">
+                <legend class="titles">Dificultad</legend>
+                <div>
+                  <input type="radio" name="level" id="level-high" value="high" />
+                  <label for="level-high">Alto</label>
+        
+                  <input type="radio" name="level" id="level-medium" value="medium" />
+                  <label for="level-medium">Medio</label>
+        
+                  <input type="radio" name="level" id="level-low" value="low" />
+                  <label for="level-low">Bajo</label>
+                </div>
+            </fieldset>
+
+            
+
+            <fieldset class="steps">
+                <legend>Paso a paso</legend>
+                <textarea name="steps"></textarea>
+            </fieldset>
+
             <button type="submit" class="form-button">Enviar</button>
         </form>
     </main>
