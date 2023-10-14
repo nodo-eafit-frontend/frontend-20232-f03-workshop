@@ -135,14 +135,6 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: "Dancing";
-  src: url(./Fonts/Dancing.ttf);
-}
-@font-face {
-  font-family: "Pacifico-Regular";
-  src: url(./Fonts/Pacifico-Regular.ttf);
-}
 body {
   background: rgb(255, 228, 196);
   display: grid;
@@ -188,6 +180,14 @@ footer {
   bottom: -195%;
 }
 
+@font-face {
+  font-family: "Dancing";
+  src: url(./Fonts/Dancing.ttf);
+}
+@font-face {
+  font-family: "Pacifico-Regular";
+  src: url(./Fonts/Pacifico-Regular.ttf);
+}
 .logo {
   width: 22rem;
   border-radius: 2rem;
