@@ -1,0 +1,77 @@
+@import"../sass/index.scss";
+
+body {
+  background-image: url(../img/rodajas-naranja-canela-polvo-encima-papilla-bol-sobre-marmol.jpg);
+  background-size: cover;
+  margin: 90px;
+  padding: 90px;
+  border: rgb(9, 55, 73);
+}
+
+.recipe-instrutions {
+  display:flex;
+}
+
+.recipe-instrutions > aside {
+  width: 40%;
+}
+
+.recipe-instrutions > section {
+  width: 60%;
+}
+
+img {
+  width: 150px;
+}
+.titulo > h2{
+  background-color:$color-primario;
+  background-position-x: 34px;
+}
+h1 {
+  font-size: 100px;
+}
+h3{
+  font-size: 60px;
+}
+
+.datos {
+  font-size: 70px;
+}
+
+img.img-varias {
+  width: 100px;
+}
+
+img.recipe-property {
+  width: 20px;
+} 
+
+h1 {
+  font-family: "Young Serif", serif;
+}
+
+p {
+  font-family:$font-family-primary;
+}
+
+.titulo > h1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.datos{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tips {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+
+/*# sourceMappingURL=styles.css.map */

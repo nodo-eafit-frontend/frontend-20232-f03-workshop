@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../img/libro-de-recetas-_1_.ico" type="image/x-icon" />
+</head>
+<body>
+     <h1>crear receta</h1>
+    <form>
+        <label for="title-recipe">Titulo receta</label>
+        <input id="title-recipe" type="text">
+        <hr />
+        <label for="min-people">Mínimo personas</label>
+        <input id="min-people" type="number">
+        <br />
+        <label for="max-people">Máximo personas</label>
+        <input id="max-people" type="number">
+        <hr />
+        <label for="time-preparation">Tiempo de preparación</label>
+        <input id="time-preparation" type="number">
+        <hr />
+        <hr />
+        <fieldset>
+            <legend>Costo</legend>
+            <div>
+                <input type="radio" name="Cost" id="high" value="alto">
+                <label for="high">alto</label>
+
+                <input type="radio" name="Cost" id="medium" value="medium">
+                <label for="high">medio</label>
+
+                <input type="radio" name="Cost" id="low" value="low">
+                <label for="high">bajo</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dificultad</legend>
+            <div>
+                <input type="radio" name="level" id="level-high" value="alto">
+                <label for="level-high">alto</label>
+
+                <input type="radio" name="level" id="level-medium" value="medium">
+                <label for="level-high">medio</label>
+
+                <input type="radio" name="level" id="level-low" value="low">
+                <label for="level-high">bajo</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>paso a paso</legend>
+            <textarea name="steps"></textarea>
+        </fieldset>
+        <input type="submit" value="crear receta">
+        <hr>
+
+    </form>
+</body>
+</html>
