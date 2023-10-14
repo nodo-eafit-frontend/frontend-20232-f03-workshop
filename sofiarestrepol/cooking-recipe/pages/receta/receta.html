@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">
 </head>
-<area>
-  <area>
+<section>
+  <body>
     <header>
       <section class="titulo">
         <div class="cont-titulo">
@@ -23,7 +23,7 @@
             <img id="pan-img" src="/sofiarestrepol/cooking-recipe/pages/receta/img/pan.png" alt="pan" >
         </div>
       </section> <!-- titulo -->
-      <sections class="cont-ingredientes">
+      <section class="cont-ingredientes">
         <h2 id="ingredientes" class="title-font">Ingredientes</h2>
         <div class="cont-lista-ingredientes">
           <img class="imagenes invertir" src="./img/harina.png" id="harina" alt="harina" >
@@ -39,60 +39,80 @@
           <p class="bold">10g</p>
           <p>Sal</p>
         </div>
-      </sectop>
+      </section>
     </header>
     <main>
       <h2 id="prep" class="title-font">Preparación</h2>
       <section class="cont-preparacion"> <!-- preparacion -->
         <div class="steps">
           <h2 class="left-align">1</h2> <!-- step 1 -->
-          <p><span>Mezcla</span> los ingredientes secos y añade la levadura y la cerveza</p>
+          <div class="text-steps left-step">
+            <p><span>Mezcla</span> los ingredientes secos y añade la levadura y la cerveza</p>
+          </div>
           <img src="./img/mezclar.png" class="imagenes" id="mezclar" alt="mezclar">
         </div>
         <div class="steps">
           <h2 class="right-align">2</h2> <!-- step 2 -->
           <img src="./img/amasar.png" class="imagenes" id="amasar" alt="amasar">
-          <p><span>Amasa</span> durante cinco minutos echa harina si la masa se pega mucho</p>
-          <p class="bold" id="reposar-txt">Reposar</p>
+          <div class="text-steps right-step">
+            <p><span>Amasa</span> durante cinco minutos echa harina si la masa se pega mucho</p>
+            <br>
+            <p class="bold" id="reposar-txt">Reposar</p>
+          </div>
         </div>
         <div class="steps">
           <h2 class="left-align">3</h2> <!-- step 3 -->
-          <p><span>Repite</span> el paso dos, tres veces mas</p>
-          <p class="bold">Amasar</p>
-          <p class="bold">Reposar</p>
+          <div class="text-steps left-step">
+            <p><span>Repite</span> el paso dos, tres veces mas</p>
+            <br>
+            <p class="bold">Amasar</p>
+            <br>
+            <p class="bold">Reposar</p>
+          </div> 
           <img src="./img/amasar-2.png" class="imagenes" id="amasar-2" alt="amasar">
         </div>
         <div class="steps">
           <h2 class="right-align">4</h2> <!-- step 4 -->
           <img src="./img/reposar.png" class="imagenes" id="reposar" alt="bowl">
-          <p>Enharina la masa y deja <span>reposar en un bol tapado</span> con un trapo 2-3h. Debe doblar su tamaño</p>
+          <div class="text-steps right-step">
+            <p>Enharina la masa y deja <span>reposar en un bol tapado</span> con un trapo 2-3h. Debe doblar su tamaño</p>
+          </div>
         </div>
         <div class="steps">
           <h2 class="left-align">5</h2> <!-- step 5 -->
-          <p class="bold">Precalienta el horno a 250°C</p>
-          <p >Coloca la masa sobre papel vegetal en la bandeja o rejilla y haz unos cortes arriba</p>
-          <img src="./img/horno.png" class="imagenes" id="horno" alt="horno">
+          <div class="text-steps left-step">
+            <p class="bold">Precalienta el horno a 250°C</p>
+            <br>
+            <p >Coloca la masa sobre papel vegetal en la bandeja o rejilla y haz unos cortes arriba</p>
+          </div>
+            <img src="./img/horno.png" class="imagenes" id="horno" alt="horno">
         </div>
         <div class="steps">
           <h2 class="right-align">6</h2> <!-- step 6 -->
           <img src="./img/horno-2.png" class="imagenes" id="horno-2" alt="horno">
-          <p>Pon una segunda bandeja mas abajo y coloca un <span>molde con agua</span></p>
-        </div>  
+          <div class="text-steps right-step">
+            <p>Pon una segunda bandeja mas abajo y coloca un <span>molde con agua</span></p>
+          </div>
+          </div>  
         <div class="steps">
           <h2 class="left-align">7</h2> <!-- step 7 -->
-          <p><span>Cocina</span> 10 minutos a 250°C. Reduce la temperatura a 200°C y deja 30 min</p>
-          <img src="" class="imagenes" id="" alt="">
-          <img src="./img/pan-final.png" class="imagenes" id="pan-final" alt="pan caliente">
-        </div>
+          <div class="text-steps left-step">
+            <p><span>Cocina</span> 10 minutos a 250°C. Reduce la temperatura a 200°C y deja 30 min</p>
+          </div>
+          </div>
         <div class="steps">
           <h2 class="right-align">8</h2> <!-- step 8 -->
-          <p class="right-align">Sacalo del horno y <span>deja que se enfrie.</span> <br>¡Disfrutalo! </p>
+          <div class="text-steps right-step">
+            <p class="right-align">Sacalo del horno y <span>deja que se enfrie.</span> <br><br>¡Disfrutalo! </p>
+          </div>
+            <img src="./img/pan-final.png" class="imagenes" id="pan-final" alt="pan caliente">
         </div>
-          <!-- <p class="flag"><p/> 
-          <p id="web">Webconsultas</p> -->
+          <p class="flag"><p/> 
+          <!-- <p id="web">Webconsultas</p>  -->
       </section> <!-- preparacion -->
-      </main>
-    </area>
-</body>
+    </main>
+  </body>
+</section>
 </html>
+
 
