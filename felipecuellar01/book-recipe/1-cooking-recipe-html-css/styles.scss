@@ -6,7 +6,31 @@ body {
   margin: 90px;
   padding: 90px;
   border: rgb(9, 55, 73);
+  z-index: 2;
 }
+
+.fondo {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  background-color: red;
+  clip-path: polygon(
+    2% 15%,
+    4% 8%,
+    12% 5%,
+    23% 7%,
+    88% 21%,
+    93% 29%,
+    96% 40%,
+    92% 84%,
+    86% 92%,
+    74% 92%,
+    14% 89%,
+    6% 83%,
+    3% 76%
+  );
+}
+
 
 .recipe-instrutions {
   display:flex;
@@ -23,12 +47,13 @@ body {
 img {
   width: 150px;
 }
-.titulo > h2{
-  background-color:$color-primario;
-  background-position-x: 34px;
+.titulo > header> h2 {
+  background-position-x: 60px;
+  font-size: 30px;
+  font-family: 'Satisfy', cursive;
 }
 h1 {
-  font-size: 100px;
+  font-size: 10px;
 }
 h3{
   font-size: 60px;
@@ -45,10 +70,6 @@ img.img-varias {
 img.recipe-property {
   width: 20px;
 } 
-
-h1 {
-  font-family: "Young Serif", serif;
-}
 
 p {
   font-family:$font-family-primary;
