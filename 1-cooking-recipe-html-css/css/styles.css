@@ -16,14 +16,14 @@ body {
   padding: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 50px;
-  box-shadow: 0px 10px 50px rgb(255, 123, 0);
+  box-shadow: 0px 10px 50px rgb(255, 115, 0);
   text-align: left;
   margin: 50px;
 }
 
 h1 {
   background-color: #ff7f50;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 15px;
   font-size: 40px;
@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-  background-color: antiquewhite;
+  background-color: rgb(255, 213, 177);
   padding: 5px;
   color: #ff7f50;
   font-size: 24px;
@@ -42,7 +42,7 @@ h2 {
 
 ul, ol {
   margin-left: 20px;
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 li {
@@ -61,15 +61,17 @@ img {
 p {
   margin: 10px 0;
   line-height: 1.4;
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 ul {
   list-style-type: "🍛";
+  color: rgb(0, 0, 0);
 }
 
 ol {
   list-style-type: decimal;
+  color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=styles.css.map */
