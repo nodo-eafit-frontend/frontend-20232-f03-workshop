@@ -199,14 +199,43 @@ fieldset {
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
+.fieldset.steps {
+  padding: 1rem;
+}
+
+.fieldset.steps ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 1rem;
+}
+
 fieldset.steps textarea {
   list-style-type: disc;
-  width: 98%;
+  width: 97%;
   height: 100%;
   border: none;
   resize: none;
   border-bottom: 1px solid #333;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  min-height: 6rem;
+  position: relative;
+}
+
+fieldset.steps textarea::before {
+  content: "- ";
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.fieldset.steps ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 1rem;
 }
 
 input[type=radio], input[type=checkbox] {
