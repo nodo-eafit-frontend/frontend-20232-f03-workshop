@@ -1,5 +1,11 @@
 @import"../sass/index.scss";
 
+body{
+  background-color: red;
+  position: absolute;
+  z-index:3;
+}
+
 body {
   background-image: url(../img/rodajas-naranja-canela-polvo-encima-papilla-bol-sobre-marmol.jpg);
   background-size: cover;
@@ -7,28 +13,6 @@ body {
   padding: 90px;
   border: rgb(9, 55, 73);
   z-index: 2;
-}
-
-.fondo {
-  position: absolute;
-  width: 400px;
-  height: 600px;
-  background-color: red;
-  clip-path: polygon(
-    2% 15%,
-    4% 8%,
-    12% 5%,
-    23% 7%,
-    88% 21%,
-    93% 29%,
-    96% 40%,
-    92% 84%,
-    86% 92%,
-    74% 92%,
-    14% 89%,
-    6% 83%,
-    3% 76%
-  );
 }
 
 
@@ -44,17 +28,39 @@ body {
   width: 60%;
 }
 
-img {
-  width: 150px;
+.titulo > header> img {
+  background-position-x: 60px;
+  width: 250px;
+  margin-left: 150px;  
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+.titulo > header> h1 {
+  background-position-x: 60px;
+  font-size: 80px;
+  font-family:$font-titulo;
+  display: flex;
+  margin-left: 400px;
+  flex-direction: column;
+
 }
 .titulo > header> h2 {
   background-position-x: 60px;
   font-size: 30px;
-  font-family: 'Satisfy', cursive;
+  font-family:$font-titulo;
+  background-color: aquamarine;
 }
+.cualquier-clase > img {
+  width:350px;
+  margin-left: 100px;
+}
+
 h1 {
   font-size: 10px;
 }
+
 h3{
   font-size: 60px;
 }
@@ -63,8 +69,8 @@ h3{
   font-size: 70px;
 }
 
-img.img-varias {
-  width: 100px;
+.img-varias > img {
+  width: 300px;
 }
 
 img.recipe-property {
@@ -80,18 +86,25 @@ p {
   align-items: center;
   flex-direction: column;
 }
-.datos{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+
+h2.steps{
+  font-size: 60px;
 }
 
-.tips {
+.steps {
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  font-family:$font-titulo;
 }
+body * {
+  padding: 5px;
+}
+img{
+  max-width: 100%;
+}
+
 
 
 
