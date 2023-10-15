@@ -319,6 +319,18 @@ body {
   border: 3px solid;
 }
 
+.titulo {
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.recipe-background {
+  position: relative;
+  background-size: auto;
+  background-color: rgb(92, 133, 221);
+  z-index: 20;
+}
+
 .recipe-instrutions {
   display: flex;
 }
@@ -331,25 +343,27 @@ body {
   width: 60%;
 }
 
-.titulo > header > img {
+.titulo > main > div > header > img {
   background-position-x: 60px;
   width: 250px;
   margin-left: 150px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  z-index: 3;
 }
 
-.titulo > header > h1 {
+.titulo > main > div > header > h1 {
   background-position-x: 60px;
   font-size: 80px;
   font-family: "Satisfy", cursive;
   display: flex;
   margin-left: 400px;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.titulo > header > h2 {
+.titulo > main > div > header > h2 {
   background-position-x: 60px;
   font-size: 30px;
   font-family: "Satisfy", cursive;
@@ -385,14 +399,8 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-.titulo > h1 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-h2.steps {
-  font-size: 60px;
+.steps > h2 {
+  font-size: 70px;
 }
 
 .steps {
@@ -403,12 +411,30 @@ h2.steps {
   font-family: "Satisfy", cursive;
 }
 
-body * {
-  padding: 5px;
-}
-
 img {
   max-width: 100%;
+}
+
+.img1 {
+  position: relative;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.img2 {
+  position: relative;
+  margin-top: 20px;
+  bottom: 40px;
+  left: 40px;
+  z-index: 5;
+}
+
+.img3 {
+  position: relative;
+  margin-top: 20px;
+  bottom: 80px;
+  left: 80px;
+  z-index: 10;
 }
 
 
