@@ -1,0 +1,31 @@
+
+
+body {
+  background-image:url(/tobuja48/1-cooking-recipe-html-css/img/color.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+  .background-recipe {
+   position: absolute;
+   width: 150rem;
+   height: 170rem;
+   background-color:bisque;
+   clip-path: polygon(
+     0 0, 
+   100% 16%,
+    100% 100%,
+     0% 100%
+     );
+   z-index: 1;
+   transform: translate(80px, 70px);
+  }
+   
+  main.cooking-recipe {
+     position: relative;
+     width: 80vw;
+     height: 80vh;
+     z-index: 2;
+ }

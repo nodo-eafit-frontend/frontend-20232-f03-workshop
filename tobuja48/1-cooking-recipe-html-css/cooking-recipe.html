@@ -4,79 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stile.css/estilo.css">
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="npm i bootstrap-icons">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Receta Cocina</title>
 </head>
 <body>
-    <header>
-    <img src="img/profile-233872444.v11.png" alt="">
-    <h1><span>Platos</span> Calientes</h1>
-    <h2 class="TituloPlato">Atun Encebollado</h2>
-    </header>
-    <main>
-        <aside>
-            <article>
-            <h3>Ingredientes:</h3>
-            <ul>
-              <li>800gr de atun</li>
-              <li>2 cebollas</li>
-              <li>2 dientes de ajo</li>
-              <li>abundante aceite de oliva (10-12)</li>
-              <li>1/2 vaso de vino blanco</li>
-              <li>2 cucharadas de vinagre jedez</li>
-              <li>1 hoja de laurel</li>
-              <li>sal y pimienta</li>
-            </ul>
-            <div></div>
-            </article>
-            <picture>
-                <img src="img/atun.jpg" alt="">
-                <img src="img/ajo.jpg" alt="">
-                <img src="img/laurel.jpg" alt="">
-                <img src="img/vino.jpg" alt="">
-            </picture>
-        
-        </aside>
-        <section>
-            <img src="img/main image.jpg" alt="">
-            <article>
-                <h3>Paso a Paso</h3>
-                <p>En una cacerola baja, o una sarten amplia, ponemos la mitad del 
-                aceite y doramos los tacos de atun.<br>
-                Una vez los doramos, los reservamos.<br>
-                Añadimos al resto del aceite y ponemos los 2 ajos. Cuando esten
-                dorados añadimos las cebollas que hemos cortado en juliana y la hoja de
-                laurel.<br>
-                dejamos pochar a fuego medio las cebollas y los ajos. Estos nos
-                llevara entre 20 o 25 minutos.<br>
-                Cuando la ceboola este pochada, añadimos una cucharada de vinagre 
-                de jerez y removemos bien.<br>
-                Añadimos el vaso de vino y dejamos evaporar el alcohol.<br>
-                añadimos los tacos de atun que habiamos reservado previamente, y 
-                dejamos a fuego medio  hasta que reduzca bastante el vino.<br>
-                salpimentamos y servimod</p>
-
-            </article>
-        </section>
-        <footer>
-            <h2>Sabias que...?</h2>
-            <p>Al cocinar el atun es conveniente evitar tocarlo lo menos posible y no
-            mojarlo nunca. Basta limpiar el Atun con un paño seco. ES muy recomendable
-            el uso de hierbas aromaticas (oregano,tomillo,albahaca,romero,menta,salvia
-            ,etc..) o el uso de aceite  de oliva mareado con hierbas. Al hacer nuestro 
-            atun encebollado, podemos freir unas patatas y añadirlas al sarten a la vez
-            que al atun, asi estaran fritas y guisadas a la vez</p>
-            <article>
-                <h6>Siguenos en:</h6>
-                <div>
-                    <img src="img/x.jpg" alt="">
-                    <img src="img/facebook.png" alt="">
-                    <a href="www.elsuperfamiliar.es/blog"></a>
-                </div>
-            </article>
-        </footer>
     
-    </main>
+    <div class="background-recipe"></div>
+    <main class="cooking-recipe">
+        <header class="Inicio">
+        <div class="start">
+        <img src="img/profile-233872444.v11.png" alt="">
+        
+        
+    
+        <h1><span class="platos">Platos</span> <span class="calientes">CALIENTES</span></h1>
+        
+          
+        <h2 class="atun">Atun Encebollado </h2>
+        </header>
+        <main class="Receta">
+            <aside class="recursos">
+                <article class="contenido">
+                <h3 class="ingredientes">Ingredientes:</h3>
+                <ul class="lista-ingredientes">
+                  <li>800gr de atun</li>
+                  <li>2 cebollas</li>
+                  <li>2 dientes de ajo</li>
+                  <li>abundante aceite de oliva (10-12)</li>
+                  <li>1/2 vaso de vino blanco</li>
+                  <li>2 cucharadas de vinagre jedez</li>
+                  <li>1 hoja de laurel</li>
+                  <li>sal y pimienta</li>
+                </ul>
+                <div class="logos-container">
+                    <svg  class="logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-standing" viewBox="0 0 16 16">
+                        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0Z"/>
+                      </svg>
+                      <i class="lista-logo">4</i>
+                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-euro" viewBox="0 0 16 16">
+                        <path d="M4 9.42h1.063C5.4 12.323 7.317 14 10.34 14c.622 0 1.167-.068 1.659-.185v-1.3c-.484.119-1.045.17-1.659.17-2.1 0-3.455-1.198-3.775-3.264h4.017v-.928H6.497v-.936c0-.11 0-.219.008-.329h4.078v-.927H6.618c.388-1.898 1.719-2.985 3.723-2.985.614 0 1.175.05 1.659.177V2.194A6.617 6.617 0 0 0 10.341 2c-2.928 0-4.82 1.569-5.244 4.3H4v.928h1.01v1.265H4v.928z"/>
+                      </svg>
+                      <i class="lista-logo">medio</i>
+                    <svg  class="logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+                        <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+                        <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+                        <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                      <i class="lista-logo">35 min.</i>
+                    <svg class="logo"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fill" viewBox="0 0 16 16">
+                        <path d="M14 10a6 6 0 0 1-12 0C2 5.686 5 0 8 0s6 5.686 6 10z"/>
+                      </svg>  
+                      <i class="lista-logo">facil</i>
+                </div>
+                </article>
+                <picture class="picture">
+                    <img src="img/atun.jpg" alt="" class="picture-img">
+                    <img src="img/ajo.jpg" alt="" class="picture-img">
+                    <img src="img/laurel.jpg" alt="" class="picture-img">
+                    <img src="img/vino.jpg" alt="" class="picture-img">
+                </picture>
+            
+            </aside>
+            <section class="cuerpo">
+                <img src="img/main image.jpg" alt="" >
+
+                <article>
+                    <h3>Paso a Paso</h3>
+                    ,<div class="pasoApaso">
+                    <p>En una cacerola baja, o una sarten amplia, ponemos la mitad del 
+                    aceite y doramos los tacos de atun.<br>
+                    Una vez los doramos, los reservamos.<br>
+                    Añadimos al resto del aceite y ponemos los 2 ajos. Cuando esten
+                    dorados añadimos las cebollas que hemos cortado en juliana y la hoja de
+                    laurel.<br>
+                    dejamos pochar a fuego medio las cebollas y los ajos. Estos nos
+                    llevara entre 20 o 25 minutos.<br>
+                    Cuando la cebolla este pochada, añadimos una cucharada de vinagre 
+                    de jerez y removemos bien.<br>
+                    Añadimos el vaso de vino y dejamos evaporar el alcohol.<br>
+                    añadimos los tacos de atun que habiamos reservado previamente, y 
+                    dejamos a fuego medio hasta que reduzca bastante el vino.<br>
+                    salpimentamos y servimos</p>
+                </div>
+                </article>
+            </section>
+            <footer>
+                <article class="concejos">
+                <h2>Sabias que...?</h2>
+                <img src="./img/chef.webp" alt="">
+                <p>Al cocinar el atun es conveniente evitar tocarlo lo menos posible y no
+                mojarlo nunca.<br>
+                 Basta limpiar el Atun con un paño seco. Es muy recomendable
+                el uso de hierbas aromaticas <br> 
+                 (oregano,tomillo,albahaca,romero,menta,salvia,
+                 etc..) o el uso de aceite  de oliva mareado con hierbas.<br>
+                 Al hacer nuestro 
+                atun encebollado, podemos freir unas patatas y añadirlas al sarten a la vez
+                que al atun,<br>
+                asi estaran fritas y guisadas a la vez</p>
+            </article>
+                <article>
+                    <h6>Siguenos en:</h6>
+                    <div >
+                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FSupermercadoMAS">
+                        <img src="img/x.jpg" alt="" class="twitter">
+                        <a href="https://www.facebook.com/SupermercadosMAS/">
+                        <img src="img/facebook.png" alt="" class="facebook">
+                    </div>
+                </article>
+            </footer>
+        </main>
+        </main>
+     </main>
+   
  
 </body>
 </html>
