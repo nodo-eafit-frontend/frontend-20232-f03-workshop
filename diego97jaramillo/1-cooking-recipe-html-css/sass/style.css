@@ -5,6 +5,7 @@
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
  */
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;
@@ -45,124 +46,222 @@ table {
 }
 
 
-hmtl {
+@font-face {
+  font-family: "oswald";
+  src: url(../Oswald-VariableFont_wght.ttf);
+  font-weight: 400;
+}
+html {
   font-size: 62.5%;
 }
 
 body {
   width: 100vw;
   height: 100vw;
-  display: flex;
-  justify-content: center;
   color: #680747;
   background-color: rgba(255, 192, 203, 0.612);
   background-image: radial-gradient(circle, rgba(252, 147, 165, 0.863) 1px, transparent 70%);
   background-size: 3rem 3rem;
-  position: relative;
 }
-body #info-beige-background {
-  width: 60%;
-  height: 70%;
+body #display-block {
+  display: flex;
+  justify-content: center;
+}
+body #display-block #info-beige-background {
+  width: 65%;
+  height: 80vw;
   position: absolute;
   z-index: -1;
   background-color: rgba(214, 209, 200, 0.849);
-  top: 7rem;
   border-radius: 3rem;
+  margin-right: 6rem;
+  margin-top: 17rem;
 }
-body .info-cooking-recipe {
+body #display-block .info-cooking-recipe {
   width: 70vw;
   height: 70vw;
+  justify-content: center;
+  position: relative;
+}
+body #display-block .info-cooking-recipe header {
+  width: 100%;
+  margin-top: 10rem;
+}
+body #display-block .info-cooking-recipe header .parte-arriba {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: relative;
+  align-items: center;
 }
-body .info-cooking-recipe header {
-  position: relative;
-}
-body .info-cooking-recipe header .cursive-title {
-  font-family: satisfy;
-  position: absolute;
-  bottom: 3.5rem;
-  right: 14rem;
-}
-body .info-cooking-recipe header h1 {
-  font-size: 70px;
-  font-weight: 600;
-  font-family: arial narrow;
-  position: absolute;
-  left: 30rem;
-  top: 6rem;
-}
-body .info-cooking-recipe header img {
-  width: 200px;
-  height: 100px;
-  margin: 2rem;
+body #display-block .info-cooking-recipe header .parte-arriba img {
+  width: 30rem;
+  height: 12rem;
   border-radius: 20px;
+  margin: 3rem;
 }
-body .info-cooking-recipe header > h2 {
+body #display-block .info-cooking-recipe header .parte-arriba div {
+  width: 70%;
+  position: relative;
+  top: 3.5rem;
+}
+body #display-block .info-cooking-recipe header .parte-arriba div .cursive-title {
+  font-family: satisfy;
+  font-size: 7rem;
+  position: relative;
+  margin-left: 10rem;
+}
+body #display-block .info-cooking-recipe header .parte-arriba div h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  margin-left: 15rem;
+}
+body #display-block .info-cooking-recipe header > h2 {
   background-color: rgba(175, 39, 61, 0.929);
-  line-height: 5.3rem;
+  align-self: flex-end;
+  line-height: 7rem;
   padding-left: 3rem;
   color: white;
-  font-size: 3rem;
+  font-size: 5.5rem;
   font-family: satisfy;
   font-weight: 1300;
   width: 70%;
-  height: 3rem;
+  height: 4rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   -webkit-text-stroke: 0.7px rgba(175, 39, 61, 0.929);
 }
-body .info-cooking-recipe main.blocks-controller {
+body #display-block .info-cooking-recipe main.blocks-controller {
+  width: 60vw;
   display: flex;
+  justify-content: space-around;
   margin-top: 3rem;
   margin-left: 3rem;
 }
-body .info-cooking-recipe main.blocks-controller aside {
+body #display-block .info-cooking-recipe main.blocks-controller aside {
   width: 30%;
   top: 2rem;
 }
-body .info-cooking-recipe main.blocks-controller aside .steps-icons {
+body #display-block .info-cooking-recipe main.blocks-controller aside article {
+  font-family: oswald;
+  height: 15rem;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
 }
-body .info-cooking-recipe main.blocks-controller aside .steps-icons i {
-  font-size: 11px;
+body #display-block .info-cooking-recipe main.blocks-controller aside article h3 {
+  font-size: 2.2rem;
 }
-body .info-cooking-recipe main.blocks-controller aside .steps-images {
+body #display-block .info-cooking-recipe main.blocks-controller aside article ul {
+  font-size: 1.5rem;
+}
+body #display-block .info-cooking-recipe main.blocks-controller aside article ul li {
+  margin: 0.5rem;
+}
+body #display-block .info-cooking-recipe main.blocks-controller aside .steps-icons {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+body #display-block .info-cooking-recipe main.blocks-controller aside .steps-icons span {
+  position: relative;
+  bottom: 0.3rem;
+}
+body #display-block .info-cooking-recipe main.blocks-controller aside .steps-icons i {
+  font-size: 2.5rem;
+}
+body #display-block .info-cooking-recipe main.blocks-controller aside .steps-images {
   display: flex;
   flex-direction: column;
 }
-body .info-cooking-recipe main.blocks-controller aside .steps-images .process-images {
+body #display-block .info-cooking-recipe main.blocks-controller aside .steps-images .process-images {
   width: 300px;
   height: 200px;
+  margin: 5px 0px;
+  border-radius: 2rem;
 }
-body .info-cooking-recipe main.blocks-controller section {
-  width: 40%;
+body #display-block .info-cooking-recipe main.blocks-controller section {
+  width: 50%;
 }
-body .info-cooking-recipe footer {
+body #display-block .info-cooking-recipe main.blocks-controller section img {
+  border-radius: 2rem;
+}
+body #display-block .info-cooking-recipe main.blocks-controller section h3 {
+  font-size: 2rem;
+  font-family: oswald;
+  padding-top: 2rem;
+}
+body #display-block .info-cooking-recipe main.blocks-controller section p {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 3.5rem 0;
+}
+body #display-block .info-cooking-recipe footer {
+  width: 80%;
   display: flex;
+  justify-content: space-between;
+}
+body #display-block .info-cooking-recipe footer #follow-information {
+  font-size: 1.6rem;
+  width: 10%;
+  position: relative;
+  top: 5rem;
+  left: 7rem;
+  margin-top: 3rem;
+}
+body #display-block .info-cooking-recipe footer #follow-information div {
+  display: flex;
+}
+body #display-block .info-cooking-recipe footer #follow-information div i {
+  margin: 0.5rem;
+  font-size: 3rem;
+}
+body #display-block .info-cooking-recipe footer #follow-information div a {
+  font-size: 30px;
+  margin: 2rem 12rem;
+}
+body #display-block .info-cooking-recipe footer .tips {
   width: 80%;
   position: relative;
+  bottom: 17rem;
 }
-body .info-cooking-recipe footer #follow-information {
-  width: 10%;
+body #display-block .info-cooking-recipe footer .tips .footer-title {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  left: 10rem;
+  bottom: 5rem;
 }
-body .info-cooking-recipe footer #follow-information div a {
-  font-size: 30px;
-  position: absolute;
-  bottom: 0;
-  left: 350px;
+body #display-block .info-cooking-recipe footer .tips .footer-title .tips-title {
+  text-align: center;
+  font-size: 6rem;
+  width: 17rem;
+  height: 7rem;
+  padding: 1rem;
+  color: white;
+  background-color: #680747;
+  margin: 2rem;
+  border-radius: 2rem;
 }
-body .info-cooking-recipe footer .tips {
-  width: 60%;
+body #display-block .info-cooking-recipe footer .tips .footer-title .little-chef {
+  width: 30rem;
+  height: 30rem;
 }
-body .info-cooking-recipe footer .tips .tips-title {
-  font-size: 60px;
-  position: absolute;
-  top: -130px;
-  left: 400px;
+body #display-block .info-cooking-recipe footer .tips p {
+  position: relative;
+  font-size: 1.5rem;
+  z-index: -1;
+  width: 70%;
+  background-color: rgba(214, 209, 200, 0.849);
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  padding-right: 30rem;
+  padding-left: 2rem;
+  border-radius: 3rem;
+  bottom: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */
