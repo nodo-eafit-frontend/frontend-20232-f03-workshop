@@ -28,6 +28,7 @@ main.outer > h1.title-recipe {
   background-color: #930166;
   width: 70%;
   height: 5vh;
+  margin-top: 10rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   color: #F6CFD2;
