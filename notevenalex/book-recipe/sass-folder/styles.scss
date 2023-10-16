@@ -1,71 +1,63 @@
-$lightred: rgb(218, 55, 95);
+@import "../variables.scss";
 
-:root {
-    --beige: #dedeb4; /* Beige */
-    --red: #b93737; /* Beige */
-  }
-
-  header{
-    h2{background-color: $lightred;
-      width: 40%;
-  }
-}
-  body {
-    position: relative;
-    background-image: url(./img/Red-background.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .background-recipe {
-    position: absolute;
-    width: 1380px;
-    height: 1900px;
-    background-color: var(--beige);
-    clip-path: polygon(-4% 3%, -2% -3%, 12% -5%, 23% -6%, 88% 15%, 93% 29%, 96% 40%, 92% 84%, 86% 92%, 74% 92%, 14% 89%, -3% 88%, -5% 70%);
-    z-index: -2;
-  }
-  
-  main.cooking-recipe {
-    width: 80vw;
-    height: 80vh;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .backgroung-recipe-instructions {
-    display: flex;
-  }
-  
-  .backgroung-recipe-instructions > aside {
-    background-color: red;
+header{
+  h2 {background-color: "$red-1";
     width: 40%;
-  }
-  
-  .backgroung-recipe-instructions > section {
-    background-color: red;
-    width: 60%;
-  }
-  
-  h1 {
-    font-family: "Lobster", cursive;
-  }
-  
-  .recipe-property-container {
-    width: 60%;
-    height: 90px;
-    background-color: var(--red);
-  }
-  
-  img {
-    width: 100px;
-  }
-  
-  .tips > h2 {
-    color: brown;
-  }
-  
-  /*# sourceMappingURL=styles.css.map */
-  
+}
+}
+body {
+  position: relative;
+  background-color: "$beige-1";
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background-recipe {
+  position: absolute;
+  width: 1380px;
+  height: 1900px;
+  background-color: "$beige-1";
+  z-index: -2;
+}
+
+main.cooking-recipe {
+  width: 80vw;
+  height: 80vh;
+  position: relative;
+  z-index: 2;
+}
+
+.backgroung-recipe-instructions {
+  display: flex;
+}
+
+.backgroung-recipe-instructions > aside {
+  background-color: red;
+
+  width: 40%;
+}
+
+.backgroung-recipe-instructions > section {
+  background-color: red;
+  width: 60%;
+}
+
+h1 {
+  font-family: 'Satisfy', cursive;
+}
+
+.recipe-property-container {
+  width: 60%;
+  height: 90px;
+  background-color: var(--red);
+}
+
+img {
+  width: 100px;
+}
+
+.tips > h2 {
+  color: brown;
+}
