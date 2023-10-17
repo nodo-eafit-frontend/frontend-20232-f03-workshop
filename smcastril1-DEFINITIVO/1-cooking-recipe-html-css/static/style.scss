@@ -14,6 +14,24 @@ body {
     background-image: $pattern;
     background-size: 3rem 3rem;
 
+    
+    > .dashed{
+        
+        
+        position: absolute;
+        // background-color: black;
+        // opacity: 50%;
+        width: 58%;
+        height: 200vh;
+        margin-left: 38%;
+        margin-top: 2.8%;
+        border-top: 0.35rem dashed $vino;
+        border-right: 0.35rem dashed $vino;
+        border-top-right-radius: 3%;
+        z-index: $z-index-dashed;
+        
+    }
+
 
 }
 
@@ -59,6 +77,7 @@ header {
         color: $vino;
     }
 
+
 }
 
 
@@ -69,6 +88,7 @@ main.outer{
     padding: 3% 1% 1% 1%;
     margin: 0% 7% 2% 7%;
     border-radius: 3rem;
+
 
 
     > h1.title-recipe{
@@ -193,6 +213,7 @@ footer{
     flex-direction: column;
     justify-content: flex-end; 
     align-items: flex-end; 
+    z-index: $z-index-footer;
 
     
         > article.tips{
@@ -215,7 +236,9 @@ footer{
                 grid-column: 1 / 3;
                 justify-self: center;
                 background-color: $vino;
-                padding-right: 1%;
+                border-radius: 30%;
+                border: 0.2rem dotted aliceblue;
+                padding: 1%;
                 margin: 0%;
                 width: 30%;
                 text-align: center;     
