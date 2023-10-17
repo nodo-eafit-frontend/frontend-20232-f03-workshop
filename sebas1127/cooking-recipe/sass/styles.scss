@@ -1,0 +1,84 @@
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
+$color-orange: rgb(255, 115, 0);
+$color-orange2: #ff7f50;
+$color-salmon2: rgb(255, 213, 177);
+$color-grey: rgb(143, 143, 143);
+
+body {
+  font-family: "Arial", sans-serif;
+
+  margin: 0;
+
+  padding: 0;
+  background-color: $color-salmon2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150vh;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: $color-white;
+  border-radius: 50px;
+  box-shadow: 0px 10px 50px $color-orange;
+  text-align: left;
+  margin: 50px;
+}
+
+h1 {
+  background-color: $color-orange2;
+  color: $color-white;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  background-color: $color-salmon2;
+  padding: 5px;
+  color: $color-orange2;
+  font-size: 24px;
+  border-radius: 20px;
+  width: 20%;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+  color: $color-black;
+}
+
+li {
+  margin: 8px 0;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px $color-grey;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.4;
+  color: $color-black;
+}
+
+ul {
+  list-style-type: "🍛";
+  color: $color-black;
+}
+
+ol {
+  list-style-type: decimal;
+  color: $color-black;
+}
