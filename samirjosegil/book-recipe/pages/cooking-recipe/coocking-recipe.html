@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helado de Nesquik</title>
     <link rel="shortcut icon" href="./Img/recipe-book.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .material-symbols-outlined {
+          font-size: 3rem;
+        }
+      </style>
     <link rel="stylesheet" href="sass/index.scss">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,7 +18,7 @@
     <header>
          <img src="./Img/logo-mas.jpg" alt="" class="logo">
          <h1 class="postres">Postres</h1> 
-         <h1 class="caseros">CASEROS</h1>
+         <h1 class="caseros">caseros</h1>
          <h2 class="heladodenesquik">Helado de Nesquik</h2>
     </header>
     <main>
@@ -24,56 +30,54 @@
                     <li>6 cucharadas de Nesquik</li>
                     <li>400 ml de nata para montar Eliges</li>
                 </ul>
-                <div class="iconos"> 
-                     <div class="elemento"> 
-                        <img src="./Img/people.ico" alt="" class="icono-img">
+                <ul class="iconos">
+                    <li class="elemento">
+                        <span class="material-symbols-outlined">boy</span>
                         <h6>4</h6>
-                     </div>
-                     <div class="elemento">
-                        <img src="./Img/clock.ico" alt="" class="icono-img">
-                        <span>
-                            <h6>35 min +</h6>
-                            <h6>5h congelador</h6>
-                        </span>
-                     </div>
-                     <div class="elemento">
-                    <img src="./Img/euro.ico" alt="" class="icono-img">
-                    <h6>Bajo</h6>
-                     </div>
-                     <div class="elemento">
-                    <img src="./Img/chef-hat.ico" alt="" class="icono-img">
-                    <h6>Facil</h6>
-                     </div>
-                </div>
+                    </li>
+                    <li class="elemento">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <h6>35 min +</h6>
+                        <h6>5h congelador</h6>
+                    </li>
+                    <li class="elemento">
+                        <span class="material-symbols-outlined">euro</span>
+                        <h6>Bajo</h6>
+                    </li>
+                    <li class="elemento">
+                        <span class="material-symbols-outlined">skillet</span>
+                        <h6>Facil</h6>
+                    </li>
+                </ul>
             </article>
             <div class="preparacion">
                 <img src="./Img/preparacion-1.jpg" alt="" class="preparacion-1">
                 <img src="./Img/preparacion-2.jpg" alt="" class="preparacion-2">
                 <img src="./Img/preparacion-3.jpg" alt="" class="preparacion-3">
                 <img src="./Img/preparacion-4.jpg" alt="" class="preparacion-4">
-            </div class="preparacion">
+            </div>
         </aside>
         <section>
             <img src="./Img/helado-1.png" alt="" class="Helado">
             <h3 class="pasoapaso">Paso a Paso</h3>
-            <article class="instrucciones">
-                <p>En un bol grande, ponemos la leche condensada.</p>
-                <p>Le añadimos las 6 cucharadas de Nesquik y mezclamos bien.</p>
-                <p>En otro bol, montamos la nata, que tiene que estar bien fria.</p>
-                <p>La vamos añadiendo poco a poco al bol con la mezcla de leche condensada y Nesquik</p>
-                <p>Mezclamos bien.</p>
-                <p>Ponemos la mezcla en un recipiente rectangular (un molde de horno) y metemos en el congelador</p>
-                <p>Tienen que estar como minimo 5 horas en el congelador </p>
-                <p>A disfrutar</p>
-            </article>
+            <ol class="instrucciones">
+                <li>En un bol grande, ponemos la leche condensada.</li>
+                <li>Le añadimos las 6 cucharadas de Nesquik y mezclamos bien.</li>
+                <li>En otro bol, montamos la nata, que tiene que estar bien fría.</li>
+                <li>La vamos añadiendo poco a poco al bol con la mezcla de leche condensada y Nesquik.</li>
+                <li>Mezclamos bien.</li>
+                <li>Ponemos la mezcla en un recipiente rectangular (un molde de horno) y metemos en el congelador.</li>
+                <li>Tienen que estar como mínimo 5 horas en el congelador.</li>
+                <li>A disfrutar.</li>
+            </ol>            
         </section>
     </main>
-<footer>
+    <footer>
      <h2 class="sabias">Sabias que...?</h2>
      <article class="sabiasque">
-          <div>¡No hay forma mas facil de hacer un helado cremoso, sin huevos ni heladera!</div>
-          <div>Ademas. si quieres que tu helado de Nesquik se conserve tan cremoso como el primer dia, instroducelo en una bolsa hermetica y metelo dentro del congelador.</div>
-          <div>Asi evitaras que el helado este muy duro la proxima vez que lo sirvas</div>  
+          <p>¡No hay forma mas facil de hacer un helado cremoso, sin huevos ni heladera!</p>
+          <p>Ademas. si quieres que tu helado de Nesquik se conserve tan cremoso como el primer dia, instroducelo en una bolsa hermetica y metelo dentro del congelador.</p>
+          <p>Asi evitaras que el helado este muy duro la proxima vez que lo sirvas</p>  
      </article>
      <img class="abuelaimg" src="./Img/abuela.png">
      <div class="siguenos">
@@ -84,6 +88,6 @@
          </span>
           <a class="linkyou" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">www.elsuperfamiliar.es/blog</a>
       </div>
-</footer>
+    </footer>
 </body>
 </html>

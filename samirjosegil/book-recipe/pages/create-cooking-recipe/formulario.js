@@ -6,6 +6,14 @@ var steps = document.getElementById("steps");
 var form = document.getElementById("form");
 
 
+title.addEventListener("input", function () {
+  if (title.value.length > 20) {
+    title.setCustomValidity("No se puede exceder los 20 caracteres.");
+  } else {
+    title.setCustomValidity("");
+  }
+});
+
  minPeople.addEventListener("input", function () {
   if (parseInt(minPeople.value) > parseInt(maxPeople.value)) {
     minPeople.setCustomValidity("El valor mínimo no puede ser mayor al máximo.");

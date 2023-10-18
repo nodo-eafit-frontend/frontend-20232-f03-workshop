@@ -15,7 +15,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     }
     
-    main {
+main {
     grid-column: 2 / 6;
     grid-row: 2;
     display: grid;

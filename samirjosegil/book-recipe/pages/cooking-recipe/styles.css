@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Dancing";
+  src: url(./Fonts/Dancing.ttf);
+}
+@font-face {
+  font-family: "Pacifico-Regular";
+  src: url(./Fonts/Pacifico-Regular.ttf);
+}
 a,
 abbr,
 acronym,
@@ -180,14 +188,6 @@ footer {
   bottom: -195%;
 }
 
-@font-face {
-  font-family: "Dancing";
-  src: url(./Fonts/Dancing.ttf);
-}
-@font-face {
-  font-family: "Pacifico-Regular";
-  src: url(./Fonts/Pacifico-Regular.ttf);
-}
 .logo {
   width: 22rem;
   border-radius: 2rem;
@@ -204,7 +204,7 @@ footer {
   grid-row: 1;
   font-weight: 900;
   font-family: "Pacifico-Regular";
-  color: rgb(87, 23, 0);
+  color: #571700;
   position: absolute;
   left: 40%;
   top: 8%;
@@ -219,7 +219,7 @@ footer {
   grid-row: 2;
   font-family: fantasy;
   font-weight: initial;
-  color: rgb(87, 23, 0);
+  color: #571700;
   margin-top: -5%;
   position: relative;
   z-index: 1;
