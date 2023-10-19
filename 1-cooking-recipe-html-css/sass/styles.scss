@@ -1,23 +1,16 @@
-$color-white: rgb(255, 255, 255);
-$color-black: rgb(0, 0, 0);
-$color-orange: rgb(255, 115, 0);
-$color-orange2: #ff7f50;
-$color-salmon2: rgb(255, 213, 177);
-$color-grey: rgb(143, 143, 143);
+@import "./variables.scss";
+@import "./fonts.scss";
 
 body {
-    font-family: 'Arial', sans-serif;
-    
-   
-margin: 0;
-    
-   
-padding: 0;
+    font-family: 'aller, Arial', sans-serif;   
+    margin: 0;  
+    padding: 0;
     background-color: $color-salmon2;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 150vh;
+    z-index: $z-index-1
 }
 
 .contenedor {
@@ -29,6 +22,7 @@ padding: 0;
     box-shadow: 0px 10px 50px $color-orange;    
     text-align: left;
     margin: 50px;
+    z-index: $z-index-1
 }
 
 h1 {
@@ -39,6 +33,7 @@ h1 {
     font-size: 40px;
     border-radius: 20px;
     margin-bottom: 60px; 
+    z-index: $z-index-4
 }
 
 h2 {
@@ -56,7 +51,7 @@ ul, ol {
 }
 
 li {  
-margin: 8px 0;
+    margin: 8px 0;
 }
 
 img {
@@ -66,6 +61,7 @@ img {
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 50px $color-grey;
+    z-index: $z-index-4
 }
 
 p {
