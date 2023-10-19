@@ -9,7 +9,11 @@
   </head>
   <body>
     <h1>Crear Receta</h1>
-    <form onsubmit="onSubmit(event)" action="../cooking-recipe/cooking-recipe.html" method="post">
+    <form
+      onsubmit="onSubmit(event)"
+      action="../cooking-recipe/cooking-recipe.html"
+      method="post"
+    >
       <label for="title-recipe">Titulo Receta</label>
       <input id="title-recipe" type="text" name="title" />
       <hr />
@@ -37,6 +41,17 @@
       </fieldset>
 
       <fieldset>
+        <legend>Tipo</legend>
+        <div>
+          <input type="radio" name="cost" id="cost-high" value="high" />
+          <label for="cost-high">Frío</label>
+
+          <input type="radio" name="cost" id="cost-medium" value="medium" />
+          <label for="cost-medium">Caliente</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
         <legend>Dificultad</legend>
         <div>
           <input type="radio" name="level" id="level-high" value="high" />
@@ -51,7 +66,7 @@
       </fieldset>
       <fieldset>
         <legend>Paso a paso</legend>
-        <textarea name="steps" required></textarea>
+        <textarea id="steps" name="steps" required></textarea>
       </fieldset>
 
       <input type="submit" value="Crear Receta" />
