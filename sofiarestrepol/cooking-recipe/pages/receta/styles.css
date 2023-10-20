@@ -55,6 +55,66 @@ table {
 }
 
 
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  background-color: rgb(253, 250, 243);
+  margin: 3rem 30rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+main {
+  font-size: 3rem;
+}
+
+span {
+  color: coral;
+  margin-top: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.title-font {
+  font-family: "Glass Antiqua", cursive;
+  letter-spacing: 17px;
+  line-height: 8rem;
+  font-weight: 100;
+}
+
+.right-align {
+  grid-column: 2;
+  margin: 2.5rem;
+}
+
+.left-align {
+  grid-column: 1;
+  margin: 2.5rem;
+}
+
+.imagenes {
+  position: absolute;
+  z-index: 30;
+}
+
+.invertir {
+  transform: scaleX(-1);
+}
+
 /* GLOBALES */
 html {
   font-size: 62.5%;
@@ -82,7 +142,8 @@ main {
 }
 
 span {
-  font-weight: bold;
+  color: coral;
+  margin-top: 0;
 }
 
 /* UTILIDADES */
@@ -127,9 +188,9 @@ h1 {
   font-size: 10rem;
   text-align: left;
   font-weight: 10rem;
-  margin: 0;
   margin-top: 4rem;
   margin-left: 25rem;
+  margin-bottom: 3rem;
 }
 
 #pan-img {
@@ -375,7 +436,7 @@ h1 {
 }
 
 /* MEDIA QUERIES */
-/* TO DO */
-/* DUDAS */
+/* TODO: */
+/* DUDA: */
 
 /*# sourceMappingURL=styles.css.map */
