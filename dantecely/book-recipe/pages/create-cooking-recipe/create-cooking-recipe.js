@@ -46,5 +46,7 @@ function onSubmit(event) {
     alert("Formulario inválido: " + validation.message);
   } else {
     console.log(recipe);
+
+    // TODO: Create fetch request to send recipe to server
   }
 }
