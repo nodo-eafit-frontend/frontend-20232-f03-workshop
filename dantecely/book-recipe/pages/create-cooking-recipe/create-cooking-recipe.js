@@ -63,3 +63,16 @@ function getRecipes() {
     codeEl.appendChild(dataEl);
   });
 }
+
+function getRecipe(idRecipe) {
+  fetch(`http://localhost:3002/recipe/${idRecipe}`)
+    .then((raw) => raw.json())
+    .then((data) => {
+      console.log(data);
+
+      const codeEl = document.querySelector("section code");
+      const dataEl = document.createTextNode(JSON.stringify(data, null, 2));
+
+      codeEl.appendChild(dataEl);
+    });
+}
