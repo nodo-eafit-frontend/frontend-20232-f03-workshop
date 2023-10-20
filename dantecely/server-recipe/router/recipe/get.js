@@ -1,8 +1,10 @@
+require("dotenv").config();
 const fs = require("fs");
+const { RECIPE_PATH } = process.env;
 
 const getRecipes = (req, res) => {
   // Operaciones con la base de datos
-  fs.readFile("./database/recipes.json", (err, data) => {
+  fs.readFile(RECIPE_PATH, (err, data) => {
     if (err) {
       const msgError = "Error reading file: " + err;
       console.error(msgError);

@@ -50,3 +50,16 @@ function onSubmit(event) {
     // TODO: Create fetch request to send recipe to server
   }
 }
+
+function getRecipes() {
+  const responsePromise = fetch("http://localhost:3002/recipe");
+  const rawProimise = responsePromise.then((raw) => raw.json());
+  rawProimise.then((data) => {
+    console.log(data);
+
+    const codeEl = document.querySelector("section code");
+    const dataEl = document.createTextNode(JSON.stringify(data, null, 2));
+
+    codeEl.appendChild(dataEl);
+  });
+}
