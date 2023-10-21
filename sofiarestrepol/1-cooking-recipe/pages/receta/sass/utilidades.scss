@@ -1,0 +1,25 @@
+.bold {
+  font-weight: bold;
+}
+.title-font {
+  font-family: 'Glass Antiqua', cursive;
+  letter-spacing: 17px;
+  line-height: 8rem;
+  font-weight: 100;
+}
+.right-align {
+  grid-column: 2;
+  margin: 2.5rem
+}
+.left-align {
+  grid-column: 1;
+  margin: 2.5rem;
+}
+.imagenes {
+  position: absolute;
+  // display: flex;
+  z-index: $index4;
+}
+.invertir {
+  transform: scaleX(-1);
+}
