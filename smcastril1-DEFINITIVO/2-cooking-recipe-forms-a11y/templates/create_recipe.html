@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Receta Cocina</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <h1>Create Your Recipe</h1>
+    <form>
+
+      <label for="title-recipe">Recipe's title: </label>
+      <input id="title-recipe" type="text" name="title" />
+      <hr />
+  
+
+
+      <label for="min-people">Minimun of people</label>
+      <input type="range" id="min-people" min="0" max="10">
+      <br />
+
+      <label for="max-people">Maximun of people</label>
+      <input type="range" id="max-people" min="3" max="30">
+      <br />
+
+      <hr>
+
+
+      <label for="time-for-cooking">Cooking time (min): </label>
+      <input id="time-for-cooking" type="number" min="1" max="120" />
+      <br />
+
+      <hr>
+
+      <br>
+
+      <fieldset>
+        <legend><strong>Cost: </strong></legend>
+        <!-- <div> -->
+        <input type="radio" name="cost" id="cost-high" value="high" />
+        <label for="cost-high">High</label>
+
+        <input type="radio" name="cost" id="cost-medium" value="medium" />
+        <label for="cost-medium">Medium</label>
+
+        <input type="radio" name="cost" id="cost-low" value="low" />
+        <label for="cost-low">low</label>
+        <!-- </div> -->
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend><strong>Recipe's type: </strong></legend>
+        <br>
+        <!-- <div> -->
+        <input type="radio" name="type" id="cold-dishes" value="cold-dishes" />
+        <label for="cold-dishes">Cold dishes</label>
+    
+
+        <input type="radio" name="type" id="hot-dishes" value="hot-dishes" />
+        <label for="hot-dishes">Hot dishes</label>
+    
+        <input type="radio" name="type" id="desserts" value="desserts" />
+        <label for="desserts">Desserts</label>
+        <!-- </div> -->
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend><strong>Dificulty: </strong></legend>
+        <div>
+          <input type="radio" name="level" id="level-high" value="high" />
+          <label for="level-high">High</label>
+
+          <input type="radio" name="level" id="level-medium" value="medium" />
+          <label for="level-medium">Medium</label>
+
+          <input type="radio" name="level" id="level-low" value="low" />
+          <label for="level-low">Low</label>
+        </div>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend><strong>Steps: </strong></legend>
+        <textarea id="steps" name="steps" required></textarea>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend><strong>Steps images: </strong></legend>
+        <label for="steps-images">Upload the images of the steps: </label>
+        <input type="file" id="steps-images" name="image" accept="image/*" multiple>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend><strong>Result image: </strong></legend>
+        <label for="result-image">Upload the image of the result: </label>
+        <input type="file" id="result-image" name="image" accept="image/*">
+      </fieldset>
+      <br>
+
+      
+
+      <input type="submit" value="Create recipe" />
+    </form>
+    <hr />
+    <!-- <section>
+      <button onclick="getRecipe('2Pkqs4MVuYk')">Mostrar Recetas</button>
+      <code> </code>
+    </section> -->
+  </body>
+  <script src="./create-cooking-recipe.js"></script>
+</html>
