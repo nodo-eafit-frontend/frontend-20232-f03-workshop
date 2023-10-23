@@ -134,7 +134,7 @@ ol, ul {
 
 
 body {
-  background-image: url(/tobuja48/1-cooking-recipe-html-css/img/color.jpg);
+  background-color: rgb(233, 157, 169);
   background-size: cover;
   background-repeat: repeat;
   width: 100vw;
@@ -176,6 +176,7 @@ header h1 .calientes {
   margin-top: -60px;
   position: absolute;
   z-index: 5;
+  text-transform: uppercase;
 }
 header .atun {
   font-family: "Satisfy", cursive;
@@ -191,7 +192,7 @@ header .atun {
 
 article .ingredientes {
   font-size: 300%;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 60px;
   color: #8B0000;
 }
