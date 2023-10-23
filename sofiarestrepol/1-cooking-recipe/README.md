@@ -5,7 +5,7 @@ You can choose a cooking recipe and turn it into a web page using HTML and CSS. 
 ### Acceptance Criteria
 
 - [ ] You must use good [semantics in HTML tags](https://es.semrush.com/blog/html-semantico/).
-- [ ] You have to import fonts from a CDN or create a font from 0 with [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face).
+- [ ] You have to import fonts from a CDN or create a font from 0 with [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face). (CDN such as Google Fonts)
 - [ ] Use [SASS preprocessor](https://sass-lang.com/documentation/style-rules/) or others ([Less vs Sass vs Stylus](https://stackshare.io/stackups/less-vs-sass-vs-stylus)).
 - [ ] Use [variables](https://sass-lang.com/documentation/variables/) for style sheets without hard code.
 - [ ] You have to [reset the CSS](https://www.aluracursos.com/blog/reset-css-que-es-ejemplos-como-crear-y-utilizar) so that you can work with the HTML elements in a clean way.
@@ -27,7 +27,7 @@ You can choose a cooking recipe and turn it into a web page using HTML and CSS. 
 - Reset CSS:
   - [🚨 Reset CSS: TODO lo que DEBES de SABER | Eduardo Fierro Pro](https://www.youtube.com/watch?v=Foieq2jTajE)
   - [🚀Reset CSS en 2022: Modo PRO 😏 | Eduardo Fierro Pro](https://www.youtube.com/watch?v=Foieq2jTajE)
-    > Note: Also you can use a CDN
+  > Note: Also you can use a CDN
 - CSS selector strategies
   - [CSS Dinner](https://flukeout.github.io/)
   - [Specificity Calculator](https://specificity.keegan.st/)
