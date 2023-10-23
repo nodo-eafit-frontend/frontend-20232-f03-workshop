@@ -1,0 +1,74 @@
+@import "./reset.css";
+@font-face {
+  font-family: cursive-title;
+  src: url("./DancingScript-Regular.otf") format(truetype);
+  font-weight: 200;
+  font-display: swap;
+}
+html {
+  font-size: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: left;
+  text-align: left;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 20;
+}
+header .logo {
+  border-radius: 25%;
+  border: 0.3rem solid #ED1C24;
+}
+header > h1, header > h2 {
+  margin: 0;
+}
+
+body {
+  background-color: #E6CCBC;
+  background-image: radial-gradient(circle, #DAB58C 20px, transparent 25px);
+  background-size: 3rem 3rem;
+}
+
+.title-recipe {
+  position: absolute;
+  font-family: cursive-title Arial, Helvetica, sans-serif;
+  clip-path: inset(0 0 0 0);
+  background-color: #930166;
+  width: 70%;
+  top: 5rem;
+  z-index: 30;
+}
+
+main.recipe-instructions {
+  clip-path: polygon(5% 0, 100% 28%, 97% 100%, 50% 100%, 1% 100%, 0 0);
+  background-color: #E8E0D5;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  z-index: 10;
+  top: 3rem;
+}
+main.recipe-instructions > aside {
+  align-items: center;
+  text-align: center;
+}
+main.recipe-instructions > section {
+  margin-top: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+picture {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+picture > img {
+  margin: 1rem;
+  border: 0.5rem solid #930166;
+  width: 12rem;
+  height: 12rem;
+}
+
+/*# sourceMappingURL=style.css.map */
