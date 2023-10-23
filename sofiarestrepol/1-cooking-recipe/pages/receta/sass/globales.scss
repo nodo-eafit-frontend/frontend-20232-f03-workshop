@@ -1,0 +1,25 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  // outline: red dashed 1px;
+  box-sizing: border-box;
+}
+body {
+  font-size: 2rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  background-color: $color-fondo;
+  margin: 3rem 30rem;
+}
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+main {
+  font-size: 3rem;
+}
+span {
+  color:coral;
+  margin-top: 0;
+}
