@@ -4,16 +4,16 @@ You can choose a cooking recipe and turn it into a web page using HTML and CSS. 
 
 ### Acceptance Criteria
 
-- [x] You must use good [semantics in HTML tags](https://es.semrush.com/blog/html-semantico/).
-- [x] You have to import fonts from a CDN or create a font from 0 with [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face).
-- [x] Use [SASS preprocessor](https://sass-lang.com/documentation/style-rules/) or others ([Less vs Sass vs Stylus](https://stackshare.io/stackups/less-vs-sass-vs-stylus)).
-- [x] Use [variables](https://sass-lang.com/documentation/variables/) for style sheets without hard code.
-- [x] You have to [reset the CSS](https://www.aluracursos.com/blog/reset-css-que-es-ejemplos-como-crear-y-utilizar) so that you can work with the HTML elements in a clean way.
-- [x] You have to use properties of [box model](https://web.dev/i18n/es/learn/css/box-model/) such as box-sizing, margin, padding, and border.
-- [x] You have to use CSS display layout properties:
+- [ ] You must use good [semantics in HTML tags](https://es.semrush.com/blog/html-semantico/).
+- [ ] You have to import fonts from a CDN or create a font from 0 with [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face). (CDN such as Google Fonts)
+- [ ] Use [SASS preprocessor](https://sass-lang.com/documentation/style-rules/) or others ([Less vs Sass vs Stylus](https://stackshare.io/stackups/less-vs-sass-vs-stylus)).
+- [ ] Use [variables](https://sass-lang.com/documentation/variables/) for style sheets without hard code.
+- [ ] You have to [reset the CSS](https://www.aluracursos.com/blog/reset-css-que-es-ejemplos-como-crear-y-utilizar) so that you can work with the HTML elements in a clean way.
+- [ ] You have to use properties of [box model](https://web.dev/i18n/es/learn/css/box-model/) such as box-sizing, margin, padding, and border.
+- [ ] You have to use CSS display layout properties:
   - [CSS Inline vs Inline-Block vs Block](https://www.samanthaming.com/pictorials/css-inline-vs-inlineblock-vs-block/)
   - [Grid & flexbox MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_grid_layout/Relationship_of_grid_layout_with_other_layout_methods#grid_y_flexbox)
-- [x] You have to use CSS [positioning](https://css-tricks.com/almanac/properties/p/position/) and [z-index](https://css-tricks.com/css-painting-order/) properties to place the overlapping elements.
+- [ ] You have to use CSS [positioning](https://css-tricks.com/almanac/properties/p/position/) and [z-index](https://css-tricks.com/css-painting-order/) properties to place the overlapping elements.
 
 ### Resources
 
