@@ -18,5 +18,17 @@ body {
     // height: 100vh; 
     text-align: center;
 
+    > h1{
+        font-family: 'Tangerine', cursive, Arial, Helvetica, sans-serif;
+        color: $vino;
+        font-weight: 700;
+        font-size: 5rem;
+        margin: 2% 0%;
+    }
+
+}
+
+.input-error{
+    border: 10% solid red;
 }
 

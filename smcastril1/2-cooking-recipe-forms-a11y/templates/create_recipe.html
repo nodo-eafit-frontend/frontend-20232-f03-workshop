@@ -9,20 +9,20 @@
   </head>
   <body>
     <h1>Create Your Recipe</h1>
-    <form>
+    <form id="recipe_form">
 
       <label for="title-recipe">Recipe's title: </label>
-      <input id="title-recipe" type="text" name="title" />
+      <input id="title-recipe" type="text" name="title" required/>
       <hr />
   
 
 
       <label for="min-people">Minimun of people</label>
-      <input type="range" id="min-people" min="0" max="10">
+      <input type="range" id="min-people" min="0" max="10" required>
       <br />
 
       <label for="max-people">Maximun of people</label>
-      <input type="range" id="max-people" min="3" max="30">
+      <input type="range" id="max-people" min="3" max="30" required>
       <br />
 
       <hr>
@@ -36,16 +36,16 @@
 
       <br>
 
-      <fieldset>
+      <fieldset >
         <legend><strong>Cost: </strong></legend>
         <!-- <div> -->
-        <input type="radio" name="cost" id="cost-high" value="high" />
+        <input type="radio" name="cost" id="cost-high" value="high" required/>
         <label for="cost-high">High</label>
 
-        <input type="radio" name="cost" id="cost-medium" value="medium" />
+        <input type="radio" name="cost" id="cost-medium" value="medium"required />
         <label for="cost-medium">Medium</label>
 
-        <input type="radio" name="cost" id="cost-low" value="low" />
+        <input type="radio" name="cost" id="cost-low" value="low" required />
         <label for="cost-low">low</label>
         <!-- </div> -->
       </fieldset>
@@ -56,14 +56,14 @@
         <legend><strong>Recipe's type: </strong></legend>
         <br>
         <!-- <div> -->
-        <input type="radio" name="type" id="cold-dishes" value="cold-dishes" />
+        <input type="radio" name="type" id="cold-dishes" value="cold-dishes" required/>
         <label for="cold-dishes">Cold dishes</label>
     
 
-        <input type="radio" name="type" id="hot-dishes" value="hot-dishes" />
+        <input type="radio" name="type" id="hot-dishes" value="hot-dishes" required/>
         <label for="hot-dishes">Hot dishes</label>
     
-        <input type="radio" name="type" id="desserts" value="desserts" />
+        <input type="radio" name="type" id="desserts" value="desserts" required/>
         <label for="desserts">Desserts</label>
         <!-- </div> -->
       </fieldset>
@@ -73,13 +73,13 @@
       <fieldset>
         <legend><strong>Dificulty: </strong></legend>
         <div>
-          <input type="radio" name="level" id="level-high" value="high" />
+          <input type="radio" name="level" id="level-high" value="high" required/>
           <label for="level-high">High</label>
 
-          <input type="radio" name="level" id="level-medium" value="medium" />
+          <input type="radio" name="level" id="level-medium" value="medium" required/>
           <label for="level-medium">Medium</label>
 
-          <input type="radio" name="level" id="level-low" value="low" />
+          <input type="radio" name="level" id="level-low" value="low" required/>
           <label for="level-low">Low</label>
         </div>
       </fieldset>
@@ -108,7 +108,7 @@
 
       
 
-      <input type="submit" value="Create recipe" />
+      <input type="submit" id="btn_save" value="Create recipe" />
     </form>
     <hr />
     <!-- <section>
@@ -116,5 +116,5 @@
       <code> </code>
     </section> -->
   </body>
-  <script src="./create-cooking-recipe.js"></script>
+  <script src="../js/create_recipe.js"></script>
 </html>
