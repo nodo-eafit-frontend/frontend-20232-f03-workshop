@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Receta Cocina</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Crear Receta</h1>
+    <form onsubmit="onSubmit(event)" action="../cooking-recipe/cooking-recipe.html" method="post">
+      <label for="title-recipe">Titulo Receta</label>
+      <input id="title-recipe" type="text" name="title" />
+      <hr />
+      <label for="min-people">Mínimo personas</label>
+      <input id="min-people" type="number" min="1" />
+      <br />
+      <label for="max-people">Máximo personas</label>
+      <input id="max-people" type="number" max="10" />
+      <hr />
+      <label for="time-for-cooking">Tiempo de preparación</label>
+      <input id="time-for-cooking" type="number" min="1" max="120" />
+
+      <fieldset>
+        <legend>Costo</legend>
+        <div>
+          <input type="radio" name="cost" id="cost-high" value="high" />
+          <label for="cost-high">Alto</label>
+
+          <input type="radio" name="cost" id="cost-medium" value="medium" />
+          <label for="cost-medium">Medio</label>
+
+          <input type="radio" name="cost" id="cost-low" value="low" />
+          <label for="cost-low">Bajo</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dificultad</legend>
+        <div>
+          <input type="radio" name="level" id="level-high" value="high" />
+          <label for="level-high">Alto</label>
+
+          <input type="radio" name="level" id="level-medium" value="medium" />
+          <label for="level-medium">Medio</label>
+
+          <input type="radio" name="level" id="level-low" value="low" />
+          <label for="level-low">Bajo</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Paso a paso</legend>
+        <textarea name="steps" required></textarea>
+      </fieldset>
+
+      <input type="submit" value="Crear Receta" />
+    </form>
+  </body>
+  <script src="./create-cooking-recipe.js"></script>
+</html>
