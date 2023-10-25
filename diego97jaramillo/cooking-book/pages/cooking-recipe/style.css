@@ -109,6 +109,7 @@ body #display-block .info-cooking-recipe header .parte-arriba div .cursive-title
   margin-left: 10rem;
 }
 body #display-block .info-cooking-recipe header .parte-arriba div h1 {
+  text-transform: uppercase;
   font-size: 8rem;
   font-weight: 700;
   font-family: sans-serif;
@@ -151,10 +152,10 @@ body #display-block .info-cooking-recipe main.blocks-controller aside article {
 body #display-block .info-cooking-recipe main.blocks-controller aside article h3 {
   font-size: 2.2rem;
 }
-body #display-block .info-cooking-recipe main.blocks-controller aside article ul {
+body #display-block .info-cooking-recipe main.blocks-controller aside article > ul {
   font-size: 1.5rem;
 }
-body #display-block .info-cooking-recipe main.blocks-controller aside article ul li {
+body #display-block .info-cooking-recipe main.blocks-controller aside article > ul > li {
   margin: 0.5rem;
 }
 body #display-block .info-cooking-recipe main.blocks-controller aside .steps-icons {
@@ -192,7 +193,7 @@ body #display-block .info-cooking-recipe main.blocks-controller section h3 {
   font-family: oswald;
   padding-top: 2rem;
 }
-body #display-block .info-cooking-recipe main.blocks-controller section p {
+body #display-block .info-cooking-recipe main.blocks-controller section li {
   font-family: oswald;
   font-weight: 400;
   font-size: 1.5rem;

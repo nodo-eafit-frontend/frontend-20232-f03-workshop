@@ -57,6 +57,67 @@ function onSubmit(event) {
     recipe.steps = formEl.querySelector('#steps').value;
     recipe.tips = formEl.querySelector('#tips').value;
 
+    let validation = {
+        isValid: true,
+        message: '',
+    }
+
+    if (recipe.category.length > 15) {
+
+        validation.isValid = false;
+        validation.message = 'la category está muy larga, por favor revisarlo y acomodarlo al valor adecuado'
+    }
+
+    if (recipe.title.length > 25) {
+
+        validation.isValid = false;
+        validation.message = 'el titulo es más largo que 25 caracteres, por favor escribalo más cortico'
+    }
+
+    if (recipe.numberPeople.min > recipe.numberPeople.max) {
+        validation.isValid = false;
+        validation.message = 'por favor chequear que el numero de min y max sigan la siguiente logica:  el minimo siempre debe ser menor que el maximo'
+    }
+
+    if (recipe.firstIngredient.length > 30) {
+        validation.isValid = false;
+        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+    }
+
+    if (recipe.secondIngredient.length > 30) {
+        validation.isValid = false;
+        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+    }
+
+    if (recipe.thirdIngredient.length > 30) {
+        validation.isValid = false;
+        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+    }
+
+    if (recipe.fourthIngredient.length > 30) {
+        validation.isValid = false;
+        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+    }
+
+    if (recipe.fifthIngredient.length > 30) {
+        validation.isValid = false;
+        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+    }
+
+    if (recipe.sixthIngredient.length > 30) {
+        validation.isValid = false;
+        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+    }
+
+
+
+    if (validation.isValid === true) {
+        alert('el formulario se ha llenado correctamente');
+    }   else {
+        alert(validation.message)
+    }
+
+
     console.log(recipe)
 }
 
