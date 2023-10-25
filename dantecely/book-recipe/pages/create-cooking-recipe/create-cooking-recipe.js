@@ -1,3 +1,5 @@
+const baseUrl = "http://localhost:3002";
+
 function getRadioResult(element, name) {
   return element.querySelector(`input[name="${name}"]:checked`)?.value;
 }
@@ -17,6 +19,7 @@ const recipe = {
 function onSubmit(event) {
   event.preventDefault();
   const formEl = event.target;
+  const resultSelector = ".new-recipe > code";
 
   recipe.title = formEl.querySelector("#title-recipe").value;
   recipe.steps = formEl.querySelector('textarea[name="steps"]').value;
@@ -45,9 +48,32 @@ function onSubmit(event) {
   if (!validation.isValid) {
     alert("Formulario inválido: " + validation.message);
   } else {
-    console.log(recipe);
+    const options = {
+      method: "PUT",
+      body: JSON.stringify(recipe),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
 
-    // TODO: Create fetch request to send recipe to server
+    fetch(`${baseUrl}/recipe`, options)
+      .then((raw) => raw.json())
+      .then((data) => {
+        console.log(data);
+
+        const codeEl = document.querySelector(resultSelector);
+        const dataEl = document.createTextNode(JSON.stringify(data, null, 2));
+
+        codeEl.appendChild(dataEl);
+      })
+      .catch((error) => {
+        const messageError = `Error: ${error.message}`;
+        console.error(messageError);
+        const codeEl = document.querySelector(resultSelector);
+        const messageText = document.createTextNode(messageError);
+
+        codeEl.appendChild(messageText);
+      });
   }
 }
 
@@ -65,7 +91,7 @@ function getRecipes() {
 }
 
 function getRecipe(idRecipe) {
-  fetch(`http://localhost:3002/recipe/${idRecipe}`)
+  fetch(`${baseUrl}/recipe/${idRecipe}`)
     .then((raw) => raw.json())
     .then((data) => {
       console.log(data);
@@ -74,5 +100,16 @@ function getRecipe(idRecipe) {
       const dataEl = document.createTextNode(JSON.stringify(data, null, 2));
 
       codeEl.appendChild(dataEl);
+    })
+    .catch((error) => {
+      const messageError = `Error: ${error.message}`;
+      console.error(messageError);
+      const sectionEl = document.querySelector("body > section");
+
+      const spanEl = document.createElement("span");
+      const messageText = document.createTextNode(messageError);
+
+      spanEl.appendChild(messageText);
+      sectionEl.appendChild(spanEl);
     });
 }
