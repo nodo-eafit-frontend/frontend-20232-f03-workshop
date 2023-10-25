@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
+
+    <header>
     <h1>Crea la receta</h1>
+    </header>
+
+
     <form onsubmit="onSubmit(event)" action="../cooking-recipe/Cooking-recipe.html" method="post">
 
         <label for="dish-category">escribe la categoria de la receta</label>
@@ -70,12 +76,12 @@
         </fieldset>
         <fieldset>
             <legend>paso a paso</legend>
-            <textarea name="steps" id="steps" requiered ></textarea>
+            <textarea name="steps" id="steps" required ></textarea>
         </fieldset>
 
         <fieldset>
             <legend>tips de doña amparo</legend>
-            <textarea name="tips" id="tips"></textarea>
+            <textarea name="tips" id="tips" required></textarea>
         </fieldset>
 
         <input type="submit" value="crear receta" />

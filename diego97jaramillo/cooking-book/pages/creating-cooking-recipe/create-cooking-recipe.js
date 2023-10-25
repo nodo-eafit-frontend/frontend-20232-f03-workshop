@@ -10,6 +10,24 @@ function getIngredients(formEvent, idString) {
     return formEvent.querySelector(`${idString}`).value;
 }
 
+function validate(inputID) {
+  const input = document.getElementById(inputID);
+  const validityState = input.validity;
+
+  if (validityState.valueMissing) {
+    input.setCustomValidity("You gotta fill this out, yo!");
+  } else if (validityState.rangeUnderflow) {
+    input.setCustomValidity("We need a higher number!");
+  } else if (validityState.rangeOverflow) {
+    input.setCustomValidity("That's too high!");
+  } else {
+    input.setCustomValidity("");
+  }
+
+  input.reportValidity();
+}
+
+
 let recipe = {
     category: '',
     title: '',
@@ -32,8 +50,10 @@ let recipe = {
 
 // esta función es la que recoge toda la información del formulario y se recoge mediante la variable event.
 function onSubmit(event) {
-    event.preventDefault()
-    const formEl = event.target
+    event.preventDefault();
+    const formEl = event.target;
+
+    validate('dish-category');
 
     recipe.title = formEl.querySelector('#dish-title').value;
     recipe.category = formEl.querySelector('#dish-category').value;
