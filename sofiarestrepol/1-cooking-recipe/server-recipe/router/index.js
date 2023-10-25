@@ -1,6 +1,7 @@
 const express = require("express"); //importar express
-const router = express.Router();
+const router = express.Router(); 
 
+//importar APIs
 const { getRecipe } = require("./recipe/get");
 const { putRecipe } = require("./recipe/put");
 const { postRecipe } = require("./recipe/post");

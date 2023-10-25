@@ -11,7 +11,7 @@ Therefore, you have to design and develop a form that allows you to create a new
 
 ## Acceptance Criteria
 
-- [ ] The form can be filled out using only the keyboard.
+- [x] The form can be filled out using only the keyboard.
 - [ ] The page can be navigated at 200% magnification.
 - [ ] The page must use contrasting colors.
 - [ ] The form must be able to be redirected to the cooking recipe page.

@@ -27,6 +27,8 @@ function onSubmit(event) { //when click on submit.. do event
   recipe.level = obtenerResultado(formEl, 'level');
   recipe.steps = formEl.querySelector("textarea[name='steps']").value;
 
+  //duda: diferencia entre innerText y textContent
+
   //Validaciones
   // let validation = {
   //   isValid: true,
@@ -78,4 +80,28 @@ function validate(selector) {
   const validityState = input.validity;
 
   input.reportValidity();
+};
+
+function getRecipes() {
+  const responsePromise = fetch("http://localhost:3002/recipe");
+  
+  const rawPromise = responsePromise.then((raw) => raw.json()); //es la info raw que nos llega. no interpretable. se pasa a json
+  rawPromise.then((data) => {
+    console.log(data);
+  })
+
+
 }
+
+function getRecipe(idRecipe) {
+  fetch(`http://localhost:3002/recipe/${idRecipe}`)
+    .then((raw) => raw.json()) //convertir raw a json
+    .then((data) => {
+      console.log(data);
+
+      const codeEl = document.querySelector("section code");
+      const dataEl = document.createTextNode(JSON.stringify(data, null, 2)); //para que se muestre como un objeto ordenado y no como una lista 
+
+      codeEl.appendChild(dataEl);
+    });
+  }

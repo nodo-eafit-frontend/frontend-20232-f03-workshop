@@ -7,12 +7,13 @@ const app = express(); //crear instancia de express
 
 const { PORT } = process.env; //obtener variable PORT del archivo .env
 
+app.use(cors())
+app.use(router);
 
 app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}`);
 }) ; //inciar servidor en puerto x
 
-app.use(router);
 
 
 
