@@ -1,12 +1,12 @@
 @import "./sass/index.scss";
 
-.title {
+.recipe-form__title {
     margin: 0;
     font-size: 3rem;
-    color: #333;
+    color: $color-cafe-claro;
 }
 
-form.recipe-form {
+.recipe-form {
     max-width: 60rem;
     margin: 0 auto;
     padding: 2rem;
@@ -16,78 +16,58 @@ form.recipe-form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label.titles {
+.recipe-form__label {
     display: block;
     font-weight: bold;
     margin-top: 1rem;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
-
-input.title-input, textarea.textarea, input[type="number"] {
+.recipe-form__input,
+.recipe-form__textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
     border: none;
     border-bottom: 1px solid #333;
     max-width: 97%;
-    box-shadow: 0 8px 8px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
 }
 
-fieldset {
+.recipe-form__people-max-min,
+.recipe-form__cost,
+.recipe-form__difficulty,
+.recipe-form__steps {
     border: 1px solid #333;
     border-radius: 1rem;
     margin: 1rem 0;
     padding: 1rem;
-    box-shadow: 1rem 1rem 1rem rgb(0, 0, 0, 0.2);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.fieldset.steps {
-    padding: 1rem;
+.recipe-form__cost,
+.recipe-form__difficulty {
+    display: flex;
+    flex-direction: row;
 }
 
-.fieldset.steps ul {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 1rem;
-  }
-
-fieldset.steps textarea {
-    list-style-type: disc;
-    width: 97%; 
-    height: 100%; 
-    border: none;
-    resize: none;
-    border-bottom: 1px solid #333;
-    box-shadow: 0 8px 8px rgb(0, 0, 0, 0.2);
-    padding-left: 1.5rem; 
-    font-size: 1rem;
-    line-height: 1.5;
-    min-height: 6rem;
-    position: relative;
+.recipe-form__cost label,
+.recipe-form__difficulty label {
+    margin-right: 10px;
 }
 
-fieldset.steps textarea::before {
-    content: "- "; 
-    color: #333; 
-    position: absolute;
-    left: 0;
-    top: 0;
+.recipe-form__cost .recipe-form__radio,
+.recipe-form__difficulty .recipe-form__radio {
+    margin: 0;
+    transform: scale(1.2);
 }
 
-.fieldset.steps ul {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 1rem;
-}
-
-input[type="radio"], input[type="checkbox"] {
+.recipe-form__radio {
     margin-right: 1rem;
     transform: scale(1.2);
 }
 
-
-button.form-button {
+.recipe-form__button {
     display: block;
     width: 20%;
     background-color: #333;
@@ -98,9 +78,9 @@ button.form-button {
     cursor: pointer;
     transition: background-color 0.5s;
     font-size: 20px;
-    box-shadow: 1rem 1rem 1rem rgb(0, 0, 0, 0.2);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-button.form-button:hover {
+.recipe-form__button:hover {
     background-color: #0a3372;
 }

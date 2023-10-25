@@ -1,9 +1,20 @@
 body {
+    background: linear-gradient(to bottom, $color-cafe, $color-cafe-claro);
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom, #136fac, #32aebe);
+}
 
+header {
+    background-color: transparent;
+    text-align: center;
+    font-size: 5rem;
+    color: $color-cafe-claro;
+    margin-top: 2rem;
+    height: 2rem;
 }
