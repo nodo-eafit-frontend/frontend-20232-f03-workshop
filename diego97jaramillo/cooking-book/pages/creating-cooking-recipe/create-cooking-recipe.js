@@ -10,7 +10,7 @@ function getIngredients(formEvent, idString) {
     return formEvent.querySelector(`${idString}`).value;
 }
 
-function validate(inputID) {
+/* function validate(inputID) {
   const input = document.getElementById(inputID);
   const validityState = input.validity;
 
@@ -25,8 +25,10 @@ function validate(inputID) {
   }
 
   input.reportValidity();
-}
+} */
 
+document.getElementById(inputID)
+input.setCustomValidity()
 
 let recipe = {
     category: '',
@@ -139,6 +141,8 @@ function onSubmit(event) {
 
 
     console.log(recipe)
+
+
 }
 
 

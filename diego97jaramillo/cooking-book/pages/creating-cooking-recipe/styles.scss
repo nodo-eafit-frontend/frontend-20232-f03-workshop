@@ -9,6 +9,8 @@ body {
     background-color: $aqua;
 
 
+
+
     h1 {
         font-size: 4rem;
         text-align: center;
@@ -18,8 +20,34 @@ body {
 
     form {
         text-align: center;
-        width:50vw;
+        width:30vw;
+        height: 70%;
         margin: auto;
+
+        .recipe_title_category {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .ingredients {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 1rem;
+            margin: 1rem;
+
+            legend {
+                font-size: 2rem;
+                margin: 1rem;
+            }
+
+            label {
+                text-align: start;
+                font-size: 1.5rem;
+            }
+        }
+
+
+
     }
 }
 
