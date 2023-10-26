@@ -1,0 +1,74 @@
+[
+  {
+    "text": "C",
+    "classname": "keyboard__clear"
+  },
+  {
+    "text": "Back",
+    "classname": "keyboard__back"
+  },
+  {
+    "text": "%",
+    "classname": "keyboard__module"
+  },
+  {
+    "text": "/",
+    "classname": "keyboard__divide"
+  },
+  {
+    "text": "7",
+    "classname": "keyboard__seven"
+  },
+  {
+    "text": "8",
+    "classname": "keyboard__eight"
+  },
+  {
+    "text": "9",
+    "classname": "keyboard__nine"
+  },
+  {
+    "text": "X",
+    "classname": "keyboard__multiply"
+  },
+  {
+    "text": "4",
+    "classname": "keyboard__four"
+  },
+  {
+    "text": "5",
+    "classname": "keyboard__five"
+  },
+  {
+    "text": "6",
+    "classname": "keyboard__six"
+  },
+  {
+    "text": "-",
+    "classname": "keyboard__minus"
+  },
+  {
+    "text": "1",
+    "classname": "keyboard__one"
+  },
+  {
+    "text": "2",
+    "classname": "keyboard__two"
+  },
+  {
+    "text": "3",
+    "classname": "keyboard__three"
+  },
+  {
+    "text": "+",
+    "classname": "keyboard__plus"
+  },
+  {
+    "text": ".",
+    "classname": "keyboard__dot"
+  },
+  {
+    "text": "=",
+    "classname": "keyboard__enter"
+  }
+]
