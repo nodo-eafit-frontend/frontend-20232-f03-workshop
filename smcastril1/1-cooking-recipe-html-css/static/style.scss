@@ -1,9 +1,7 @@
 // @import "./reset.css";
 @import "./normalize.css";
 @import "./variables.scss";
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Tangerine:wght@700&display=swap');
+@import "./fonts.css";
 
 html {
     font-size: 100%;
@@ -119,6 +117,19 @@ main.outer{
 
             > article{
                 padding-left: 7%;
+
+                > ul.parameters{
+                    list-style-type: none;
+                    
+                    > li{
+                        display: inline-block;
+                        margin-right: 4%;
+
+                        > img{
+                            width: 20px;
+                        }
+                    }
+                }
 
                 > span{
                     margin-right: 4%;
