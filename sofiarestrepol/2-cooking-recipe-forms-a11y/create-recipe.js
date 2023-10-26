@@ -41,9 +41,6 @@ function onSubmit(event) { //when click on submit.. do event
   if (recipe.title.length > 30) {
     validation.isValid = false;
     validation.message = "El titulo excede 20 caracteres";
-  } else if (recipe.portions < 1) {
-    validation.isValid = false;
-    validation.message = "El numero de porciones debe ser superior o igual a 1";
   } else if (recipe.time > 180) {
     validation.isValid = false;
     validation.message = "El tiempo de preparacion debe ser inferior a 3 horas";
@@ -60,53 +57,8 @@ function onSubmit(event) { //when click on submit.. do event
     event.returnValue;
 
   }
-
 } // cierra onSubmit
 
 
 
-// switch () {
-//   case value:
-    
-//     break;
 
-//   default:
-//     break;
-// }
-
-//DUDA:
-//cuando se definen variables ( let var = x) y cuando no (var = x)
-
-// const titleInput = document.querySelector("#title");
-// titleInput.setCustomValidity("Escribe el titulo de la receta");
-
-
-// function validate(selector) {
-//   const titleInput =document.querySelector(selector);
-//   const validityState = titleInput.validity;
-//   titleInput.reportValidity();
-// };
-
-function getRecipes() {
-  const responsePromise = fetch("http://localhost:3002/recipe");
-  
-  const rawPromise = responsePromise.then((raw) => raw.json()); //es la info raw que nos llega. no interpretable. se pasa a json
-  rawPromise.then((data) => {
-    console.log(data);
-  })
-
-
-}
-
-function getRecipe(idRecipe) {
-  fetch(`http://localhost:3002/recipe/${idRecipe}`)
-    .then((raw) => raw.json()) //convertir raw a json
-    .then((data) => {
-      console.log(data);
-
-      const codeEl = document.querySelector("section code");
-      const dataEl = document.createTextNode(JSON.stringify(data, null, 2)); //para que se muestre como un objeto ordenado y no como una lista 
-
-      codeEl.appendChild(dataEl);
-    });
-  }

@@ -18,7 +18,7 @@ Therefore, you have to design and develop a form that allows you to create a new
 - [x] The form must to have validations with feedbacks near the HTML inputs.
   - [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
   - [HTMLInputElement: setCustomValidity() method](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setCustomValidity)
-- [ ] The form and the cooking recipe page must use BEM methodology
+- [x] The form and the cooking recipe page must use BEM methodology
 
 Support tools 🧰:
 
