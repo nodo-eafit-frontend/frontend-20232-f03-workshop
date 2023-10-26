@@ -33,8 +33,6 @@ maxPeople.addEventListener("input", function () {
   }
 });
 
-form.addEventListener("submit", handleSubmit);
-
 function getRadioValue(name) {
   const radioElements = document.getElementsByName(name);
 
@@ -47,7 +45,7 @@ function getRadioValue(name) {
   return null;
 }
 
-function handleSubmit(event) {
+form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   var recipe = {
@@ -62,4 +60,6 @@ function handleSubmit(event) {
   };
 
   console.log(recipe);
-}
+
+  window.location.href = '../cooking-recipe/coocking-recipe.html';
+});
