@@ -7,85 +7,88 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="content-block">
+        <header>
+        <h1>Crea la receta</h1>
+        </header>
 
-    <header>
-    <h1>Crea la receta</h1>
-    </header>
+        <form onsubmit="onSubmit(event)" action="../cooking-recipe/Cooking-recipe.html" method="post">
+            <fieldset class='recipe_title_category'>
+                <label for="dish-category">escribe la categoria de la receta</label>
+                <input type="text" name="dish-category" id="dish-category"> <br />
 
-    <form onsubmit="onSubmit(event)" action="../cooking-recipe/Cooking-recipe.html" method="post">
-        <fieldset class='recipe_title_category'>
-            <label for="dish-category">escribe la categoria de la receta</label>
-            <input type="text" name="dish-category" id="dish-category">
+                <label for="dish-title">escribe el título de la receta</label>
+                <input type="text" name="dish-title" id="dish-title"> <br />
+            </fieldset>
 
-            <label for="dish-title">escribe el título de la receta</label>
-            <input type="text" name="dish-title" id="dish-title">
-        </fieldset>
+            <fieldset class="ingredients">
+                <legend>ingredientes</legend>
+                <label for="primer-ingrediente">cual es el primer ingrediente</label>
+                <input type="text" name="ingredients" id="primer-ingrediente"> <br />
 
-        <fieldset class="ingredients">
-            <legend>ingredientes</legend>
-            <label for="primer-ingrediente">cual es el primer ingrediente</label>
-            <input type="text" name="ingredients" id="primer-ingrediente">
+                <label for="segundo-ingrediente">cual es el segundo ingrediente</label>
+                <input type="text" name="ingredients" id="segundo-ingrediente">  <br />
 
-            <label for="segundo-ingrediente">cual es el segundo ingrediente</label>
-            <input type="text" name="ingredients" id="segundo-ingrediente">
+                <label for="tercer-ingrediente">cual es el tercer ingrediente</label>
+                <input type="text" name="ingredients" id="tercer-ingrediente"> <br />
 
-            <label for="tercer-ingrediente">cual es el tercer ingrediente</label>
-            <input type="text" name="ingredients" id="tercer-ingrediente">
+                <label for="cuarto-ingrediente">cual es el cuarto ingrediente</label>
+                <input type="text" name="ingredients" id="cuarto-ingrediente"> <br />
 
-            <label for="cuarto-ingrediente">cual es el cuarto ingrediente</label>
-            <input type="text" name="ingredients" id="cuarto-ingrediente">
+                <label for="quinto-ingrediente">cual es el quinto ingrediente</label>
+                <input type="text" name="ingredients" id="quinto-ingrediente"> <br />
 
-            <label for="quinto-ingrediente">cual es el quinto ingrediente</label>
-            <input type="text" name="ingredients" id="quinto-ingrediente">
+                <label for="sexto-ingrediente">cual es el sexto ingrediente</label>
+                <input type="text" name="ingredients" id="sexto-ingrediente"> <br />
+            </fieldset>
 
-            <label for="sexto-ingrediente">cual es el sexto ingrediente</label>
-            <input type="text" name="ingredients" id="sexto-ingrediente">
-        </fieldset>
+            <fieldset clase="numbers"">
+                <label for="min-num-people">minimo de personas</label>
+                <input type="number" name="number-of-people" id="min-num-people" min="1"><br />
 
-        <label for="min-num-people">minimo de personas</label>
-        <input type="number" name="number-of-people" id="min-num-people" min="1"><hr />
+                <label for="max-num-people">maximo de personas</label>
+                <input type="number" name="number-of-people" id="max-num-people" max="50"><br />
 
-        <label for="max-num-people">maximo de personas</label>
-        <input type="number" name="number-of-people" id="max-num-people" max="50"><hr />
+                <label for="cooking-time">tiempo para hacer la receta</label>
+                <input type="number" name="time-to-finish" id="cooking-time" min="0"><br />
+            </fieldset>
 
-        <label for="cooking-time">tiempo para hacer la receta</label>
-        <input type="number" name="time-to-finish" id="cooking-time" min="0"><hr />
+            <fieldset class="dificulty">
+                <legend>nivel de dificultad</legend>
+                <div>
+                    <input type="radio" name="level-dificulty" id="easy">
+                    <label for="easy">facil</label>
+                    <input type="radio" name="level-dificulty" id="medium">
+                    <label for="medium">normal</label>
+                    <input type="radio" name="level-dificulty" id="hard">
+                    <label for="hard">dificil</label>
+                </div>
+            </fieldset>
 
-        <fieldset class="dificulty">
-            <legend>nivel de dificultad</legend>
-            <div>
-                <input type="radio" name="level-dificulty" id="easy">
-                <label for="easy">facil</label>
-                <input type="radio" name="level-dificulty" id="medium">
-                <label for="medium">normal</label>
-                <input type="radio" name="level-dificulty" id="hard">
-                <label for="hard">dificil</label>
-            </div>
-        </fieldset>
+            <fieldset class="cost">
+                <legend>nivel de costo</legend>
+                <div>
+                    <input type="radio" name="level-cost" id="cheap" value="cheap">
+                    <label for="cheap">barato</label>
+                    <input type="radio" name="level-cost" id="normal" value="normal">
+                    <label for="normal">normal</label>
+                    <input type="radio" name="level-cost" id="expensive" value="expensive">
+                    <label for="expensive">costoso</label>
+                </div>
+            </fieldset>
+            <fieldset class="steps">
+                <legend>paso a paso</legend>
+                <textarea name="steps" id="steps" required ></textarea>
+            </fieldset>
 
-        <fieldset class="cost">
-            <legend>nivel de costo</legend>
-            <div>
-                <input type="radio" name="level-cost" id="cheap" value="cheap">
-                <label for="cheap">barato</label>
-                <input type="radio" name="level-cost" id="normal" value="normal">
-                <label for="normal">normal</label>
-                <input type="radio" name="level-cost" id="expensive" value="expensive">
-                <label for="expensive">costoso</label>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>paso a paso</legend>
-            <textarea name="steps" id="steps" required ></textarea>
-        </fieldset>
+            <fieldset class="tips">
+                <legend>tips de doña amparo</legend>
+                <textarea name="tips" id="tips" required></textarea>
+            </fieldset>
 
-        <fieldset>
-            <legend>tips de doña amparo</legend>
-            <textarea name="tips" id="tips" required></textarea>
-        </fieldset>
-
-        <input type="submit" value="crear receta" />
-    </form>
+            <input type="submit" value="crear receta" />
+        </form>
+    </div>
 </body>
 <script src="./create-cooking-recipe.js"></script>
 </html>
