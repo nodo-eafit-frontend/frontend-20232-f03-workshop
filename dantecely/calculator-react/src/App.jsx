@@ -1,5 +1,5 @@
 import Calculator from './components/organisms/Calculator/Calculator';
-import "./App.scss";
+import './App.scss';
 
 function App({ title, time }) {
   return (

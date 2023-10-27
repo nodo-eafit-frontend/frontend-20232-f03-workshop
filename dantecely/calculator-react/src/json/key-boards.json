@@ -1,19 +1,19 @@
 [
   {
     "text": "C",
-    "classname": "keyboard__clear"
+    "classname": "keyboard__clear keyboard__clear--operator"
   },
   {
-    "text": "Back",
-    "classname": "keyboard__back"
+    "text": "←",
+    "classname": "keyboard__back keyboard__back--operator"
   },
   {
     "text": "%",
-    "classname": "keyboard__module"
+    "classname": "keyboard__module keyboard__module--operator"
   },
   {
     "text": "/",
-    "classname": "keyboard__divide"
+    "classname": "keyboard__divide keyboard__divide--operator"
   },
   {
     "text": "7",
@@ -29,7 +29,7 @@
   },
   {
     "text": "X",
-    "classname": "keyboard__multiply"
+    "classname": "keyboard__multiply keyboard__multiply--operator"
   },
   {
     "text": "4",
@@ -45,7 +45,7 @@
   },
   {
     "text": "-",
-    "classname": "keyboard__minus"
+    "classname": "keyboard__minus keyboard__minus--operator"
   },
   {
     "text": "1",
@@ -61,14 +61,18 @@
   },
   {
     "text": "+",
-    "classname": "keyboard__plus"
+    "classname": "keyboard__plus keyboard__plus--operator"
+  },
+  {
+    "text": "0",
+    "classname": "keyboard__zero"
   },
   {
     "text": ".",
-    "classname": "keyboard__dot"
+    "classname": "keyboard__dot keyboard__dot--operator"
   },
   {
     "text": "=",
-    "classname": "keyboard__enter"
+    "classname": "keyboard__enter keyboard__enter--operator"
   }
 ]
