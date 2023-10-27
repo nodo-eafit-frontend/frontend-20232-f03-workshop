@@ -88,10 +88,15 @@ function getRecipes() {
   const rawPromise = responsePromise.then((raw) => raw.json()); //es la info raw que nos llega. no interpretable. se pasa a json
   rawPromise.then((data) => {
     console.log(data);
+
+    const codeEl = document.querySelector("section code");
+    const dataEl = document.createTextNode(JSON.stringify(data, null, 2));
+
+    codeEl.appendChild(dataEl);
   })
-
-
 }
+
+
 
 function getRecipe(idRecipe) {
   fetch(`http://localhost:3002/recipe/${idRecipe}`)
@@ -103,5 +108,17 @@ function getRecipe(idRecipe) {
       const dataEl = document.createTextNode(JSON.stringify(data, null, 2)); //para que se muestre como un objeto ordenado y no como una lista 
 
       codeEl.appendChild(dataEl);
+    })
+    .catch((error) => {
+      const messageError = `Error: ${error.message}`;
+      console.error(messageError);
+      const sectionEl = document.querySelector("body > section");
+
+      const spanEl = document.createElement("span");
+      const messageText = document.createTextNode(messageError);
+
+      spanEl.appendChild(messageText);
+      sectionEl.appendChild(spanEl);
     });
   }
+
