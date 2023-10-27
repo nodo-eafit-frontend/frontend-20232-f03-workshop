@@ -17,30 +17,46 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        border-radius: 5rem;
 
 
+        header {
 
-        h1 {
-            background-color: pink;
-            font-size: 10rem;
-            text-align: center;
+            height:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient($light-pink 5%, transparent );
+
+            h1 {
+                font-size: 10rem;
+                text-transform: capitalize;
+            }
         }
 
         form {
-            width: 100%;
+            width: 90%;
+            height: 95%;
             background-color: aquamarine;
-            align-content: center;
-
 
             fieldset {
                 margin:10px 15%;
 
                 &.ingredients {
+                    font-size: 1.3rem;
                     display: grid;
-                    grid-column: 1fr 1fr;
-                    background-color: greenyellow;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    gap: 5px;
 
+                    legend{
+                        position: relative;
+                        margin: auto;
+                        bottom: 5px;
+                    }
                 }
+
+
             }
 
             .recipe_title_category {

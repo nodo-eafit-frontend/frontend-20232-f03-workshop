@@ -9,7 +9,7 @@
 <body>
     <div class="content-block">
         <header>
-        <h1>Crea la receta</h1>
+        <h1>crea <br /> la <br /> receta <br /></h1>
         </header>
 
         <form onsubmit="onSubmit(event)" action="../cooking-recipe/Cooking-recipe.html" method="post">
@@ -24,22 +24,22 @@
             <fieldset class="ingredients">
                 <legend>ingredientes</legend>
                 <label for="primer-ingrediente">cual es el primer ingrediente</label>
-                <input type="text" name="ingredients" id="primer-ingrediente"> <br />
+                <input type="text" name="ingredients" id="primer-ingrediente">
 
                 <label for="segundo-ingrediente">cual es el segundo ingrediente</label>
-                <input type="text" name="ingredients" id="segundo-ingrediente">  <br />
+                <input type="text" name="ingredients" id="segundo-ingrediente">
 
                 <label for="tercer-ingrediente">cual es el tercer ingrediente</label>
-                <input type="text" name="ingredients" id="tercer-ingrediente"> <br />
+                <input type="text" name="ingredients" id="tercer-ingrediente">
 
                 <label for="cuarto-ingrediente">cual es el cuarto ingrediente</label>
-                <input type="text" name="ingredients" id="cuarto-ingrediente"> <br />
+                <input type="text" name="ingredients" id="cuarto-ingrediente">
 
                 <label for="quinto-ingrediente">cual es el quinto ingrediente</label>
-                <input type="text" name="ingredients" id="quinto-ingrediente"> <br />
+                <input type="text" name="ingredients" id="quinto-ingrediente">
 
                 <label for="sexto-ingrediente">cual es el sexto ingrediente</label>
-                <input type="text" name="ingredients" id="sexto-ingrediente"> <br />
+                <input type="text" name="ingredients" id="sexto-ingrediente">
             </fieldset>
 
             <fieldset clase="numbers"">
@@ -50,17 +50,17 @@
                 <input type="number" name="number-of-people" id="max-num-people" max="50"><br />
 
                 <label for="cooking-time">tiempo para hacer la receta</label>
-                <input type="number" name="time-to-finish" id="cooking-time" min="0"><br />
+                <input type="number" name="time-to-finish" id="cooking-time" min="1"><br />
             </fieldset>
 
             <fieldset class="dificulty">
                 <legend>nivel de dificultad</legend>
                 <div>
-                    <input type="radio" name="level-dificulty" id="easy">
+                    <input type="radio" name="level-dificulty" id="easy" value="facil">
                     <label for="easy">facil</label>
-                    <input type="radio" name="level-dificulty" id="medium">
+                    <input type="radio" name="level-dificulty" id="medium" value="normal">
                     <label for="medium">normal</label>
-                    <input type="radio" name="level-dificulty" id="hard">
+                    <input type="radio" name="level-dificulty" id="hard" value="dificil">
                     <label for="hard">dificil</label>
                 </div>
             </fieldset>
@@ -68,11 +68,11 @@
             <fieldset class="cost">
                 <legend>nivel de costo</legend>
                 <div>
-                    <input type="radio" name="level-cost" id="cheap" value="cheap">
+                    <input type="radio" name="level-cost" id="cheap" value="barato">
                     <label for="cheap">barato</label>
                     <input type="radio" name="level-cost" id="normal" value="normal">
                     <label for="normal">normal</label>
-                    <input type="radio" name="level-cost" id="expensive" value="expensive">
+                    <input type="radio" name="level-cost" id="expensive" value="costoso">
                     <label for="expensive">costoso</label>
                 </div>
             </fieldset>

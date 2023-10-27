@@ -27,9 +27,12 @@ function getIngredients(formEvent, idString) {
   input.reportValidity();
 } */
 
-document.getElementById(inputID)
-input.setCustomValidity()
+/* document.getElementById('steps')
+input.setCustomValidity('por favor llenar los pasos de la receta')
 
+document.getElementById('tips')
+input.setCustomValidity('por favor llenar los tips de la receta')
+ */
 let recipe = {
     category: '',
     title: '',
@@ -55,7 +58,7 @@ function onSubmit(event) {
     event.preventDefault();
     const formEl = event.target;
 
-    validate('dish-category');
+/*     validate('dish-category'); */
 
     recipe.title = formEl.querySelector('#dish-title').value;
     recipe.category = formEl.querySelector('#dish-category').value;
@@ -66,7 +69,7 @@ function onSubmit(event) {
     recipe.secondIngredient = getIngredients(formEl, '#segundo-ingrediente');
     // acá es otra forma de buscar los elementos pero sin ir directamente al id sino buscando por las capas del html, esto lo permite
     // la propiedad children cuando el querySelector te despliega una lista de tags.
-    recipe.thirdIngredient = formEl.querySelector('fieldset').children[11].value;
+    recipe.thirdIngredient = formEl.querySelector('.ingredients').children[8].value;
     recipe.fourthIngredient = getIngredients(formEl, '#cuarto-ingrediente');
     recipe.fifthIngredient = getIngredients(formEl, '#quinto-ingrediente');
     recipe.sixthIngredient = getIngredients(formEl, '#sexto-ingrediente');
@@ -87,51 +90,62 @@ function onSubmit(event) {
     if (recipe.category.length > 15) {
 
         validation.isValid = false;
-        validation.message = 'la category está muy larga, por favor revisarlo y acomodarlo al valor adecuado'
+        validation.message = 'la categoria está muy larga, por favor revisarlo y resumirlo';
+    } else if (recipe.category.length < 5) {
+        validation.isValid = false;
+        validation.message = 'la categoria es muy cortica, revisa que si lo hayas escrito bien'
     }
 
-    if (recipe.title.length > 25) {
+    if (recipe.title.length > 35) {
 
         validation.isValid = false;
-        validation.message = 'el titulo es más largo que 25 caracteres, por favor escribalo más cortico'
+        validation.message = 'el titulo es más largo que 25 caracteres, por favor escribalo más cortico';
     }
 
     if (recipe.numberPeople.min > recipe.numberPeople.max) {
         validation.isValid = false;
-        validation.message = 'por favor chequear que el numero de min y max sigan la siguiente logica:  el minimo siempre debe ser menor que el maximo'
+        validation.message = 'por favor chequear que el numero de min y max sigan la siguiente logica:  el minimo siempre debe ser menor que el maximo';
     }
 
     if (recipe.firstIngredient.length > 30) {
         validation.isValid = false;
-        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco';
     }
 
     if (recipe.secondIngredient.length > 30) {
         validation.isValid = false;
-        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+        validation.message = 'por favor revisa que solo hayas puesto el segundo ingrediente, si es así resumelo un poco';
     }
 
     if (recipe.thirdIngredient.length > 30) {
         validation.isValid = false;
-        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+        validation.message = 'por favor revisa que solo hayas puesto el tercer ingrediente, si es así resumelo un poco';
     }
 
     if (recipe.fourthIngredient.length > 30) {
         validation.isValid = false;
-        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+        validation.message = 'por favor revisa que solo hayas puesto el cuarto ingrediente, si es así resumelo un poco';
     }
 
     if (recipe.fifthIngredient.length > 30) {
         validation.isValid = false;
-        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+        validation.message = 'por favor revisa que solo hayas puesto el quinto ingrediente, si es así resumelo un poco';
     }
 
     if (recipe.sixthIngredient.length > 30) {
         validation.isValid = false;
-        validation.message = 'por favor revisa que solo hayas puesto el primer ingrediente, si es así resumelo un poco'
+        validation.message = 'por favor revisa que solo hayas puesto el sexto ingrediente, si es así resumelo un poco';
     }
 
+    if (recipe.level === undefined) {
+        validation.isValid = false;
+        validation.message = 'por favor indica que nivel de dificultad es la receta';
+    }
 
+    if (recipe.cost === undefined) {
+        validation.isValid = false;
+        validation.message = 'por favor indica cual es el costo';
+    }
 
     if (validation.isValid === true) {
         alert('el formulario se ha llenado correctamente');
