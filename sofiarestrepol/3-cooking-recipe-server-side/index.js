@@ -17,16 +17,18 @@ app.use(express.json()); //aplicar el middleware
 // router.get('/recipe', getRecipes);
 // router.get('/recipe/:id', getRecipe);
 
-app.get("/recipe", (req, res) => {  //recipe es la ruta. (req, res) es el handler
+router.get("/recipe", (req, res) => {  //recipe es la ruta. (req, res) es el handler
   res.status(200).send({ //primero se manda un estado para determinar si success o failure
     recipe: 'hello' //y luego se manda la info que pidio 
   })
 })
 
+
+
 //POST RECIPE (AGREGAR)
 // router.post("/recipe", postRecipe);
 
-app.post("/recipe/:id", (req,res) => {
+router.post("/recipe/:id", (req,res) => {
   const {id} = req.params; //obtiene el id de la receta, contenido en los parametros del request
   const {title} = req.body; //obtiene el titulo de la receta, contenido en el body del request
 
@@ -43,17 +45,23 @@ app.post("/recipe/:id", (req,res) => {
 //PUT RECIPE (ACTUALIZAR)
 // router.put("/recipe", putRecipe);
 
+router.put("/recipe", (req, res) => {
+
+});
+
 //DELETE RECIPE
 
-const deleteRecipe = (req, res) => {
-  res.send({mensaje: "eliminé receta", recipe});
-};
+// const deleteRecipe = (req, res) => {
+//   res.send({mensaje: "eliminé receta", recipe});
+// };
 
-router.delete("/recipe", deleteRecipe);
+router.delete("/recipe", (req, res) => {
 
-module.exports = {deleteRecipe};
+});
 
+// module.exports = {deleteRecipe};
 
+app.use(router);
 
 //LISTEN
 app.listen(
