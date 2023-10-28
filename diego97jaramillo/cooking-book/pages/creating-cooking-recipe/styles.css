@@ -62,8 +62,7 @@ body .content-block {
   width: 80vw;
   height: 90vh;
   background-color: bisque;
-  margin: auto;
-  margin-top: 3rem;
+  margin: 3rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -74,7 +73,7 @@ body .content-block header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(rgba(255, 192, 203, 0.612) 5%, transparent);
+  background: radial-gradient(rgba(255, 192, 203, 0.612) 10%, transparent);
 }
 body .content-block header h1 {
   font-size: 10rem;
@@ -82,26 +81,57 @@ body .content-block header h1 {
 }
 body .content-block form {
   width: 90%;
-  height: 95%;
+  height: 100%;
   background-color: aquamarine;
-}
-body .content-block form fieldset {
-  margin: 10px 15%;
+  box-sizing: border-box;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 100%;
 }
 body .content-block form fieldset.ingredients {
   font-size: 1.3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
 }
-body .content-block form fieldset.ingredients legend {
-  position: relative;
-  margin: auto;
-  bottom: 5px;
+body .content-block form fieldset.numbers {
+  background-color: yellow;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+body .content-block form fieldset.numbers label {
+  background-color: aliceblue;
+  padding: 5px;
+  font-size: 0.9rem;
+  height: 2.2rem;
+}
+body .content-block form fieldset.numbers input {
+  height: 1rem;
+  width: 3rem;
 }
 body .content-block form .recipe_title_category {
   background-color: red;
+  font-size: 1.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2px;
+}
+body .content-block form .steps-tips {
+  background-color: greenyellow;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body .content-block form .steps-tips textarea {
+  width: 12rem;
+}
+body .content-block form .steps-tips fieldset {
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

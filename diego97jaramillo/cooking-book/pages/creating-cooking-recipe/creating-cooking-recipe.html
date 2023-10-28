@@ -14,11 +14,13 @@
 
         <form onsubmit="onSubmit(event)" action="../cooking-recipe/Cooking-recipe.html" method="post">
             <fieldset class='recipe_title_category'>
+                <legend>titulo y categoria de la receta.</legend>
+
                 <label for="dish-category">escribe la categoria de la receta</label>
-                <input type="text" name="dish-category" id="dish-category"> <br />
+                <input type="text" name="dish-category" id="dish-category">
 
                 <label for="dish-title">escribe el título de la receta</label>
-                <input type="text" name="dish-title" id="dish-title"> <br />
+                <input type="text" name="dish-title" id="dish-title">
             </fieldset>
 
             <fieldset class="ingredients">
@@ -42,15 +44,15 @@
                 <input type="text" name="ingredients" id="sexto-ingrediente">
             </fieldset>
 
-            <fieldset clase="numbers"">
+            <fieldset class="numbers"">
                 <label for="min-num-people">minimo de personas</label>
-                <input type="number" name="number-of-people" id="min-num-people" min="1"><br />
-
                 <label for="max-num-people">maximo de personas</label>
-                <input type="number" name="number-of-people" id="max-num-people" max="50"><br />
-
                 <label for="cooking-time">tiempo para hacer la receta</label>
-                <input type="number" name="time-to-finish" id="cooking-time" min="1"><br />
+                <input type="number" name="number-of-people" id="min-num-people" min="1">
+                <input type="number" name="number-of-people" id="max-num-people" max="50">
+                <input type="number" name="time-to-finish" id="cooking-time" min="1">
+
+
             </fieldset>
 
             <fieldset class="dificulty">
@@ -76,15 +78,18 @@
                     <label for="expensive">costoso</label>
                 </div>
             </fieldset>
-            <fieldset class="steps">
-                <legend>paso a paso</legend>
-                <textarea name="steps" id="steps" required ></textarea>
-            </fieldset>
 
-            <fieldset class="tips">
-                <legend>tips de doña amparo</legend>
-                <textarea name="tips" id="tips" required></textarea>
-            </fieldset>
+            <div class="steps-tips">
+                <fieldset class="steps">
+                    <legend>paso a paso</legend>
+                    <textarea name="steps" id="steps" required ></textarea>
+                </fieldset>
+
+                <fieldset class="tips">
+                    <legend>tips de doña amparo</legend>
+                    <textarea name="tips" id="tips" required></textarea>
+                </fieldset>
+            </div>
 
             <input type="submit" value="crear receta" />
         </form>
