@@ -24,8 +24,8 @@ const recipe = {
     tips: 'Puedes servir la tarta de manzana con una bola de helado de vainilla para un toque extra delicioso.'
 };
 
-const callback = (req, res) => {
-    res.send (recipe);
+const getRecipe = (req, res) => {
+    res.send ({ mensaje: 'soy una receta', recipe });
 };
 
-app.get('/recipe', callback);
+module.exports = { getRecipe };
