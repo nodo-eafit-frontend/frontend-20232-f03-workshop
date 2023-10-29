@@ -141,7 +141,7 @@ function onSubmit(event) {
 
 
     console.log(recipe)
-
+    /* todo create fetch to send recipe to server */
 
 }
 
