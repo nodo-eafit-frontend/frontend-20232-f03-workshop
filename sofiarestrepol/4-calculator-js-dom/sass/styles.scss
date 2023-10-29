@@ -1,45 +1,25 @@
 @import "./base.scss";
 
-/* VARIABLES */
 
-
-/* GLOBALES */
-html {
-	font-size: 62.5%;
-}
-* {	 
-	box-sizing: border-box;
-  // outline: black dashed 1px;
-}
-body {
-	font-size: 16px;
-  // background-color: $bg-color;
-  // font-family: $body-font;
-  letter-spacing: 5px;
-  height: 100vh;
-  // background-color:rgb(188 218 244);
-  background: linear-gradient(to top, #f3caff, #c4e4fd);
+/* UTILIDADES */
+.span {
+  font-weight: bold;
 }
 
-
+/* CALCULADORA */
 .cont-calculator {
-  background-color: rgb(229 151 151);
+  background-color: $bg-color;
   width: 80%;
   height: 75%;
-  margin: 0 auto;
-  margin-top: 10rem;
-  // justify-content: center;
-  // align-items: center;
   border-radius: 6rem;
   display: grid;
   grid-template-rows: 25% 75%;
-  
-  
 }
+
 
 /* SCREEN */
 .screen {
-  background-color: rgba(252, 210, 210, 0.95);
+  background-color: $screen-color;
   width: 90%;
   height: 55%;
   margin: 0 auto;
@@ -50,39 +30,45 @@ body {
   padding: 3rem;
   align-items: center;
   justify-content: right;
-  color: rgb(110 12 12 / 95%)
-  // flex: 0 1 80%;
-
+  color: rgb(110 12 12 / 95%);
+  word-break: break-all; //para que no se expanda la calculadora hacia los lados
 }
 
 
-/* KEYS */
-.cont-keys {
+/* BUTTONS */
+.cont-buttons {
   display: flex;
-  // grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
-  // border: black solid thin;
-  // grid-template-columns: repeat(4fr);
-  // grid-template-rows: repeat(4fr);
   height: 80%;
   margin: 2rem 4rem;
-  .key {
+  .button {
     flex: 0 1 25%;
-    background-color: rgb(227, 176, 176);
+    background-color: $button-color;
     font-size: 2rem;
-    color: rgb(110 12 12 / 95%);
-    border: rgba(252, 210, 210) solid thin ;
+    color: $text-color;
+    border: $border-color solid thin ;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: $hover-color;
+  }
+  .button:active {
+    background-color: $active-color;
   }
   .op {
     font-size: 2.5rem;
   }
+  .imp {
+    background-color: $important-button-color;
+    .imp:active {
+      background-color: $active-color;
+    }
+  }
+
+  
 }
 
-//note: min-height: 100vh means que el grid de la calculadora va a ocupar 100% del espacio
-//^eso hace que el grid no quede vertical
-
-//todo: poner en negrita el = y el AC
-//todo: poner la info en las variables scss
+//todo: 
 
 
 

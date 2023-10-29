@@ -53,7 +53,6 @@ table {
 }
 
 
-/* VARIABLES */
 /* GLOBALES */
 html {
   font-size: 62.5%;
@@ -68,14 +67,22 @@ body {
   letter-spacing: 5px;
   height: 100vh;
   background: linear-gradient(to top, #f3caff, #c4e4fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* COLORES */
+/* UTILIDADES */
+.span {
+  font-weight: bold;
+}
+
+/* CALCULADORA */
 .cont-calculator {
   background-color: rgb(229, 151, 151);
   width: 80%;
   height: 75%;
-  margin: 0 auto;
-  margin-top: 10rem;
   border-radius: 6rem;
   display: grid;
   grid-template-rows: 25% 75%;
@@ -95,24 +102,38 @@ body {
   align-items: center;
   justify-content: right;
   color: rgba(110, 12, 12, 0.95);
+  word-break: break-all;
 }
 
-/* KEYS */
-.cont-keys {
+/* BUTTONS */
+.cont-buttons {
   display: flex;
   flex-wrap: wrap;
   height: 80%;
   margin: 2rem 4rem;
 }
-.cont-keys .key {
+.cont-buttons .button {
   flex: 0 1 25%;
   background-color: rgb(227, 176, 176);
   font-size: 2rem;
   color: rgba(110, 12, 12, 0.95);
   border: rgb(252, 210, 210) solid thin;
+  cursor: pointer;
 }
-.cont-keys .op {
+.cont-buttons .button:hover {
+  background-color: rgba(231, 170, 170, 0.95);
+}
+.cont-buttons .button:active {
+  background-color: rgba(252, 210, 210, 0.95);
+}
+.cont-buttons .op {
   font-size: 2.5rem;
+}
+.cont-buttons .imp {
+  background-color: rgba(252, 210, 210, 0.95);
+}
+.cont-buttons .imp .imp:active {
+  background-color: rgba(252, 210, 210, 0.95);
 }
 
 /*# sourceMappingURL=styles.css.map */

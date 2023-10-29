@@ -4,9 +4,9 @@ In this exercise, you will have the opportunity to create a simple calculator us
 
 ## Acceptance Criteria
 
-- [ ] Calculator buttons should be interactive and respond to user events.
+- [x] Calculator buttons should be interactive and respond to user events.
   - Mouse click
   - Keyboard keys
-- [ ] The calculator must be able to handle multiple consecutive operations. For example, if the user enters 2 + 3 \* 5, the calculator must calculate the result correctly following the rules of mathematical precedence.
-- [ ] All logic must be organized in javascript files.
-- [ ] You must use SASS with their respective files varibales, reset, fonts, and fonts.
+- [x] The calculator must be able to handle multiple consecutive operations. For example, if the user enters 2 + 3 \* 5, the calculator must calculate the result correctly following the rules of mathematical precedence.
+- [x] All logic must be organized in javascript files.
+- [x] You must use SASS with their respective files varibales, reset, fonts, and fonts.

@@ -1,0 +1,35 @@
+/* GLOBALES */
+html {
+	font-size: 62.5%;
+}
+* {	 
+	box-sizing: border-box;
+  // outline: black dashed 1px;
+}
+body {
+	font-size: 16px;
+  // background-color: $bg-color;
+  // font-family: $body-font;
+  letter-spacing: 5px;
+  height: 100vh;
+  // background-color:rgb(188 218 244);
+  background: linear-gradient(to top, #f3caff, #c4e4fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* COLORES */
+$bg-color: rgb(229 151 151);
+$screen-color: rgba(252, 210, 210, 0.95);
+$button-color: rgb(227, 176, 176);
+$text-color: rgb(110 12 12 / 95%);
+$border-color: rgba(252, 210, 210);
+$active-color: rgba(252, 210, 210, 0.95);
+$hover-color: rgb(231 170 170 / 95%);
+$important-button-color: rgba(252, 210, 210, 0.95);
+
+
+
+
+
