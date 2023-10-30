@@ -2,7 +2,7 @@
 const express = require('express'); //importa express
 require('dotenv').config(); //importa dotenv para usar .env
 const cors = require('cors');  //importa cors
-const { getRecipes } = require("./router/get");
+const { getRecipes, getRecipe } = require("./router/get");
 const { publishRecipe } = require("./router/post");
 const { updateRecipe } = require("./router/put");
 const { deleteRecipe } = require("./router/delete");
@@ -21,7 +21,7 @@ app.use(express.json()); //aplicar el middleware
 
 //GET RECIPE
 router.get("/recipe", getRecipes )
-// router.get('/recipe/:id', getRecipe);
+router.get('/recipe/:id', getRecipe);
 
 //POST RECIPE (PUBLISH)
 router.post("/recipe", publishRecipe);

@@ -54,7 +54,8 @@ function onSubmit(event) { //when click on submit.. do event
     event.preventDefault(); //evita que se haga la accion predeterminada
   } else {
     console.log(recipe);
-    event.returnValue;
+    // event.returnValue;
+    event.preventDefault(); //evita que se haga la accion predeterminada
 
   }
 } // cierra onSubmit
@@ -83,4 +84,4 @@ function showRecipes() {
 //se convierte en json para facilitar la comunicacion entre servidores, y luego se re convierte a objeto para la lectura 
 //cors define quienes pueden acceder a x recurso web
 
-
+//Obtener info del formulario

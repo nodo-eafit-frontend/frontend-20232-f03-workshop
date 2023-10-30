@@ -15,7 +15,7 @@ const saludar = (nombres) => {
   nombres.forEach((persona, index) => {
     console.log(`hola ${persona.nombre}, tienes ${persona.edad} años`);
   }); //esto es el callback
-};
+}; //como usamos el forEach entonces ya no se necesita usar el contador, ni while, ni i++ !!
 
 
 //funcion para buscar personas
@@ -41,7 +41,7 @@ const buscarPersona = (personas, nombre) => {
   // }
   // return persona, resultado;
 
-  const personaEncontrada = persona.find((persona) => {
+  const personaEncontrada = personas.find((persona) => {
     return persona.nombre === nombre;
   })
   
@@ -60,7 +60,7 @@ const filtrarPorEdad = (personas, minEdad, maxEdad) => {
   // }
   // return personasFiltradas
 
-  const personasFiltradas = persona.filter((x) => {
+  const personasFiltradas = personas.filter((persona) => {
     return persona.edad <= minEdad && persona.edad >= maxEdad
   }) 
   return personasFiltradas
@@ -81,9 +81,12 @@ const filtrarPorEdad = (personas, minEdad, maxEdad) => {
 // console.log(resultado, persona);
 
 
-const candidatos = filtrarPorEdad(personas, 23, 30);
-console.log(candidatos);
-console.log(personas);
+// const candidatos = filtrarPorEdad(personas, 23, 30);
+// console.log(candidatos);
+// console.log(personas);
+
+const persona = "Laura"
+console.log(buscarPersona(personas, persona));
 
 
 
