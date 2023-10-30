@@ -1,61 +1,43 @@
+//importaciones
 const express = require('express'); //importa express
-const app = express(); // crear un middleware para poder parse el json
-
 require('dotenv').config(); //importa dotenv para usar .env
+const cors = require('cors');  //importa cors
+const { getRecipes } = require("./router/get");
+const { publishRecipe } = require("./router/post");
+const { updateRecipe } = require("./router/put");
+const { deleteRecipe } = require("./router/delete");
+
 const PORT = process.env.PORT; //llama al puerto del .env
 
-// const router = require("./router"); //import router 
+const app = express(); // crear un middleware para poder parse el json
 const router = express.Router(); //crear un router
-
-
-
-
+app.use(cors()); // habilitar cors antes del router !
+app.use(router); //habilitar el router
 app.use(express.json()); //aplicar el middleware
 
 
+
+
+
 //GET RECIPE
-// router.get('/recipe', getRecipes);
+router.get("/recipe", getRecipes )
 // router.get('/recipe/:id', getRecipe);
 
-app.get("/recipe", (req, res) => {  //recipe es la ruta. (req, res) es el handler
-  res.status(200).send({ //primero se manda un estado para determinar si success o failure
-    recipe: 'hello' //y luego se manda la info que pidio 
-  })
-})
+//POST RECIPE (PUBLISH)
+router.post("/recipe", publishRecipe);
 
-//POST RECIPE (AGREGAR)
-// router.post("/recipe", postRecipe);
-
-app.post("/recipe/:id", (req,res) => {
-  const {id} = req.params; //obtiene el id de la receta, contenido en los parametros del request
-  const {title} = req.body; //obtiene el titulo de la receta, contenido en el body del request
-
-  if (!title) { //si no hay titulo, mandar estado de 400 y mandar error message
-    return res.status(400).send({error: 'title is required'})
-  }
-
-  res.send({ //si hay un titulo, mandar recipe
-    recipe: `u can do it because the id is ${id} and the title is ${title}`
-  })
-
-})
-
-//PUT RECIPE (ACTUALIZAR)
-// router.put("/recipe", putRecipe);
+//PUT RECIPE (UPDATE)
+router.put("/recipe", updateRecipe);
 
 //DELETE RECIPE
-
-const deleteRecipe = (req, res) => {
-  res.send({mensaje: "eliminé receta", recipe});
-};
-
-router.delete("/recipe", deleteRecipe);
-
-module.exports = {deleteRecipe};
-
+router.delete("/recipe", deleteRecipe )
 
 
 //LISTEN
 app.listen(
   PORT, () => console.log(`running on http://localhost:${PORT}`)
-)
+  )
+  
+  
+//export
+module.exports = router;

@@ -1,5 +1,7 @@
 const deleteRecipe = (req, res) => {
-  res.send({mensaje: "eliminé receta", recipe});
-};
+  res.status(200).send({
+    message: "deleted recipe"
+  })
+}
 
 module.exports = {deleteRecipe};
