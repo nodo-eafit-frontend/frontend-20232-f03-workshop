@@ -63,6 +63,24 @@ function onSubmit(event) { //when click on submit.. do event
 //request to server
 
 
+//Mostrar Recetas
+function showRecipes() {
+  const promise = fetch("http://localhost:5252/recipe"); //fetch devuelve una promesa
+  const rawResponse = promise.then((response) => response.json()); //abre la promesa y entrega la respuesta en formato RAW, y response.json la traduce a json
+  rawResponse.then((data) => { //data es el json traducido a objeto cre
+    console.log(data);
 
+    const codeEl = document.querySelector("section code"); //selecciona el <code> en el html
+    const textNode = document.createTextNode(JSON.stringify(data, null, 2)) //crea un texto , lo vuelve string, y lo organiza 
+    
+    codeEl.appendChild(textNode); 
+  })
+
+}
+
+//la promesa es el sobre de una carta, y para abrir el sobre hay que usar el metodo .then que nos va a devolver una response - esa respuesta es la carta
+
+//se convierte en json para facilitar la comunicacion entre servidores, y luego se re convierte a objeto para la lectura 
+//cors define quienes pueden acceder a x recurso web
 
 
