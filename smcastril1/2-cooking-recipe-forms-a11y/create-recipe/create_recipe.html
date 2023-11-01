@@ -3,40 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crear Receta Cocina</title>
+    <title>Create recipe</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="stylesheet" href="./static/style.css" />
+
   </head>
   <body>
     <h1>Create Your Recipe</h1>
-    <form id="recipe_form">
-
+    <form onsubmit="onSubmit(event)" action= "../static-recipe/cooking-recipe.html"   id="recipe_form">  
+   
       <label for="title-recipe">Recipe's title: </label>
-      <input id="title-recipe" type="text" name="title" required/>
+      <input id="title-recipe" type="text" name="title" value ="Kiwi Jam"  required/>
       <hr />
   
 
 
       <label for="min-people">Minimun of people</label>
-      <input type="range" id="min-people" min="0" max="10" required>
+      <input type="range" id="min-people" min="0" max="10"  value ="1" required>
       <br />
 
       <label for="max-people">Maximun of people</label>
-      <input type="range" id="max-people" min="3" max="30" required>
+      <input type="range" id="max-people" min="0" max="30" value ="20" required>
       <br />
 
       <hr>
 
 
       <label for="time-for-cooking">Cooking time (min): </label>
-      <input id="time-for-cooking" type="number" min="1" max="120" />
+      <input id="time-for-cooking" type="number" min="1" max="120" value ="60"/>
       <br />
 
       <hr>
 
       <br>
 
-      <fieldset >
+      <fieldset>
         <legend><strong>Cost: </strong></legend>
         <!-- <div> -->
         <input type="radio" name="cost" id="cost-high" value="high" required/>
@@ -45,7 +46,7 @@
         <input type="radio" name="cost" id="cost-medium" value="medium"required />
         <label for="cost-medium">Medium</label>
 
-        <input type="radio" name="cost" id="cost-low" value="low" required />
+        <input type="radio" name="cost" id="cost-low" value="low" checked required />
         <label for="cost-low">low</label>
         <!-- </div> -->
       </fieldset>
@@ -63,7 +64,7 @@
         <input type="radio" name="type" id="hot-dishes" value="hot-dishes" required/>
         <label for="hot-dishes">Hot dishes</label>
     
-        <input type="radio" name="type" id="desserts" value="desserts" required/>
+        <input type="radio" name="type" id="desserts" value="desserts" checked/>
         <label for="desserts">Desserts</label>
         <!-- </div> -->
       </fieldset>
@@ -79,7 +80,7 @@
           <input type="radio" name="level" id="level-medium" value="medium" required/>
           <label for="level-medium">Medium</label>
 
-          <input type="radio" name="level" id="level-low" value="low" required/>
+          <input type="radio" name="level" id="level-low" value="low" checked required/>
           <label for="level-low">Low</label>
         </div>
       </fieldset>
@@ -115,6 +116,8 @@
       <button onclick="getRecipe('2Pkqs4MVuYk')">Mostrar Recetas</button>
       <code> </code>
     </section> -->
+
+    <script src="./create_recipe.js"></script>
   </body>
-  <script src="../js/create_recipe.js"></script>
+  
 </html>
