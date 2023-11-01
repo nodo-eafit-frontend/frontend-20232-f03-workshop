@@ -2,6 +2,8 @@
 const express = require('express'); //importa express
 require('dotenv').config(); //importa dotenv para usar .env
 const cors = require('cors');  //importa cors
+const {v4: uuidv4} = require('uuid'); 
+
 const { getRecipes, getRecipe } = require("./router/get");
 const { publishRecipe } = require("./router/post");
 const { updateRecipe } = require("./router/put");
@@ -11,9 +13,11 @@ const PORT = process.env.PORT; //llama al puerto del .env
 
 const app = express(); // crear un middleware para poder parse el json
 const router = express.Router(); //crear un router
+
 app.use(cors()); // habilitar cors antes del router !
-app.use(router); //habilitar el router
 app.use(express.json()); //aplicar el middleware
+app.use(express.urlencoded({ extended: true })); 
+app.use(router); //habilitar el router
 
 
 
@@ -40,4 +44,4 @@ app.listen(
   
   
 //export
-module.exports = router;
+module.exports = router; 
