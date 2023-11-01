@@ -152,6 +152,12 @@ function onSubmit(event) {
 
     console.log(recipe)
 
+    const options = {
+        method: "DELETE",
+        body: JSON.stringify(recipe),
+    };
+
+    fetch(`${baseUrl}/recipe`, options);
 
 }
 
