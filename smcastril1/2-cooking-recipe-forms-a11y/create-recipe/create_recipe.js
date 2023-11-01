@@ -49,15 +49,6 @@
 
 // }
 
-let data;
-
-
-function onSubmit(event){
-    // event.preventDefault(); //No redirecciona
-    data = Object.fromEntries(new FormData(event.target));
-    console.log(data);
-    //console.log(event);
-    // debugger;
     // const my_recipe = new Recipe();
     // my_recipe.set_attribute("title", "#title-recipe");
     // my_recipe.set_attribute("time", "#time-for-cooking");
@@ -67,5 +58,39 @@ function onSubmit(event){
     // my_recipe.set_attribute("steps", "#steps");
 
     // console.log(my_recipe);
+
+
+// ------------------------------------------------------------------------------
+
+let data;
+
+
+function onSubmit(event){
+    let isValid = true;
+    let msg;
+
+    event.preventDefault(); //No redirecciona
+    data = Object.fromEntries(new FormData(event.target));
+    console.log(data);
+
+
+    //VALIDACIONES
+    if (data.title.length > 20){
+        isValid = false;
+        msg += "ERROR: Title too long."
+    }
+    
+
+    if (data.min_people >= data.max_people){
+        console.log("ENTRÉ")
+        isValid = false;
+        msg += "ERROR: The minimum of people has to be shorter than the maximum."
+    }
+
+
+
+    if(!isValid){
+        alert(msg)
+    }
 
 }
