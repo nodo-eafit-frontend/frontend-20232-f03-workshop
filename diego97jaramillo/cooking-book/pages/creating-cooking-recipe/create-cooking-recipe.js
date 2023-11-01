@@ -54,6 +54,8 @@ function onSubmit(event) {
     event.preventDefault();
     const formEl = event.target;
 
+/*     validate('dish-category'); */
+
     recipe.title = formEl.querySelector('#dish-title').value;
     recipe.category = formEl.querySelector('#dish-category').value;
     recipe.firstIngredient = formEl.querySelector('#primer-ingrediente').value;
@@ -63,7 +65,7 @@ function onSubmit(event) {
     recipe.secondIngredient = getIngredients(formEl, '#segundo-ingrediente');
     // acá es otra forma de buscar los elementos pero sin ir directamente al id sino buscando por las capas del html, esto lo permite
     // la propiedad children cuando el querySelector te despliega una lista de tags.
-    recipe.thirdIngredient = formEl.querySelector('fieldset').children[11].value;
+    recipe.thirdIngredient = formEl.querySelector('.ingredients').children[8].value;
     recipe.fourthIngredient = getIngredients(formEl, '#cuarto-ingrediente');
     recipe.fifthIngredient = getIngredients(formEl, '#quinto-ingrediente');
     recipe.sixthIngredient = getIngredients(formEl, '#sexto-ingrediente');
@@ -80,6 +82,7 @@ function onSubmit(event) {
         isValid: true,
         message: '',
     }
+
     if (recipe.category.length > 15) {
 
         validation.isValid = false;
@@ -146,10 +149,12 @@ function onSubmit(event) {
         alert(validation.message)
     }
 
+
     console.log(recipe)
-    /* todo create fetch to send recipe to server */
+
 
 }
+
 
 function getRecipes() {
     const recipePromise = fetch(`${baseUrl}/recipe`);
