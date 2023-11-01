@@ -12,7 +12,7 @@
     "classname": "keyboard__module keyboard__module--operator"
   },
   {
-    "text": "/",
+    "text": "÷",
     "classname": "keyboard__divide keyboard__divide--operator"
   },
   {
@@ -28,7 +28,7 @@
     "classname": "keyboard__nine"
   },
   {
-    "text": "X",
+    "text": "×",
     "classname": "keyboard__multiply keyboard__multiply--operator"
   },
   {

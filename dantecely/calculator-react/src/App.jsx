@@ -1,12 +1,16 @@
 import Calculator from './components/organisms/Calculator/Calculator';
 import './App.scss';
 
-function App({ title, time }) {
+import { CalculatorProvider } from './context/CalculatorProvider';
+
+const App = () => {
   return (
     <main>
-      <Calculator />
+      <CalculatorProvider>
+        <Calculator />
+      </CalculatorProvider>
     </main>
   );
-}
+};
 
 export default App;

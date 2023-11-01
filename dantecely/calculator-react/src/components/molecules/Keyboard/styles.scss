@@ -10,6 +10,7 @@
     'four five six minus'
     'one two three plus'
     'zero dot enter enter';
+  gap: 0.5rem;
 
   @each $button in $buttons {
     &__#{$button} {
