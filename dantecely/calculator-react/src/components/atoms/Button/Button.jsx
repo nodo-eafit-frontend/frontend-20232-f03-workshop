@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
 
+const namespace = 'button';
+
 const Button = ({ text, className, onClick }) => {
   return (
-    <button className={className} onClick={() => onClick(text)}>
+    <button className={`${namespace} ${className}`} onClick={() => onClick(text)}>
       {text}
     </button>
   );

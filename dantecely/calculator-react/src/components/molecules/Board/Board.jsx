@@ -7,11 +7,11 @@ import './styles.scss';
 
 const namespace = 'board';
 
-const Board = ({ operations }) => {
+const Board = ({ board, result }) => {
   return (
     <section className={namespace}>
-      <Input value={operations} readOnly={true} />
-      <Result />
+      <Input value={board} readOnly={true} />
+      <Result text={result} />
     </section>
   );
 };
