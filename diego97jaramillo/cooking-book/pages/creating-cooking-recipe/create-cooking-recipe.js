@@ -56,8 +56,6 @@ function onSubmit(event) {
     event.preventDefault();
     const formEl = event.target;
 
-    validate('dish-category');
-
     recipe.title = formEl.querySelector('#dish-title').value;
     recipe.category = formEl.querySelector('#dish-category').value;
     recipe.firstIngredient = formEl.querySelector('#primer-ingrediente').value;
