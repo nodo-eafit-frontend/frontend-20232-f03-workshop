@@ -1,3 +1,4 @@
+const baseUrl = 'http://localhost:3000';
 
 // Se crea esta función para recoger los datos de todos los rabio-buttons que puedan haber en el formulario
 function getRadioResult(element, name) {
@@ -145,4 +146,40 @@ function onSubmit(event) {
 
 }
 
+function getRecipes() {
+    const recipePromise = fetch(`${baseUrl}/recipe`);
+    rawPromise = recipePromise.then((raw) => raw.json());
+    rawPromise.then((data) => {
+        console.log(data)
 
+        const codeEl = document.querySelector('section > code');
+        const TextEl = document.createTextNode(JSON.stringify(data, null, 2));
+
+        codeEl.appendChild(TextEl);
+    });
+}
+
+function getRecipe(idRecipe) {
+    const recipePromise = fetch(`${baseUrl}/recipe/${idRecipe}`);
+
+    const rawPromise = recipePromise.then((raw) => raw.json());
+
+    rawPromise.then((data) => {
+
+        console.log(data)
+
+        const codeEl = document.querySelector("section > code");
+        const dataEl = document.createTextNode(JSON.stringify(data, null, 2));
+
+        codeEl.appendChild(dataEl);
+    }).catch((error) => {
+        const messageError = `Error: ${error.message}`;
+        console.error(messageError);
+        const sectionEl = document.querySelector('body > section');
+        const spanEl = document.createElement('span');
+        const messageText = document.createTextNode(messageError);
+
+        spanEl.appendChild(messageText);
+        sectionEl.appendChild(spanEl);
+    })
+}

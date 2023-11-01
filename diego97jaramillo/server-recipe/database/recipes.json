@@ -24,5 +24,59 @@
             "Dejar enfriar antes de servir. ¡Disfruta de tu deliciosa tarta de manzana!"
         ],
         "tips": "Puedes servir la tarta de manzana con una bola de helado de vainilla para un toque extra delicioso."
+    },
+
+    {
+        "id": "s3gund0",
+        "category": "Postres",
+        "title": "Tarta de pera",
+        "firstIngredient": "peras",
+        "secondIngredient": "Harina",
+        "thirdIngredient": "Azúcar",
+        "fourthIngredient": "Huevos",
+        "fifthIngredient": "Levadura",
+        "sixthIngredient": "Canela",
+        "numberPeople": {
+            "max": 8,
+            "min": 6
+        },
+        "cookingTime": 45,
+        "level": "Fácil",
+        "cost": 30000,
+        "steps": [
+            "Pelar y cortar las peras en rodajas finas.",
+            "En un tazón grande, mezclar la harina, el azúcar, los huevos y la levadura.",
+            "Agregar las rodajas de pera a la mezcla y añadir canela al gusto.",
+            "Verter la mezcla en un molde para tarta y hornear a 180°C durante 35-40 minutos.",
+            "Dejar enfriar antes de servir. ¡Disfruta de tu deliciosa tarta de pera!"
+        ],
+        "tips": "Puedes servir la tarta de pera con una bola de helado de vainilla para un toque extra delicioso."
+    },
+
+    {
+        "id": "pr1m3r0",
+        "category": "Postres",
+        "title": "Tarta de melocoton",
+        "firstIngredient": "melocotones",
+        "secondIngredient": "Harina",
+        "thirdIngredient": "Azúcar",
+        "fourthIngredient": "Huevos",
+        "fifthIngredient": "Levadura",
+        "sixthIngredient": "Canela",
+        "numberPeople": {
+            "max": 8,
+            "min": 6
+        },
+        "cookingTime": 45,
+        "level": "Fácil",
+        "cost": 30000,
+        "steps": [
+            "Pelar y cortar los melocotones en rodajas finas.",
+            "En un tazón grande, mezclar la harina, el azúcar, los huevos y la levadura.",
+            "Agregar las rodajas de melocoton a la mezcla y añadir canela al gusto.",
+            "Verter la mezcla en un molde para tarta y hornear a 180°C durante 35-40 minutos.",
+            "Dejar enfriar antes de servir. ¡Disfruta de tu deliciosa tarta de melocoton!"
+        ],
+        "tips": "Puedes servir la tarta de melocoton con una bola de helado de vainilla para un toque extra delicioso."
     }
 ]
