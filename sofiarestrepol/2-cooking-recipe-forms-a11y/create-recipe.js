@@ -1,3 +1,5 @@
+const baseUrl = "http://localhost:5252";
+
 
 //obtener dificultad
 function obtenerResultado(element, name) {
@@ -17,10 +19,9 @@ const recipe = { //objeto con la info de la receta
 
 //despues se llena la info
 function onSubmit(event) { //when click on submit.. do event
-  // event.preventDefault(); //evita que se haga la accion predeterminada
+  event.preventDefault(); //evita que se haga la accion predeterminada
   const formEl = event.target; 
-
-  // validate("#title");
+  const resultSelector = ".new-recipe > code";
 
   recipe.title = formEl.querySelector("#title").value;
   recipe.portions = Number(formEl.querySelector("#portions").value);
@@ -53,10 +54,36 @@ function onSubmit(event) { //when click on submit.. do event
     alert(`Formulario Invalido. ${validation.message}`);
     event.preventDefault(); //evita que se haga la accion predeterminada
   } else {
+    event.preventDefault(); //evita que se haga la accion predeterminada
     console.log(recipe);
     // event.returnValue;
-    event.preventDefault(); //evita que se haga la accion predeterminada
+    
+    const options = {
+      method: "POST",
+      body: JSON.stringify(recipe),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
 
+    fetch(`${baseUrl}/recipe`, options)
+      .then((response) => response.json())
+      .then((data) => { 
+        console.log(data); //imprimir en terminal
+
+        const codeEl = document.querySelector(resultSelector); 
+        const textNode = document.createTextNode(JSON.stringify(data, null, 2)); 
+      
+        codeEl.appendChild(textNode); //imprimir en pantalla 
+    })
+      .catch((error) => {
+        const errorMessage = `Error: ${error.message}`; //crea mensaje de error
+        console.error(errorMessage);
+        const codeEl = document.querySelector(resultSelector);  //buscar elemento dentro de el hijo de body llamado section
+        const errorText = document.createTextNode(errorMessage); 
+        codeEl.appendChild(errorText);
+    
+    });
   }
 } // cierra onSubmit
 
@@ -75,7 +102,7 @@ function showRecipes() {
     const textNode = document.createTextNode(JSON.stringify(data, null, 2)) //crea un texto , lo vuelve string, y lo organiza 
     
     codeEl.appendChild(textNode); 
-  })
+  });
 
 }
 
@@ -84,4 +111,29 @@ function showRecipes() {
 //se convierte en json para facilitar la comunicacion entre servidores, y luego se re convierte a objeto para la lectura 
 //cors define quienes pueden acceder a x recurso web
 
-//Obtener info del formulario
+
+//mostrar receta por id
+function showRecipe(idRecipe) {
+  fetch(`${baseUrl}/recipe/${idRecipe}`)
+    .then((response) => response.json())
+    .then((data) => { 
+      console.log(data);
+
+      const codeEl = document.querySelector("section code"); 
+      const textNode = document.createTextNode(JSON.stringify(data, null, 2)); 
+      
+      codeEl.appendChild(textNode); 
+  })
+    .catch((error) => {
+    const errorMessage = `Error: ${error.message}`; //crea mensaje de error
+    console.error(errorMessage);
+    const sectionEl = document.querySelector("body > section");  //buscar elemento dentro de el hijo de body llamado section
+    
+    const spanEl = document.createElement('span'); //crea elemento span
+    const errorText = document.createTextNode(errorMessage); 
+    spanEl.appendChild(errorText);
+    sectionEl.appendChild(spanEl);
+  
+  })
+
+}

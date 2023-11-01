@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width", initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crear Receta Cocina</title>
   <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="/sofiarestrepol/cooking-recipe/img/favicon.ico
-  ">
+  <link rel="stylesheet" href="/sofiarestrepol/cooking-recipe/img/favicon.ico">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <article class="cont-form">
     <h1 class="cont-form__title">Crea tu propia receta</h1>
     <div class="cont-form__vertical-line"></div>
-    <form class="cont-form__form" onsubmit="onSubmit(event)" action="../1-cooking-recipe/pages/receta/receta.html"> <!-- ejecuta la funcion onSubmit when click en submit -->
+    <form class="cont-form__form" onsubmit="onSubmit(event)" 
+      action="../1-cooking-recipe/pages/receta/receta.html" 
+      method="put"> <!-- ejecuta la funcion onSubmit when click en submit -->
       <div class="cont-form__cont-input">
         <label for="title" class="bold">Titulo de la Receta</label> <!-- duda: no me funciona <b> para bold -->
         <br>
@@ -51,6 +52,9 @@
       <input id="button" type="submit" value="Crear receta">
     </form>
   </article>
+  <section class="new-recipe">
+    <code></code>
+  </section>
   <section>
     <button onclick="showRecipes()">Mostrar Recetas</button>
     <!-- <button> <a href="../1-cooking-recipe/pages/receta/receta.html"></a></button> -->
