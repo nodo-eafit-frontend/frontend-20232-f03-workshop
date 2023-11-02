@@ -153,8 +153,11 @@ function onSubmit(event) {
     console.log(recipe)
 
     const options = {
-        method: "DELETE",
+        method: "POST",
         body: JSON.stringify(recipe),
+        headers: {
+            "content-Type": "application/jason",
+        },
     };
 
     fetch(`${baseUrl}/recipe`, options);
