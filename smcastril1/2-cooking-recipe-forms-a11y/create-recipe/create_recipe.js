@@ -70,6 +70,12 @@ function onSubmit(event) {
   if (data.title.length > 20) {
     isValid = false;
     msg += 'ERROR: Title too long.';
+    const fieldsetEl = document.querySelector('#title-recipe');
+    const messageErrorEl = document.createElement('span');
+    messageErrorEl.className = 'error-message';
+    messageErrorEl.textContent = msg;
+
+    fieldsetEl.appendChild(messageErrorEl);
   }
 
   if (data.min_people >= data.max_people) {
@@ -87,6 +93,5 @@ function onSubmit(event) {
 
   if (!isValid) {
     alert(msg);
-    s;
   }
 }
