@@ -1,3 +1,4 @@
+
 app.post("/recipe/:id", (req,res) => {
   const {id} = req.params; //obtiene el id de la receta, contenido en los parametros del request
   const {title} = req.body; //obtiene el titulo de la receta, contenido en el body del request
