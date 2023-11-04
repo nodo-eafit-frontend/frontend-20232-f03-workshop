@@ -11,24 +11,6 @@ function getIngredients(formEvent, idString) {
     return formEvent.querySelector(`${idString}`).value;
 }
 
-/* function validate(inputID) {
-  const input = document.getElementById(inputID);
-  const validityState = input.validity;
-
-  if (validityState.valueMissing) {
-    input.setCustomValidity("You gotta fill this out, yo!");
-  } else if (validityState.rangeUnderflow) {
-    input.setCustomValidity("We need a higher number!");
-  } else if (validityState.rangeOverflow) {
-    input.setCustomValidity("That's too high!");
-  } else {
-    input.setCustomValidity("");
-  }
-
-  input.reportValidity();
-} */
-
-
 let recipe = {
     category: '',
     title: '',
@@ -143,25 +125,39 @@ function onSubmit(event) {
         validation.message = 'por favor indica cual es el costo';
     }
 
-    if (validation.isValid === true) {
-        alert('el formulario se ha llenado correctamente');
-    }   else {
+    if (!validation.isValid === true) {
         alert(validation.message)
+    }   else {
+        alert('el formulario se ha llenado correctamente');
+        console.log(recipe)
+
+        const options = {
+            method: "POST",
+            body: JSON.stringify(recipe),
+            headers: {
+                "content-Type": "application/json",
+            },
+        };
+
+        fetch(`${baseUrl}/recipe`, options).then((raw) => raw.json()).then((data) => {
+            console.log(data)
+
+            const codeEl = document.querySelector(".addedRecipe > code");
+            const dataEl = document.createTextNode(JSON.stringify(data, null, 2));
+
+            codeEl.appendChild(dataEl);
+        }).catch((error) => {
+            const messageError = `Error: ${error.message}`;
+            console.error(messageError);
+            const sectionEl = document.querySelector('body > section');
+            const spanEl = document.createElement('span');
+            const messageText = document.createTextNode(messageError);
+
+            spanEl.appendChild(messageText);
+            sectionEl.appendChild(spanEl);
+        });
+
     }
-
-
-    console.log(recipe)
-
-    const options = {
-        method: "POST",
-        body: JSON.stringify(recipe),
-        headers: {
-            "content-Type": "application/jason",
-        },
-    };
-
-    fetch(`${baseUrl}/recipe`, options);
-
 }
 
 
