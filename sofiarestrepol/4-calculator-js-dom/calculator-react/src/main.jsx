@@ -1,6 +1,6 @@
 
-import React from 'react'; //importa react desde node_modules
-import ReactDOM from 'react-dom/client'; //importa el document potenciado por react
+import React from 'react'; //React trabaja los componentes, las herramientas de desarrollo
+import ReactDOM from 'react-dom/client'; //ReactDOM sincroniza las copias remotas - locales (?)
 import App from './App.jsx'; //importa App desde el doc .App.jsx
 import './index.scss';
 
