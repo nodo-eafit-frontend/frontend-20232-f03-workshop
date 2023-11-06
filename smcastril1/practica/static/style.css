@@ -1,0 +1,56 @@
+div {
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.blue-box {
+  background-color: rgb(3, 3, 35);
+}
+
+.green-box {
+  background-color: rgb(5, 80, 5);
+  width: 35rem;
+  height: 30rem;
+  /* position: absolute; */
+  position: relative;
+  top: 3rem;
+  left: 3rem;
+}
+.green-box > div {
+  position: absolute;
+  z-index: 10;
+}
+.green-box .yellow-box {
+  background-color: rgb(154, 154, 9);
+  /* position: absolute; */
+  z-index: 20;
+  top: 0;
+  right: 0;
+}
+.green-box .red-box {
+  background-color: rgb(154, 9, 9);
+  /* position: absolute; */
+  z-index: 45;
+  bottom: 1rem;
+  left: 1rem;
+}
+.green-box .violet-box {
+  background-color: rgb(154, 9, 149);
+  /* position: absolute; */
+  z-index: 45;
+  top: 7rem;
+  left: 8rem;
+}
+.green-box .gray-box {
+  background-color: rgb(89, 85, 85);
+  /* position: absolute; */
+  z-index: 40;
+  top: 1rem;
+  left: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
