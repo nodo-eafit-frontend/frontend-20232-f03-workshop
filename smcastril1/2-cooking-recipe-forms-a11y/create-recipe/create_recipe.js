@@ -58,6 +58,25 @@
 
 let data;
 
+
+function validate(inputID) {
+  const input = document.querySelector(inputID);
+  const validityState = input.validity;
+
+  if (validityState.valueMissing) {
+    input.setCustomValidity("You gotta fill this out, yo!");
+  } else if (validityState.rangeUnderflow) {
+    input.setCustomValidity("We need a higher number!");
+  } else if (validityState.rangeOverflow) {
+    input.setCustomValidity("That's too high!");
+  } else {
+    input.setCustomValidity("");
+  }
+
+  input.reportValidity();
+}
+
+
 function onSubmit(event) {
   let isValid = true;
   let msg = '';
@@ -79,7 +98,7 @@ function onSubmit(event) {
   }
 
   if (data.min_people >= data.max_people) {
-    console.log('ENTRÉ');
+    // console.log('ENTRÉ');
     isValid = false;
     msg += 'ERROR: The minimum of people has to be shorter than the maximum.';
 
@@ -90,6 +109,8 @@ function onSubmit(event) {
 
     fieldsetEl.appendChild(messageErrorEl);
   }
+
+  validate("#title-recipe")
 
   if (!isValid) {
     alert(msg);
