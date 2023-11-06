@@ -1,0 +1,106 @@
+@import "./sass/index.scss";
+
+.title {
+    margin: 0;
+    font-size: 3rem;
+    color: #333;
+}
+
+form.recipe-form {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border: 8px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label.titles {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+
+input.title-input, textarea.textarea, input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #333;
+    max-width: 97%;
+    box-shadow: 0 8px 8px rgb(0, 0, 0, 0.2);
+}
+
+fieldset {
+    border: 1px solid #333;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 1rem 1rem 1rem rgb(0, 0, 0, 0.2);
+}
+
+.fieldset.steps {
+    padding: 1rem;
+}
+
+.fieldset.steps ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 1rem;
+  }
+
+fieldset.steps textarea {
+    list-style-type: disc;
+    width: 97%; 
+    height: 100%; 
+    border: none;
+    resize: none;
+    border-bottom: 1px solid #333;
+    box-shadow: 0 8px 8px rgb(0, 0, 0, 0.2);
+    padding-left: 1.5rem; 
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 6rem;
+    position: relative;
+}
+
+fieldset.steps textarea::before {
+    content: "- "; 
+    color: #333; 
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fieldset.steps ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 1rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 1rem;
+    transform: scale(1.2);
+}
+
+
+button.form-button {
+    display: block;
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    font-size: 20px;
+    box-shadow: 1rem 1rem 1rem rgb(0, 0, 0, 0.2);
+}
+
+button.form-button:hover {
+    background-color: #0a3372;
+}

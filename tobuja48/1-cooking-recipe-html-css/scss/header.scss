@@ -1,0 +1,41 @@
+header {
+    h1{
+        position: relative;
+        .platos {
+          font-size: 600%; 
+          color: $color-dark-red;
+          position: absolute;
+          margin-left: 45rem;
+          top: -130px;
+          font-family: 'Satisfy', cursive;
+        
+      }
+      
+      .calientes {
+        font-size: 600%;
+        color: $color-dark-red;
+        margin-left: 60rem;
+        margin-top: -60px;
+        position: absolute;
+        z-index: 5;
+        text-transform: uppercase;
+      }
+        
+      }
+      
+    
+    
+          
+          .atun {
+            font-family: 'Satisfy', cursive;
+            font-size: 40px;
+            color:$color-white;
+           margin-left: 1%;
+           margin-top: -40px;
+           border: 10px solid $color-light-red;
+           padding: 10px;
+           background-color: $color-light-red;
+           z-index: 4;
+    }
+       
+}
