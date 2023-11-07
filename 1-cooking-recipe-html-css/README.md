@@ -27,7 +27,7 @@ You can choose a cooking recipe and turn it into a web page using HTML and CSS. 
 - Reset CSS:
   - [🚨 Reset CSS: TODO lo que DEBES de SABER | Eduardo Fierro Pro](https://www.youtube.com/watch?v=Foieq2jTajE)
   - [🚀Reset CSS en 2022: Modo PRO 😏 | Eduardo Fierro Pro](https://www.youtube.com/watch?v=Foieq2jTajE)
-  > Note: Also you can use a CDN
+    > Note: Also you can use a CDN
 - CSS selector strategies
   - [CSS Dinner](https://flukeout.github.io/)
   - [Specificity Calculator](https://specificity.keegan.st/)

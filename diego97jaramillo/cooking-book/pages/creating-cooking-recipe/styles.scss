@@ -1,117 +1,45 @@
-@import "../../sass/index.scss";
+@import '../../sass/index.scss';
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-
 
 body {
-    background-color: $light-gray;
+  background-color: $aqua;
 
-    .content-block {
-        width:80vw;
-        height: 90vh;
-        background-color: $beige;
-        margin: 3rem auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        border-radius: 5rem;
-        background: radial-gradient($beige 10%, transparent );
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+  }
 
+  form {
+    text-align: center;
+    width: 30vw;
+    height: 70%;
+    margin: auto;
 
-        header {
-
-            height:100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            h1 {
-                font-size: 10rem;
-                text-transform: capitalize;
-            }
-        }
-
-        form {
-            width: 90%;
-            height: 100%;
-            box-sizing: border-box;
-            padding: 4rem;
-            display: grid;
-            text-transform: capitalize;
-
-
-
-            fieldset {
-
-                legend {
-                    text-align: center;
-                    padding-bottom: 5px;
-                }
-
-                &.ingredients {
-                    font-size: 1.3rem;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    align-items: center;
-                    gap: 2px;
-                }
-
-                &.numbers {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    text-align: center;
-
-                    & label {
-                        display: inline-block;
-                        padding: 5px;
-                        font-size: 0.9rem;
-                        height: 1rem;
-                        width: 8rem;
-                        justify-self: center;
-                    }
-
-                    & input{
-                        height: 1rem;
-                        width: 3rem;
-                        justify-self: center;
-                    }
-                }
-
-                &.dificulty {
-                    display: grid;
-                    justify-content: center;
-                }
-
-                &.cost {
-                    display: grid;
-                    justify-content: center;
-                }
-            }
-
-            .recipe_title_category {
-                font-size: 1.3rem;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                justify-content: center;
-                align-items: center;
-                row-gap: 2px;
-
-            }
-
-            .steps-tips {
-                display:grid;
-                grid-template-columns: repeat(2, 1fr);
-                text-align: center;
-                gap: 0 1.5rem;
-                padding-bottom: 5px;
-            }
-        }
+    .recipe_title_category {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
 
+    .ingredients {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 1rem;
+      margin: 1rem;
 
+      legend {
+        font-size: 2rem;
+        margin: 1rem;
+      }
 
+      label {
+        text-align: start;
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
-
-

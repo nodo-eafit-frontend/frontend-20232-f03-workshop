@@ -1,0 +1,16 @@
+{
+  "name": "typescript-clases",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:ts": "npx tsc --watch index.ts",
+    "dev": "node --watch index.js"
+  },
+  "author": "Diego Jaramillo",
+  "license": "ISC"
+}
