@@ -1,8 +1,11 @@
 
 import '../../json/keys.json';
 // import Buttons from "../buttons/Buttons.jsx";
+import React from 'react';
 import '../buttons/buttons.scss';
 import "./keyboard.scss";
+
+
 
 const namespace = "keyboard";
 

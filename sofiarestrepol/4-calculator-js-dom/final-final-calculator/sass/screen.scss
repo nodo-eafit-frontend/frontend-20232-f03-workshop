@@ -1,0 +1,30 @@
+
+.screen {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  // text-align: right;
+  align-items: flex-end;
+  justify-content: space-around;
+  // border: gray 2px solid;
+  background-color: rgba(252, 210, 210, 0.95);
+  border-radius: 2rem;
+  margin: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+  padding-right: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.screen .previous-op {
+  color: rgb(178 92 92 / 95%);
+  font-size: 16px;
+}
+.screen .current-op {
+  color: rgb(110 12 12 / 95%);
+  font-size: 20px;
+  margin-top: 3px;
+}
+
+
