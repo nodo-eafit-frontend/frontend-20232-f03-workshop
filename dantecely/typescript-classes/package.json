@@ -1,0 +1,14 @@
+{
+  "name": "typescript-classes",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "compile:ts": "npx tsc --watch index.ts",
+    "dev": "node --watch index.js"
+  },
+  "author": "Marvin Cely",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

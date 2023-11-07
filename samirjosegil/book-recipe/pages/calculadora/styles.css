@@ -1,0 +1,213 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Dancing";
+  src: url(./Fonts/Dancing.ttf);
+}
+@font-face {
+  font-family: "Pacifico-Regular";
+  src: url(./Fonts/Pacifico-Regular.ttf);
+}
+body {
+  background: linear-gradient(to bottom, #571700, #ffe4c4);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: transparent;
+  text-align: center;
+  font-size: 5rem;
+  color: #ffe4c4;
+  margin-top: 2rem;
+  height: 2rem;
+}
+
+.calculator {
+  border: 8px solid #333;
+  border-radius: 1rem;
+  width: 36rem;
+  height: 30rem;
+  background-color: #fff;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.4);
+  margin: 10rem;
+  background: #333;
+}
+
+.display {
+  text-align: right;
+  padding: 10px;
+  border-bottom: 1rem solid #333;
+}
+
+input[type=text] {
+  width: 98%;
+  border-radius: 1rem;
+  height: 4rem;
+  border: none;
+  font-size: 2rem;
+  padding: 5px;
+  color: #fff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8a8a8a;
+}
+
+/*# sourceMappingURL=styles.css.map */

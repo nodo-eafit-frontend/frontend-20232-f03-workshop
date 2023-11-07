@@ -12,13 +12,13 @@ Therefore, you have to design and develop a form that allows you to create a new
 ## Acceptance Criteria
 
 - [x] The form can be filled out using only the keyboard.
-- [ ] The page can be navigated at 200% magnification.
-- [ ] The page must use contrasting colors.
-- [ ] The form must be able to be redirected to the cooking recipe page.
-- [ ] The form must to have validations with feedbacks near the HTML inputs.
+- [x] The page can be navigated at 200% magnification.
+- [x] The page must use contrasting colors.
+- [x] The form must be able to be redirected to the cooking recipe page.
+- [x] The form must to have validations with feedbacks near the HTML inputs.
   - [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
   - [HTMLInputElement: setCustomValidity() method](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setCustomValidity)
-- [ ] The form and the cooking recipe page must use BEM methodology
+- [x] The form and the cooking recipe page must use BEM methodology
 
 Support tools 🧰:
 

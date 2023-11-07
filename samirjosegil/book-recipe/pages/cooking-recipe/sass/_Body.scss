@@ -1,0 +1,50 @@
+// Body //
+
+head {
+    .material-symbols-outlined {
+        font-size: 3rem;
+    }}
+body {
+    background: $color-cafe-claro;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header {
+    display: grid;
+    grid-column: 2 / 6;
+    grid-template-columns: repeat(3, 1fr);
+    }
+    
+main {
+    grid-column: 2 / 6;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns:repeat(11, 1fr);
+    position: absolute;
+    z-index: 2;
+    padding: 0%;
+    }
+    
+        aside {
+        display: grid;
+        grid-column: 1 / 4;
+        }
+            
+        section {
+        grid-column:6 / 11;
+        display: grid;
+        }
+    
+    footer {
+    grid-column: 2 / 6;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns:repeat(7, 1fr);
+    position: relative;
+    z-index: 1;
+    bottom: -195%;
+    }
