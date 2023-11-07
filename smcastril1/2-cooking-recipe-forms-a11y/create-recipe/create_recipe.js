@@ -87,6 +87,5 @@ function onSubmit(event) {
 
   if (!isValid) {
     alert(msg);
-    s;
   }
 }
