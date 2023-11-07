@@ -1,9 +1,10 @@
 /* Error: Can't find stylesheet to import.
  *   ,
- * 1 | @import '../ ../sass';
- *   |         ^^^^^^^^^^^^^
+ * 1 | @import './base';
+ *   |         ^^^^^^^^
  *   '
- *   styles.scss 1:9  root stylesheet */
+ *   ..\..\..\sass\index.scss 1:9  @import
+ *   styles.scss 1:8               root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import '../ ../sass';\d\a   \2502          ^^^^^^^^^^^^^\a   \2575 \a   styles.scss 1:9  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import './base';\d\a   \2502          ^^^^^^^^\a   \2575 \a   ..\\..\\..\\sass\\index.scss 1:9  @import\a   styles.scss 1:8               root stylesheet";
 }
