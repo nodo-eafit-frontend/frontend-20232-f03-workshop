@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="recipe-form__title">Crear Receta Cocina</h1>
+    </header>
+
+    <main>
+        <form class="recipe-form" action="recetas.html" method="post" id="form">
+            <label for="recipe-name" class="recipe-form__label">Titulo de la Receta:</label>
+            <input type="text" id="recipe-name" class="recipe-form__input" name="recipeName" required />
+
+            <label for="ingredients" class="recipe-form__label">Ingredientes:</label>
+            <textarea id="ingredients" class="recipe-form__textarea" name="ingredients" required></textarea>
+
+            <fieldset class="recipe-form__people-max-min">
+                <legend class="recipe-form__legend">Cantidad de Personas</legend>
+                <label for="min-people" class="recipe-form__label">Mín.</label>
+                <input id="min-people" class="recipe-form__input" type="number" />
+                <br />
+                <label for="max-people" class="recipe-form__label">Máx.</label>
+                <input id="max-people" class="recipe-form__input" type="number" />
+            </fieldset>
+
+            <fieldset class="recipe-form__cost">
+                <legend class="recipe-form__legend">Costo</legend>
+                <div>
+                    <input type="radio" name="cost" id="cost-high" class="recipe-form__radio" value="high" />
+                    <label for="cost-high" class="recipe-form__label">Alto</label>
+
+                    <input type="radio" name="cost" id="cost-medium" class="recipe-form__radio" value="medium" />
+                    <label for="cost-medium" class="recipe-form__label">Medio</label>
+
+                    <input type="radio" name="cost" id="cost-low" class="recipe-form__radio" value="low" />
+                    <label for="cost-low" class="recipe-form__label">Bajo</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="recipe-form__difficulty">
+                <legend class="recipe-form__legend">Dificultad</legend>
+                <div>
+                    <input type="radio" name="level" id="level-high" class="recipe-form__radio" value="high" />
+                    <label for="level-high" class="recipe-form__label">Alto</label>
+
+                    <input type="radio" name="level" id="level-medium" class="recipe-form__radio" value="medium" />
+                    <label for="level-medium" class="recipe-form__label">Medio</label>
+
+                    <input type="radio" name="level" id="level-low" class="recipe-form__radio" value="low" />
+                    <label for="level-low" class="recipe-form__label">Bajo</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="recipe-form__steps">
+                <legend class="recipe-form__legend">Paso a paso</legend>
+                <textarea name="steps" id="steps" class="recipe-form__textarea"></textarea>
+            </fieldset>
+
+            <button type="submit" class="recipe-form__button">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+    </footer>
+    <script src="formulario.js"></script>
+</body>
+
+</html>
