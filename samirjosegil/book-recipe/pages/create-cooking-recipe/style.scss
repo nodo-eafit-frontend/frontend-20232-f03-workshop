@@ -1,106 +1,84 @@
 @import "./sass/index.scss";
 
-.title {
+.recipe-form {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: $blanco-puro;
+  border: 8px solid $negro-mate;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &__title {
     margin: 0;
     font-size: 3rem;
-    color: #333;
-}
+    color: $blanco-puro;
+  }
 
-form.recipe-form {
-    max-width: 60rem;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #fff;
-    border: 8px solid #333;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label.titles {
+  &__label {
     display: block;
     font-weight: bold;
     margin-top: 1rem;
-    font-size: 20px;
-}
+    font-size: 1rem;
+  }
 
-
-input.title-input, textarea.textarea, input[type="number"] {
+  &__input,
+  &__textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
     border: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid $color-negro;
     max-width: 97%;
-    box-shadow: 0 8px 8px rgb(0, 0, 0, 0.2);
-}
+    box-shadow: $degradado-negro;
+  }
 
-fieldset {
-    border: 1px solid #333;
+  &__people-max-min,
+  &__cost,
+  &__difficulty,
+  &__steps {
+    border: 1px solid $color-negro;
     border-radius: 1rem;
     margin: 1rem 0;
     padding: 1rem;
-    box-shadow: 1rem 1rem 1rem rgb(0, 0, 0, 0.2);
-}
-
-.fieldset.steps {
-    padding: 1rem;
-}
-
-.fieldset.steps ul {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 1rem;
+    box-shadow: $degradado-negro;
   }
 
-fieldset.steps textarea {
-    list-style-type: disc;
-    width: 97%; 
-    height: 100%; 
-    border: none;
-    resize: none;
-    border-bottom: 1px solid #333;
-    box-shadow: 0 8px 8px rgb(0, 0, 0, 0.2);
-    padding-left: 1.5rem; 
-    font-size: 1rem;
-    line-height: 1.5;
-    min-height: 6rem;
-    position: relative;
-}
+  &__cost,
+  &__difficulty {
+    display: flex;
+    flex-direction: row;
 
-fieldset.steps textarea::before {
-    content: "- "; 
-    color: #333; 
-    position: absolute;
-    left: 0;
-    top: 0;
-}
+    label {
+      margin-right: 10px;
+    }
 
-.fieldset.steps ul {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 1rem;
-}
+    &__radio {
+      margin: 0;
+      transform: scale(1.2);
+    }
+  }
 
-input[type="radio"], input[type="checkbox"] {
+  &__radio {
     margin-right: 1rem;
     transform: scale(1.2);
-}
+  }
 
-
-button.form-button {
+  &__button {
     display: block;
     width: 20%;
-    background-color: #333;
-    color: #fff;
+    background-color: $color-negro;
+    color: $blanco-puro;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.5s;
     font-size: 20px;
-    box-shadow: 1rem 1rem 1rem rgb(0, 0, 0, 0.2);
-}
+    box-shadow: $degradado-negro;
 
-button.form-button:hover {
-    background-color: #0a3372;
+    &:hover {
+      background-color: #0a3372;
+    }
+  }
 }
