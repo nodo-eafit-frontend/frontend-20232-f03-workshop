@@ -29,12 +29,13 @@ h1 {
   top: 2rem;
   font-size: 6rem;
   z-index: 1000;
+  text-transform: uppercase;
 }
 
 h1 span {
   font-family: "Kaushan Script", cursive;
   display: block; /* !Permite que se genere un bloqueo */
-  font-size: 5rem;
+ 
 }
 
 .titulo-plato {
