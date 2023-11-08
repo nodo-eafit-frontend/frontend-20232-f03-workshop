@@ -68,13 +68,17 @@ var Carro = /** @class */ (function (_super) {
 }(Vehiculo));
 var Moto = /** @class */ (function (_super) {
     __extends(Moto, _super);
-    function Moto(marca, color, tipoCadena) {
+    function Moto(marca, color, tipoCadena, nudosPorSeg) {
         var _this = _super.call(this, marca, color) || this;
         _this.tipoCadena = tipoCadena;
+        _this.nudosPorSeg = nudosPorSeg || 0;
         return _this;
     }
     Moto.prototype.presentarse = function () {
         return "Este es un ".concat(this.miMarca, " de color ").concat(_super.prototype.getColor.call(this), " con nuevas cadenas tipo ").concat(this.tipoCadena);
+    };
+    Moto.prototype.mostrarVelocidadMax = function (metros) {
+        return this.nudosPorSeg * metros;
     };
     return Moto;
 }(Vehiculo));
@@ -82,5 +86,6 @@ var miCarro = new Carro('Renault', 'gris', 4);
 var miCarro2 = new Carro('Ferrari', 'rojo', 2);
 var miCarro3 = new Carro('Hyundai', 'verde', 4);
 var miMoto = new Moto('Yamaha', 'negra', 'fortificada');
-concecionario.push(miCarro, miCarro2, miCarro3, miMoto);
-console.log(concecionario);
+var miMotoAcuatica = new Moto('Yamaha', 'negra', 'fortificada', 6);
+concecionario.push(miCarro, miCarro2, miCarro3, miMoto, miMotoAcuatica);
+console.log(miMotoAcuatica.mostrarVelocidadMax(10));

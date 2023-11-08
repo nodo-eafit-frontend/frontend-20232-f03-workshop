@@ -60,17 +60,33 @@ class Carro extends Vehiculo {
     return `Este es un ${this.miMarca} de color ${super.getColor()} con ${this.puertas} puertas`;
   }
 }
+interface Acuatico2 {
+  tipo: string;
+}
 
-class Moto extends Vehiculo {
+interface Acuatico extends Acuatico2 {
+  nudosPorSeg: number;
+  mostrarVelocidadMax: (metros: number) => number;
+}
+
+class Moto extends Vehiculo implements Acuatico {
   private tipoCadena: string;
+  nudosPorSeg: number;
+  tipo: string;
+  cualquiera: any;
 
-  constructor(marca: string, color: string, tipoCadena: string) {
+  constructor(marca: string, color: string, tipoCadena: string, nudosPorSeg?: number) {
     super(marca, color);
     this.tipoCadena = tipoCadena;
+    this.nudosPorSeg = nudosPorSeg || 0;
   }
 
   presentarse() {
     return `Este es un ${this.miMarca} de color ${super.getColor()} con nuevas cadenas tipo ${this.tipoCadena}`;
+  }
+
+  mostrarVelocidadMax(metros: number): number {
+    return this.nudosPorSeg * metros;
   }
 }
 
@@ -78,7 +94,8 @@ const miCarro = new Carro('Renault', 'gris', 4);
 const miCarro2 = new Carro('Ferrari', 'rojo', 2);
 const miCarro3 = new Carro('Hyundai', 'verde', 4);
 const miMoto = new Moto('Yamaha', 'negra', 'fortificada');
+const miMotoAcuatica = new Moto('Yamaha', 'negra', 'fortificada', 6);
 
-concecionario.push(miCarro, miCarro2, miCarro3, miMoto);
+concecionario.push(miCarro, miCarro2, miCarro3, miMoto, miMotoAcuatica);
 
-console.log(concecionario);
+console.log(miMotoAcuatica.mostrarVelocidadMax(10));
