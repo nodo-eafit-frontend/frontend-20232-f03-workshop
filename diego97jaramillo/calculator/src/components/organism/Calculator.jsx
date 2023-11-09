@@ -1,12 +1,10 @@
-
-import Keyboard from '../molecules/Keyboard/keyboard';
+import Keyboard from "../molecules/Keyboard/keyboard";
+import Board from "../molecules/Board/Board";
 import './calculator.scss';
-
-const namespace = "calculator";
 
 const Calculator = () => {
     return (
-        <section className={namespace}>
+        <section>
             <Board />
             <Keyboard />
         </section>

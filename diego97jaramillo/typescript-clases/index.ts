@@ -46,15 +46,34 @@ class carro extends vehicles {
     }
 }
 
-class moto extends vehicles {
+interface Acuatico2 {
+    tipo: string;
+}
+
+interface Acuatico extends Acuatico2 {
+    nudosPorSeg: number;
+    mostrarVelocidadMax: (metros:number) => number;
+}
+
+class moto extends vehicles implements Acuatico {
     private cadenas: string;
-    constructor(marca: string, color: string, cadenas: string) {
+    nudosPorSeg: number;
+    tipo: string;
+
+
+
+    constructor(marca: string, color: string, cadenas: string, nudosPorSeg?: number) {
         super(marca, color);
         this.cadenas = cadenas;
+        this.nudosPorSeg = nudosPorSeg ? nudosPorSeg : 0;
     };
 
     presentarse(): string {
         return `Hola soy una ${this.laMarca} de color ${this.elColor} con cadena de marca ${this.cadenas}`
+    }
+
+    mostrarVelocidadMax (metros:number): number {
+        return this.nudosPorSeg * metros;
     }
 }
 
@@ -62,12 +81,13 @@ const miCarro = new carro('amarok', 'plata', 5);
 const miCarro1 = new carro('golf', 'dorado', 3);
 const miCarro2 = new carro('twingo', 'azul', 5);
 const mimoto = new moto('suzuki', 'amarillo', 'shark');
+const mimotoAcuatica = new moto('suzuki', 'amarillo', 'shark', 6);
 
 console.log(mimoto.presentarse());
 
+console.log(mimotoAcuatica.mostrarVelocidadMax(10));
 
-
-concesionario.push(miCarro, miCarro1,  miCarro2, mimoto);
+concesionario.push(miCarro, miCarro1,  miCarro2, mimoto, mimotoAcuatica);
 console.log(concesionario);
 
 

@@ -1,12 +1,13 @@
-import React from 'react';
-import Input from '../../atoms/input/input';
-import Result from '../../atoms/result/result';
+import Result from "../../atoms/result/Result";
+import Input from "../../atoms/input/Input";
+import './Board.scss';
+
 
 const namespace = 'board';
 
 const Board = () => {
   return (
-    <section classname={namespace}>
+    <section className={namespace}>
         <Input />
         <Result />
     </section>
