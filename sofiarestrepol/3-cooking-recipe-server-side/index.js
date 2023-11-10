@@ -11,6 +11,7 @@ const router = express.Router(); //crear un router
 
 
 app.use(express.json()); //aplicar el middleware
+//no usamos json reader porque express tiene parse incluido
 
 
 //GET RECIPE

@@ -1,32 +1,44 @@
-import PropTypes from "prop-types";
-import keys from "../../../json/keys.json";
-import Button from "../../atoms/Button/Button";
+// import PropTypes from "prop-types";
+// import keys from '../../../json/keys.json';
 import "./styles.scss";
 
 const namespace = "keyboard";
 
-const Keyboard = ({ onClick }) => {
+
+const Keyboard = () => {
   return (
     <article className={namespace}>
-      {/* {keys.map(({ text, class_name }, index) => ( //step 1: toma la lista de keys, saca su classname, y ...
-        <Button key={`button-${index}-${text}`} text={text} className={class_name} /> //... se lo aplica al boton
-      ))} tambien le aplica el index y el text */}
-      {keys.map(({ text, classname }, index) => {
-        return (
-          <Button
-            key={`button-${index}-${text}`}
-            text={text}
-            className={classname}
-            onClick={onClick}
-          />
-        );
-      })}
+      {/* {keys.map(({ text, classname }, index) => (
+        <Button key={`button-${index}-${text}`} text={text} className={classname} />
+      ))} */}
+      <button>AC</button>
+      <button>←</button>
+      <button>%</button>
+      <button>÷</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>*</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>-</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>+</button>
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+      <button>OK</button>
     </article>
-  );
-};
+  )
 
-Keyboard.propTypes = {
-  onClick: PropTypes.func.isRequired,
-};
+}//step 1: toma la lista de keys, saca su classname, y se lo aplica al boton
+
+
+// Keyboard.propTypes = {
+//   onClick: PropTypes.func.isRequired,
+// };
 
 export default Keyboard;

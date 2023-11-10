@@ -40,29 +40,6 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #f9cbcb;;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: rgba(252, 210, 210, 0.95);
-  background-color: #f3afaf;
-}
-
-button:active {
-  border: 1.5px solid rgb(223 129 129 / 95%);
-}
-// button:focus,
-// button:focus-visible {
-//   outline: 4px auto #cf8d91;
-// }
 
 @media (prefers-color-scheme: light) {
   :root {

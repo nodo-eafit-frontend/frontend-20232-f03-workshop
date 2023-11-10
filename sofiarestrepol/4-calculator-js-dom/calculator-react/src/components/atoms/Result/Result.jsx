@@ -1,16 +1,15 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+// import PropTypes from 'prop-types';
 
-const Result = ({ text }) => {
-  return <span>{text}</span>;
+const Result = () => {
+  return <span>Hola</span>;
 };
 
-Result.defaultProps = {
-  text: '0',
-};
+// Result.defaultProps = {
+//   text: '0',
+// };
 
-Result.propTypes = {
-  text: PropTypes.string,
-};
+// Result.propTypes = {
+//   text: PropTypes.string,
+// };
 
 export default Result;
