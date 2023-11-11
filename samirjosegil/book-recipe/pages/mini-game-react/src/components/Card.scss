@@ -1,0 +1,23 @@
+@import '../styles/_variables';
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid $primary-color;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+}
