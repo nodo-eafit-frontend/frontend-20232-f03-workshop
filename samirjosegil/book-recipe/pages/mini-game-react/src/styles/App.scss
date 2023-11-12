@@ -10,22 +10,51 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   min-width: 100vw;
   background-color: $background-color;
   transition: background-color 0.5s;
 }
 
 header {
+  display: flex;
+  justify-content: center;
   background-color: $primary-color;
   padding: 20px;
-  min-width: 100vw;
-  text-align: center;
+  min-width: 97vw;
+  align-items: center;
 }
+
+header button {
+  background-color: $button-bg-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 3rem;
+  box-shadow: 0 0 1rem rgb(255, 255, 255);
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: $button-hover-color;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    background-color: $button-active-color;
+    transform: scale(0.95);
+    color: #ffff
+    ;
+  }
+}
+
 
 h1 {
   color: white;
   margin: 0;
+  font-size: 3rem;
 }
 
 main {
@@ -40,26 +69,10 @@ main {
   justify-content: center;
   background-color: $container-bg-color;
   margin-top: 20px;
-  width: 70vw;
+  width: 60vw;
   height: 80vh;
   align-items: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.Card {
-  width: 100px;
-  height: 150px;
-  border: 2px solid #ccc;
-  margin: 5px;
-  cursor: pointer;
-  background-color: $card-bg-color;
-  transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
-
-  &.flipped {
-    transform: rotateY(180deg);
-    background-color: black;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
 }
 
 footer {
@@ -72,23 +85,27 @@ footer {
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.score-container {
-  display: flex;
-  flex-direction: column;
+.scoreboard {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  height: 7rem;
+  width: 11rem;
+  background-color: $container-bg-color;
+  margin-top: 20px;
+  margin-left: 3rem;
   align-items: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+  }
 }
 
-h2 {
-  color: white;
-  margin: 0;
-}
-
-p {
-  color: white;
-  margin: 5px 0;
-}
-
-.score {
-  color: $primary-color; /* Color específico para el marcador */
-  font-size: 24px; /* Tamaño de fuente ajustado */
-}

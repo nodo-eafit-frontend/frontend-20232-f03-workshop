@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import Card from './components/Card';
+import Card from './components/Card/Card';
 import './styles/App.scss';
+
+// Definir constantes directamente aquí
+const CARD_COLUMNS = 6;
+const CARD_ROWS = 3;
+const CARD_PAIRS = (CARD_COLUMNS * CARD_ROWS) / 2;
+const CARD_IMAGE_PREFIX = 'imagen';
+const CARD_IMAGE_EXTENSION = '.jpg';
 
 const App = () => {
   const generateCards = () => {
-    const columns = 6;
-    const rows = 3;
-    const pairs = (columns * rows) / 2;
-
-    const uniquePairs = [...Array(pairs).keys()];
-
+    const uniquePairs = [...Array(CARD_PAIRS).keys()];
     const allPairs = [...uniquePairs, ...uniquePairs];
-
     const shuffledPairs = allPairs.sort(() => Math.random() - 0.5);
 
     return shuffledPairs.map((pair, index) => ({
       id: index + 1,
-      image: `imagen${pair + 1}.jpg`,
+      image: `${CARD_IMAGE_PREFIX}${pair + 1}${CARD_IMAGE_EXTENSION}`,
       isFlipped: false,
       isMatched: false,
     }));
@@ -43,7 +44,7 @@ const App = () => {
       const [card1, card2] = [...flippedCards].map(
         (flippedId) => cards.find((card) => card.id === flippedId) || {}
       );
-
+  
       if (card1.image === card2.image) {
         setCards((prevCards) =>
           prevCards.map((card) =>
@@ -58,10 +59,10 @@ const App = () => {
               flippedCards.has(card.id) ? { ...card, isFlipped: false } : card
             )
           );
-          setScore((prevScore) => Math.max(prevScore - 4, 0));
-        }, 1000);
+          setScore((prevScore) => Math.max(prevScore - 50, 0));
+        }, 500);
       }
-
+  
       setFlippedCards(new Set());
     }
   }, [flippedCards, cards]);
@@ -102,7 +103,6 @@ const App = () => {
           <div className="scoreboard">
             <h2>Scoreboard</h2>
             <p>Score: {score}</p>
-            {/* Aquí puedes añadir tu tabla de puntajes */}
           </div>
         </main>
       )}

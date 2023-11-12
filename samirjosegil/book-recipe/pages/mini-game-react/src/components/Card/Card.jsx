@@ -1,5 +1,5 @@
 import React from 'react';
-import CardImage from './CardImage';
+import CardImage from '../CardImage/CardImage';
 import PropTypes from 'prop-types';
 import './Card.scss';
 
