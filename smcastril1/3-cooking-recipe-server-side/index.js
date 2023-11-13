@@ -1,6 +1,8 @@
-require("dotenv").config();
 const express =  require("express");
-const router = require("./router")
+const cors = require("cors");
+const router = require("./router");
+require("dotenv").config();
+
 
 
 // Create my app
@@ -31,8 +33,9 @@ const { PORT } = process.env;
 //     res.send("Recipe deleted");
 // })
 
-
+app.use(cors());
 app.use(router); //Midleware
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
