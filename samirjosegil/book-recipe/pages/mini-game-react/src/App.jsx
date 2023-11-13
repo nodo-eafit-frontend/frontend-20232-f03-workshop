@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Board from './components/Board/Board';
 import Scoreboard from './components/Scoreboard/Scoreboard';
-import './styles/App.scss';
+import './App.scss';
 
 const App = () => {
   const [cards, setCards] = useState([]);
