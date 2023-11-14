@@ -5,7 +5,6 @@ var maxPeople = document.querySelector("#max-people");
 var steps = document.getElementById("steps");
 var form = document.getElementById("form");
 
-
 title.addEventListener("input", function () {
   if (title.value.length > 20) {
     title.setCustomValidity("No se puede exceder los 20 caracteres.");
@@ -14,9 +13,11 @@ title.addEventListener("input", function () {
   }
 });
 
- minPeople.addEventListener("input", function () {
+minPeople.addEventListener("input", function () {
   if (parseInt(minPeople.value) > parseInt(maxPeople.value)) {
-    minPeople.setCustomValidity("El valor mínimo no puede ser mayor al máximo.");
+    minPeople.setCustomValidity(
+      "El valor mínimo no puede ser mayor al máximo."
+    );
   } else {
     minPeople.setCustomValidity("");
   }
@@ -24,28 +25,27 @@ title.addEventListener("input", function () {
 
 maxPeople.addEventListener("input", function () {
   if (parseInt(maxPeople.value) < parseInt(minPeople.value)) {
-    maxPeople.setCustomValidity("El valor máximo no puede ser menor al mínimo.");
+    maxPeople.setCustomValidity(
+      "El valor máximo no puede ser menor al mínimo."
+    );
   } else {
     maxPeople.setCustomValidity("");
   }
 });
 
-
-form.addEventListener("submit", handleSubmit);
-  
 function getRadioValue(name) {
   const radioElements = document.getElementsByName(name);
-  
+
   for (const radio of radioElements) {
     if (radio.checked) {
       return radio.value;
     }
   }
-  
-return null;
+
+  return null;
 }
-  
-function handleSubmit(event) {
+
+form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   var recipe = {
@@ -54,10 +54,12 @@ function handleSubmit(event) {
       min: minPeople.value,
       max: maxPeople.value,
     },
-    cost: getRadioValue('cost'),
-    level: getRadioValue('level'),
+    cost: getRadioValue("cost"),
+    level: getRadioValue("level"),
     steps: steps.value,
   };
-  
-console.log(recipe);
-}
+
+  console.log(recipe);
+
+  window.location.href = '../cooking-recipe/coocking-recipe.html';
+});
