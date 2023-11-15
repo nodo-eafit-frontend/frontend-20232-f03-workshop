@@ -4,13 +4,14 @@ import './style.scss';
 
 const namespace = 'keyboard';
 
-const Keyboard = () => {
+const Keyboard = ({onClick}) => {
+
 
 
     return (
         <article className={namespace}>
             {keyboardButtons.map(({text, classname}, index) => (
-                <Button className={classname} text={text} key={`button_${index}`} />
+                <Button className={classname} text={text} key={`button_${index}`} onClick={onClick}/>
             ))}
         </article>
     )

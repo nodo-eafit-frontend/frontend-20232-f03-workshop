@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Result = () => {
+const Result = ({readOnly, result}) => {
   return (
-    <input></input>
+    <input value={result} readOnly={readOnly}></input>
   )
 }
 

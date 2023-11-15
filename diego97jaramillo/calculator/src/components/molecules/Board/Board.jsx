@@ -5,11 +5,11 @@ import './Board.scss';
 
 const namespace = 'board';
 
-const Board = () => {
+const Board = ({result}) => {
   return (
     <section className={namespace}>
-        <Input />
-        <Result />
+        <Result result={result} readOnly={true}/>
+        <Input  />
     </section>
   )
 }
