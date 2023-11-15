@@ -12,7 +12,7 @@ router.post('/recipe', addRecipe);
 
 router.put('/recipe', updateRecipe);
 
-router.delete('/recipe', deleteRecipe);
+router.delete('/recipe/:id', deleteRecipe);
 
 
 module.exports = router;

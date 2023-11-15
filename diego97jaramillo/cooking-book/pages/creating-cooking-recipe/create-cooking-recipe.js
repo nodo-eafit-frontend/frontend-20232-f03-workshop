@@ -181,7 +181,7 @@ function getRecipe(idRecipe) {
 
     rawPromise.then((data) => {
 
-        console.log(data)
+        console.log(data);
 
         const codeEl = document.querySelector("section > code");
         const dataEl = document.createTextNode(JSON.stringify(data, null, 2));
@@ -196,5 +196,15 @@ function getRecipe(idRecipe) {
 
         spanEl.appendChild(messageText);
         sectionEl.appendChild(spanEl);
-    })
-}
+    });
+};
+
+function deleteRecipe(idRecipe) {
+    const options = {
+        method: "DELETE"
+    };
+
+    fetch(`${baseUrl}/recipe/${idRecipe}`, options).then((raw) => raw.json()).then((data) => {
+        console.log(data);
+    });
+};
