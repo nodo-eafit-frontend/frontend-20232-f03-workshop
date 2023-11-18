@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../img/libro-de-recetas-_1_.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fondo">
+    <h1 class="fondo__title">Crear Receta</h1>
+    <form class="fondo__form" onsubmit="onSubmit(event)" action="../1-cooking-recipe-html-css/cooking-recipe.html" id="recipe_form">
+        <label for="title-recipe" class="box__label">Titulo receta</label>
+        <input id="title-recipe" type="text" class="box__input">
+        <hr class="box__hr">
+        <label for="min-people" class="box__label">Mínimo personas</label>
+        <input id="min-people" type="number" min="1" class="box__input">
+        <br class="box__br">
+        <label for="max-people" class="box__label">Máximo personas</label>
+        <input id="max-people" type="number" min="1" class="box__input">
+        <hr class="box__hr">
+        <label for="time-preparation" class="box__label">Tiempo de preparación</label>
+        <input id="time-preparation" type="number" min="20" max="60" class="box__input">
+        <hr class="box__hr">
+        <hr class="box__hr">
+        <fieldset class="box__fieldset">
+            <legend class="box__legend">Costo</legend>
+            <div class="box__radio-group">
+                <input type="radio" name="Cost" id="high" value="alto" class="box__radio">
+                <label for="high" class="box__radio-label">Alto</label>
+
+                <input type="radio" name="Cost" id="medium" value="medium" class="box__radio">
+                <label for="medium" class="box__radio-label">Medio</label>
+
+                <input type="radio" name="Cost" id="low" value="low" class="box__radio">
+                <label for="low" class="box__radio-label">Bajo</label>
+            </div>
+        </fieldset>
+        <fieldset class="box__fieldset">
+            <legend class="box__legend">Dificultad</legend>
+            <div class="box__radio-group">
+                <input type="radio" name="level" id="level-high" value="alto" class="box__radio">
+                <label for="level-high" class="box__radio-label">Alto</label>
+
+                <input type="radio" name="level" id="level-medium" value="medium" class="box__radio">
+                <label for="level-medium" class="box__radio-label">Medio</label>
+
+                <input type="radio" name="level" id="level-low" value="low" class="box__radio">
+                <label for="level-low" class="box__radio-label">Bajo</label>
+            </div>
+        </fieldset>
+        <fieldset class="box__fieldset">
+            <legend class="box__legend">Paso a paso</legend>
+            <textarea name="steps" class="box__textarea"></textarea>
+        </fieldset>
+        <input type="submit" value="Crear Receta" class="box__submit">
+        <hr class="box__hr">
+    </form>
+</body>
+<script src="./create-cooking-recipe.js"></script>
+</html>
