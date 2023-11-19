@@ -31,6 +31,6 @@ function onSubmit(event) {
     }
 
     alert('¡Receta creada exitosamente!');
-    window.location.href = 'http://127.0.0.1:3000/felipecuellar01/book-recipe/1-cooking-recipe-html-css/cooking-recipe.html?steps=';
+    window.location.href = 'http://127.0.0.1:3000/1-book-recipe/1-cooking-recipe-html-css/cooking-recipe.html';
     document.getElementById('recipe_form').reset();
 }

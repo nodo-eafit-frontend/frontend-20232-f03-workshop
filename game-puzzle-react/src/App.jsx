@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
 import Card from './components/Card';
-import { images } from './import'
-
+import { images } from './components/Image-import'
+import { shuffleArray } from './components/Aleatory';
 
 function App() {
 
@@ -13,16 +13,6 @@ function App() {
   const [unflippedCards, setUnflippedCard] = useState([]);
   const [disabledCards, setDisabledCards] = useState([]);
 
-  const shuffleArray = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-      let temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-    }
-  };
-
-
   useEffect(() => {
     shuffleArray(images);
     setCards(images);
@@ -31,7 +21,6 @@ function App() {
   useEffect(() => {
     checkForMatch();
   },[secondCard]);
-
 
   const flipCard = (name, number) => {
     if (firstCard.name === name && firstCard.number === number) {
@@ -52,7 +41,6 @@ function App() {
       match ? disableCards() : unflipCards();
     }
   }
-
 
   const disableCards = () => {
     setDisabledCards([firstCard.number, secondCard.number])
@@ -85,12 +73,12 @@ function App() {
               unflippedCards={unflippedCards}
               disabledCards={disabledCards}
             />
+            
           ))
-
-
         }
       </div>
     </div>
+
   )
 }
 

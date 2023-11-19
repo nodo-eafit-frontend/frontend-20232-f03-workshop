@@ -1,9 +1,9 @@
-import src1 from './images/ballon-dor/benzema-b-oro.jpg';
-import src2 from './images/ballon-dor/cr7-b-oro.jpeg';
-import src3 from './images/ballon-dor/lewandowski-b-oro.jpg';
-import src4 from './images/ballon-dor/lukita-b-oro.jpg';
-import src5 from './images/ballon-dor/messi-b-oro.jpg';
-import src6 from './images/ballon-dor/ronaldinho-b-oro.jpg';
+import src1 from '../images/ballon-dor/benzema-b-oro.jpg';
+import src2 from '../images/ballon-dor/cr7-b-oro.jpeg';
+import src3 from '../images/ballon-dor/lewandowski-b-oro.jpg';
+import src4 from '../images/ballon-dor/lukita-b-oro.jpg';
+import src5 from '../images/ballon-dor/messi-b-oro.jpg';
+import src6 from '../images/ballon-dor/ronaldinho-b-oro.jpg';
 
 
 const images = [
