@@ -1,6 +1,6 @@
-const removegetRecipes = (req, res) => {
-    
-    res.send({mensaje: "eliminé una receta"})
+const removeRecipes =(req, res) => {
+
+    res.send("borré una receta")
 };
 
-module.exports = { removegetRecipes }
+  module.exports = {removeRecipes};

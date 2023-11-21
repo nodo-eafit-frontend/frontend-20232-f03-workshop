@@ -1,13 +1,45 @@
 [
-    {
+      {
+        "id": "67890",
+        "title": "Spaghetti Bolognese",
+        "peopleAmount": {
+          "max": 6,
+          "min": 4
+        },
+        "time": 45,
+        "cost": 40000,
+        "level": "MEDIUM",
         "steps": [
-            "4 manzanas",
-            "1 taza de harina",
-            "1 taza de azúcar",
-            "1 huevo",
-            "1 cucharadita de canela",
-            "1 cucharadita de esencia de vainilla",
-            "1/2 taza de mantequilla derretida"
+          "Calienta aceite de oliva en una sartén grande.",
+          "Añade cebolla y ajo picados, cocina hasta que estén dorados.",
+          "Agrega carne molida y cocina hasta que se dore.",
+          "Incorpora tomate triturado, pasta de tomate, sal, pimienta y hierbas al gusto.",
+          "Cocina a fuego lento hasta que la salsa espese.",
+          "Hierve agua, agrega sal y cocina la pasta hasta que esté al dente.",
+          "Escurre la pasta y mezcla con la salsa.",
+          "Sirve caliente y espolvorea queso parmesano rallado encima."
         ]
-    }
+      },
+      {
+        "id": "98765",
+        "title": "Chicken Alfredo Pasta",
+        "peopleAmount": {
+          "max": 4,
+          "min": 2
+        },
+        "time": 35,
+        "cost": 35000,
+        "level": "EASY",
+        "steps": [
+          "Cocina la pasta según las instrucciones del paquete.",
+          "En una sartén, derrite mantequilla y añade pollo cortado en tiras.",
+          "Cocina hasta que el pollo esté bien cocido.",
+          "Añade crema, ajo picado, queso parmesano y pimienta al gusto.",
+          "Revuelve hasta que la salsa esté cremosa.",
+          "Mezcla la pasta cocida con la salsa de pollo.",
+          "Sirve caliente, espolvorea perejil fresco y más queso parmesano si lo deseas."
+        ]
+      }
 ]
+    
+    

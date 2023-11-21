@@ -1,6 +1,6 @@
-const updagetRecipes = (req, res) => {
-    
-    res.send({mensaje: "eliminé una receta"})
+const updateRecipes = (req, res) => {
+
+  res.send("actualicé una receta")
 };
 
-module.exports = { updagetRecipes }
+module.exports = {updateRecipes};

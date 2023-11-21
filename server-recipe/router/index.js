@@ -1,17 +1,17 @@
 const express = require("express");
 const router = express.Router();
-const { getRecipes } = require("./recipe/Get");
-const { updagetRecipes} = require("./recipe/post");
-const { addgetRecipes } = require("./recipe/put");
-const { removegetRecipes } = require("./recipe/delete");
+const {getRecipes} = require("./recipe/Get");
+const {updateRecipes} = require("./recipe/post");
+const {addRecipes} = require("./recipe/put");
+const {removeRecipes} = require("./recipe/delete");  
 
-router.get( "/recipe", getRecipes);
 
-router.post( "/recipe", updagetRecipes);
+router.get("/recipe", getRecipes);
 
-router.put("/recipe", addgetRecipes);
+router.post("/recipe",updateRecipes );
 
-router.delete( "/recipe", removegetRecipes);
+router.put("/recipe", addRecipes);
 
+router.delete("/recipe", removeRecipes);
 
 module.exports = router;
