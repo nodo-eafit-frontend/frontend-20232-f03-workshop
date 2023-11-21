@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Board from './components/Board/Board';
 import Scoreboard from './components/Scoreboard/Scoreboard';
+import GameControls from './components/GameControls/GameControls'; 
 import './App.scss';
 
 const App = () => {
@@ -46,6 +47,7 @@ const App = () => {
   };
 
   const handleRestartGame = () => {
+    setGameStarted(false);
     setCards(generateCards());
     setScore(0);
     setFlippedCards(new Set());
@@ -83,16 +85,19 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">Memory Game</h1>
-        {!gameStarted && (
-          <button className="App-button" onClick={handleStartGame}>
-            Start Game
-          </button>
-        )}
-        {gameStarted && (
-          <button className="App-button" onClick={handleRestartGame}>
-            Restart Game
-          </button>
-        )}
+        <GameControls
+          handleStartGame={() => {
+            setGameStarted(true);
+            setCards(generateCards());
+            setScore(0);
+          }}
+          handleRestartGame={() => {
+            setGameStarted(false);
+            setCards(generateCards());
+            setScore(0);
+            setFlippedCards(new Set());
+          }}
+        />
       </header>
       {gameStarted && (
         <main>
@@ -105,3 +110,4 @@ const App = () => {
 };
 
 export default App;
+

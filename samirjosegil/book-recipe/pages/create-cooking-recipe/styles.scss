@@ -3,17 +3,17 @@
 .recipe-form__title {
     margin: 0;
     font-size: 3rem;
-    color: $color-cafe-claro;
+    color: $cafe-claro;
 }
 
 .recipe-form {
     max-width: 60rem;
     margin: 0 auto;
     padding: 2rem;
-    background-color: #fff;
-    border: 8px solid #333;
+    background-color: $blanco;
+    border: 8px solid $negro;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: $degradado-negro;
 }
 
 .recipe-form__label {
@@ -29,20 +29,20 @@
     padding: 10px;
     margin: 5px 0;
     border: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid $negro;
     max-width: 97%;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: $degradado-negro;
 }
 
 .recipe-form__people-max-min,
 .recipe-form__cost,
 .recipe-form__difficulty,
 .recipe-form__steps {
-    border: 1px solid #333;
+    border: 1px solid $negro;
     border-radius: 1rem;
     margin: 1rem 0;
     padding: 1rem;
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: $degradado-negro;
 }
 
 .recipe-form__cost,
@@ -70,17 +70,17 @@
 .recipe-form__button {
     display: block;
     width: 20%;
-    background-color: #333;
-    color: #fff;
+    background-color: $negro;
+    color: $blanco;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.5s;
     font-size: 20px;
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: $degradado-negro;
 }
 
 .recipe-form__button:hover {
-    background-color: #0a3372;
+    background-color: $negro;
 }

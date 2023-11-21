@@ -2,8 +2,8 @@
 
 body {
   margin: 0;
-  background-color: $background-color;
-  color: $text-color;
+  background-color: $blanco;
+  color: $negro;
 }
 
 .App {
@@ -12,14 +12,14 @@ body {
   align-items: center;
   min-height: 90vh;
   min-width: 100vw;
-  background-color: $background-color;
+  background-color: $blanco;
   transition: background-color 0.5s;
 }
 
 header {
   display: flex;
   justify-content: center;
-  background-color: $primary-color;
+  background-color: $negro;
   padding: 20px;
   min-width: 97vw;
   align-items: center;
@@ -27,14 +27,14 @@ header {
 
 header button {
   background-color: $button-bg-color;
-  color: white;
+  color: $blanco;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   margin-left: 3rem;
-  box-shadow: 0 0 1rem rgb(255, 255, 255);
+  box-shadow: 0 0 1rem $blanco;
   transition: background-color 0.3s, transform 0.3s;
 
   &:hover {
@@ -45,14 +45,13 @@ header button {
   &:active {
     background-color: $button-active-color;
     transform: scale(0.95);
-    color: #ffff
-    ;
+    color: $blanco;
   }
 }
 
 
 h1 {
-  color: white;
+  color: $blanco;
   margin: 0;
   font-size: 3rem;
 }
@@ -78,7 +77,7 @@ main {
 footer {
   display: flex;
   justify-content: space-around;
-  background-color: $primary-color;
+  background-color: $negro;
   padding: 20px;
   min-width: 100vw;
   text-align: center;

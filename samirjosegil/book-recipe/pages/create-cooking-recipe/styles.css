@@ -145,17 +145,17 @@ table {
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #571700, #ffe4c4);
+  background: linear-gradient(to bottom, #805342, #ffe4c4);
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: #571700;
-  color: #fff;
+  background: #805342;
+  color: #ffffff;
   text-align: center;
   padding: 1rem;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .recipe-form__title {
@@ -168,10 +168,10 @@ header {
   max-width: 60rem;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #fff;
-  border: 8px solid #333;
+  background-color: #ffffff;
+  border: 8px solid #000;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .recipe-form__label {
@@ -187,16 +187,16 @@ header {
   padding: 10px;
   margin: 5px 0;
   border: none;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #000;
   max-width: 97%;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .recipe-form__people-max-min,
 .recipe-form__cost,
 .recipe-form__difficulty,
 .recipe-form__steps {
-  border: 1px solid #333;
+  border: 1px solid #000;
   border-radius: 1rem;
   margin: 1rem 0;
   padding: 1rem;
@@ -228,8 +228,8 @@ header {
 .recipe-form__button {
   display: block;
   width: 20%;
-  background-color: #333;
-  color: #fff;
+  background-color: #000;
+  color: #ffffff;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -240,7 +240,7 @@ header {
 }
 
 .recipe-form__button:hover {
-  background-color: #0a3372;
+  background-color: #000;
 }
 
 /*# sourceMappingURL=styles.css.map */

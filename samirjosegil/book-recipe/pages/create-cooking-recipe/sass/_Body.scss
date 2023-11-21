@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, $color-cafe, $color-cafe-claro);
+    background: linear-gradient(to bottom, $cafe, $cafe-claro);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: $color-cafe;
-    color: #fff;
+    background: $cafe;
+    color: $blanco;
     text-align: center;
     padding: 1rem;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: $degradado-negro;
 }

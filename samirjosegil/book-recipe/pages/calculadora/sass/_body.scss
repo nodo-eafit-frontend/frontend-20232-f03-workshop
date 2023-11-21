@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, $color-cafe, $color-cafe-claro);
+    background: linear-gradient(to bottom, $cafe, $cafe-claro);
 }
 
 main {
@@ -14,7 +14,7 @@ header {
     background-color: transparent;
     text-align: center;
     font-size: 5rem;
-    color: $color-cafe-claro;
+    color: $cafe-claro;
     margin-top: 2rem;
     height: 2rem;
 }

@@ -144,7 +144,7 @@ table {
   src: url(./Fonts/Pacifico-Regular.ttf);
 }
 body {
-  background: linear-gradient(to bottom, #571700, #ffe4c4);
+  background: linear-gradient(to bottom, #805342, #ffe4c4);
 }
 
 main {
@@ -169,7 +169,7 @@ header {
   border-radius: 1rem;
   width: 36rem;
   height: 30rem;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.4);
   margin: 10rem;
   background: #333;
@@ -188,7 +188,7 @@ input[type=text] {
   border: none;
   font-size: 2rem;
   padding: 5px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .buttons {
@@ -200,7 +200,7 @@ input[type=text] {
 button {
   border: none;
   background-color: #333;
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   padding: 10px;
   cursor: pointer;
