@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Result = ({readOnly, result}) => {
+const Result = ({ result }) => {
   return (
-    <input value={result} readOnly={readOnly}></input>
+    <span>{result}</span>
   )
 }
 
-export default Result
+Result.defaultProps = {
+  result: "0"
+};
+
+Result.propTypes = {
+  result: PropTypes.string
+};
+
+export default Result;

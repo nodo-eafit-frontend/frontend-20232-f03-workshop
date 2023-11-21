@@ -1,78 +1,78 @@
 [
     {
         "text": "AC",
-        "classname": "keyboard_ac"
+        "classname": "keyboard__ac keyboard__ac--operator"
     },
     {
         "text": "-",
-        "classname": "keyboard_minus"
+        "classname": "keyboard__minus keyboard__minus--operator"
     },
     {
         "text": "+",
-        "classname": "keyboard_sum"
+        "classname": "keyboard__sum keyboard__sum--operator"
     },
     {
         "text": "*",
-        "classname": "keyboard_multiply"
+        "classname": "keyboard__multiply keyboard__multiply--operator"
     },
     {
         "text": "1",
-        "classname": "keyboard_one"
+        "classname": "keyboard__one"
     },
     {
         "text": "2",
-        "classname": "keyboard_two"
+        "classname": "keyboard__two"
     },
     {
         "text": "3",
-        "classname": "keyboard_three"
+        "classname": "keyboard__three"
     },
     {
         "text": "/",
-        "classname": "keyboard_divide"
+        "classname": "keyboard__divide keyboard__divide--operator"
     },
     {
         "text": "4",
-        "classname": "keyboard_four"
+        "classname": "keyboard__four"
     },
     {
         "text": "5",
-        "classname": "keyboard_five"
+        "classname": "keyboard__five"
     },
     {
         "text": "6",
-        "classname": "keyboard_six"
+        "classname": "keyboard__six"
     },
     {
         "text": "%",
-        "classname": "keyboard_module"
+        "classname": "keyboard__module keyboard__module--operator"
     },
     {
         "text": "7",
-        "classname": "keyboard_seven"
+        "classname": "keyboard__seven"
     },
     {
         "text": "8",
-        "classname": "keyboard_eight"
+        "classname": "keyboard__eight"
     },
     {
         "text": "9",
-        "classname": "keyboard_nine"
+        "classname": "keyboard__nine"
     },
     {
-        "text": "Back",
-        "classname": "keyboard_back"
+        "text": "←",
+        "classname": "keyboard__back keyboard__back--operator"
     },
     {
         "text": ".",
-        "classname": "keyboard_dot"
+        "classname": "keyboard__dot keyboard__dot--operator"
     },
     {
         "text": "0",
-        "classname": "keyboard_zero"
+        "classname": "keyboard__zero"
     },
     {
         "text": "=",
-        "classname": "keyboard_equal"
+        "classname": "keyboard__equal keyboard__equal--operator"
     }
 ]
