@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "Dancing";
+  font-family: 'Dancing';
   src: url(./Fonts/Dancing.ttf);
 }
 @font-face {
-  font-family: "Pacifico-Regular";
+  font-family: 'Pacifico-Regular';
   src: url(./Fonts/Pacifico-Regular.ttf);
 }
 a,
@@ -134,7 +134,7 @@ blockquote:after,
 blockquote:before,
 q:after,
 q:before {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -177,7 +177,8 @@ header {
   margin-top: 1rem;
   font-size: 1rem;
 }
-.recipe-form__input, .recipe-form__textarea {
+.recipe-form__input,
+.recipe-form__textarea {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -186,21 +187,27 @@ header {
   max-width: 97%;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
-.recipe-form__people-max-min, .recipe-form__cost, .recipe-form__difficulty, .recipe-form__steps {
+.recipe-form__people-max-min,
+.recipe-form__cost,
+.recipe-form__difficulty,
+.recipe-form__steps {
   border: 1px solid #000;
   border-radius: 1rem;
   margin: 1rem 0;
   padding: 1rem;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
-.recipe-form__cost, .recipe-form__difficulty {
+.recipe-form__cost,
+.recipe-form__difficulty {
   display: flex;
   flex-direction: row;
 }
-.recipe-form__cost label, .recipe-form__difficulty label {
+.recipe-form__cost label,
+.recipe-form__difficulty label {
   margin-right: 10px;
 }
-.recipe-form__cost__radio, .recipe-form__difficulty__radio {
+.recipe-form__cost__radio,
+.recipe-form__difficulty__radio {
   margin: 0;
   transform: scale(1.2);
 }
