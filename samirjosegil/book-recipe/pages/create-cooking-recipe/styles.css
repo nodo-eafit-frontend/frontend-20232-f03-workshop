@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'Dancing';
+  src: url(./Fonts/Dancing.ttf);
+}
+@font-face {
+  font-family: 'Pacifico-Regular';
+  src: url(./Fonts/Pacifico-Regular.ttf);
+}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #571700, #ffe4c4);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.recipe-form {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border: 8px solid #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.recipe-form__title {
+  margin: 0;
+  font-size: 3rem;
+  color: #fff;
+}
+.recipe-form__label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.recipe-form__input,
+.recipe-form__textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid #000;
+  max-width: 97%;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.recipe-form__people-max-min,
+.recipe-form__cost,
+.recipe-form__difficulty,
+.recipe-form__steps {
+  border: 1px solid #000;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.recipe-form__cost,
+.recipe-form__difficulty {
+  display: flex;
+  flex-direction: row;
+}
+.recipe-form__cost label,
+.recipe-form__difficulty label {
+  margin-right: 10px;
+}
+.recipe-form__cost__radio,
+.recipe-form__difficulty__radio {
+  margin: 0;
+  transform: scale(1.2);
+}
+.recipe-form__radio {
+  margin-right: 1rem;
+  transform: scale(1.2);
+}
+.recipe-form__button {
+  display: block;
+  width: 20%;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-size: 20px;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.recipe-form__button:hover {
+  background-color: #0a3372;
+}
+
+/*# sourceMappingURL=styles.css.map */

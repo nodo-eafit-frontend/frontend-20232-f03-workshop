@@ -1,5 +1,5 @@
 const deleteRecipe = (req, res) => {
-  res.send({mensaje: "eliminé receta", recipe});
+  res.send({ mensaje: 'eliminé receta', recipe });
 };
 
-module.exports = {deleteRecipe};
+module.exports = { deleteRecipe };

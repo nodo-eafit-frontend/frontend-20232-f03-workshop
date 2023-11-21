@@ -1,67 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width", initial-scale=1.0">
-  <title>Crear Receta Cocina</title>
-  <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="/sofiarestrepol/cooking-recipe/img/favicon.ico
-  ">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <article class="cont-form">
-    <h1 class="cont-form__title">Crea tu propia receta</h1>
-    <div class="cont-form__vertical-line"></div>
-    <form class="cont-form__form" onsubmit="onSubmit(event)" action="../1-cooking-recipe/pages/receta/receta.html"> <!-- ejecuta la funcion onSubmit when click en submit -->
-      <div class="cont-form__cont-input">
-        <label for="title" class="bold">Titulo de la Receta</label> <!-- duda: no me funciona <b> para bold -->
-        <br>
-        <input class="cont-form__input" id="title" type="text" required placeholder="Ex: Galletas de Mantequilla">
-      </div>
-      <div class="cont-form__input-nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>Crear Receta Cocina</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link
+      rel="stylesheet"
+      href="/sofiarestrepol/cooking-recipe/img/favicon.ico
+  "
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <article class="cont-form">
+      <h1 class="cont-form__title">Crea tu propia receta</h1>
+      <div class="cont-form__vertical-line"></div>
+      <form class="cont-form__form" onsubmit="onSubmit(event)" action="../1-cooking-recipe/pages/receta/receta.html">
+        <!-- ejecuta la funcion onSubmit when click en submit -->
         <div class="cont-form__cont-input">
-          <label for="portions" class="bold">Numero de Porciones</label>
-          <br>
-          <input class="cont-form__input" id="portions" type="number" min="1" required placeholder="Ex: 2">
+          <label for="title" class="bold">Titulo de la Receta</label>
+          <!-- duda: no me funciona <b> para bold -->
+          <br />
+          <input class="cont-form__input" id="title" type="text" required placeholder="Ex: Galletas de Mantequilla" />
         </div>
-        <div class="cont-form__cont-input">
-          <label for="prep-time" class="bold">Tiempo de preparacion</label>
-          <br>
-          <br>
-          <input class="cont-form__input" id="prep-time" type="number" min="1" required placeholder="Ex: 100"><span> minutos</span>
+        <div class="cont-form__input-nb">
+          <div class="cont-form__cont-input">
+            <label for="portions" class="bold">Numero de Porciones</label>
+            <br />
+            <input class="cont-form__input" id="portions" type="number" min="1" required placeholder="Ex: 2" />
+          </div>
+          <div class="cont-form__cont-input">
+            <label for="prep-time" class="bold">Tiempo de preparacion</label>
+            <br />
+            <br />
+            <input class="cont-form__input" id="prep-time" type="number" min="1" required placeholder="Ex: 100" /><span>
+              minutos</span
+            >
+          </div>
         </div>
-      </div>
-      <fieldset>
-        <legend class="bold">Dificultad</legend>
-        <input class="cont-form__radio" id="alto" name="level" type="radio" value="alto">
-        <label for="alto">Alto</label>
-        <input class="cont-form__radio" id="medio" name="level" type="radio" value="medio">
-        <label for="medio">Medio</label> <!-- duda: por que el label queda mas abajo? -->
-        <input class="cont-form__radio" id="bajo" name="level" type="radio" value="bajo">
-        <label for="bajo">Bajo</label>
-      </fieldset>
-      <br>
-      <legend class="bold">Ingredientes</legend>
-      <textarea class="cont-form__cont-input" id="ingredients" name="ingredients" rows="5" cols="40" required placeholder="Ex: 2 huevos, 200g de harina, azucar..."></textarea>
-      <br>
-      <legend class="bold">Pasos</legend>
-      <textarea class="cont-form__cont-input" id="steps" name="steps" rows="5" cols="40" required placeholder="Ex: Paso 1: Precalentar el horno a 180°..."></textarea>
-      <br>
-      <input id="button" type="submit" value="Crear receta">
-    </form>
-  </article>
-  <!-- <section> -->
+        <fieldset>
+          <legend class="bold">Dificultad</legend>
+          <input class="cont-form__radio" id="alto" name="level" type="radio" value="alto" />
+          <label for="alto">Alto</label>
+          <input class="cont-form__radio" id="medio" name="level" type="radio" value="medio" />
+          <label for="medio">Medio</label>
+          <!-- duda: por que el label queda mas abajo? -->
+          <input class="cont-form__radio" id="bajo" name="level" type="radio" value="bajo" />
+          <label for="bajo">Bajo</label>
+        </fieldset>
+        <br />
+        <legend class="bold">Ingredientes</legend>
+        <textarea
+          class="cont-form__cont-input"
+          id="ingredients"
+          name="ingredients"
+          rows="5"
+          cols="40"
+          required
+          placeholder="Ex: 2 huevos, 200g de harina, azucar..."
+        ></textarea>
+        <br />
+        <legend class="bold">Pasos</legend>
+        <textarea
+          class="cont-form__cont-input"
+          id="steps"
+          name="steps"
+          rows="5"
+          cols="40"
+          required
+          placeholder="Ex: Paso 1: Precalentar el horno a 180°..."
+        ></textarea>
+        <br />
+        <input id="button" type="submit" value="Crear receta" />
+      </form>
+    </article>
+    <!-- <section> -->
     <!-- <button onclick="getRecipes()"></button>
     <button> <a href="../1-cooking-recipe/pages/receta/receta.html"></a></button> -->
     <!-- <code></code>  -->
-  <!-- </section>  -->
-</body>
-<script src="./create-recipe.js"></script>
+    <!-- </section>  -->
+  </body>
+  <script src="./create-recipe.js"></script>
 </html>
-
 
 <!-- DUDAS: -->
 
 <!-- TODO: -->
-
