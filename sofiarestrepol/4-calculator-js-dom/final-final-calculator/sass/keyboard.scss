@@ -1,0 +1,12 @@
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  margin: 1rem;
+
+  @each $button in $buttons {
+    grid-area: $button;
+  }
+
+}
