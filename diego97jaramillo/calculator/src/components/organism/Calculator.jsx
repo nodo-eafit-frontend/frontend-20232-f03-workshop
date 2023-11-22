@@ -26,10 +26,8 @@ const percentage = (number1, number2) => {
 const Calculator = () => {
     const [text, setText] = useState('');
     const [operator, setOperator] = useState();
-    const [leftNum, setLeftNum] = useState('0');
-    const [rightNum, setRightNum] = useState('0');
-    const leftNumber = Number(leftNum);
-    const rightNumber = Number(rightNum);
+    const [finalValue, setFinalValue] = useState();
+
 
 
 
@@ -58,22 +56,27 @@ const Calculator = () => {
                 result = text.slice(0, -1);
                 break;
             case '=':
-                prevResult = text.substring(0, text.length - 1);
+                result = result.substring(0, result.length - 1);
                 const [num1, num2] = result.split(operator);
-                setLeftNum(num1);
-
-                setRightNum(num2.slice(0,-1));
+                const leftNumber = Number(num1);
+                const rightNumber = Number(num2);
 
                 if (operator === '+') {
-                    plus(leftNumber, rightNumber);
+                    const operationResult = plus(leftNumber, rightNumber);
+                    setFinalValue(operationResult);
                 } else if (operator === '-') {
-                    minus(leftNumber, rightNumber);
+                    const operationResult = minus(leftNumber, rightNumber);
+                    console.log(finalValue);
+                    setFinalValue(operationResult);
                 } else if (operator === '*') {
-                    multiply(leftNumber, rightNumber);
+                    const operationResult = multiply(leftNumber, rightNumber);
+                    setFinalValue(operationResult);
                 } else if (operator === '/') {
-                    divide(leftNumber, rightNumber);
+                    const operationResult = divide(leftNumber, rightNumber);
+                    setFinalValue(operationResult);
                 } else if (operator === '%') {
-                    percentage(leftNumber, rightNumber);
+                    const operationResult = percentage(leftNumber, rightNumber);
+                    setFinalValue(operationResult);
                 };
                 break;
         }
@@ -86,7 +89,7 @@ const Calculator = () => {
 
     return (
         <section className={namespace}>
-            <Board textGiven={text} />
+            <Board textGiven={text} result={finalValue} />
             <Keyboard onClick={handlerButton} />
         </section>
     )

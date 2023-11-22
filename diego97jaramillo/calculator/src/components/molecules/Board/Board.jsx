@@ -6,10 +6,10 @@ import './Board.scss';
 
 const namespace = 'board';
 
-const Board = ({ textGiven }) => {
+const Board = ({ textGiven, result }) => {
   return (
     <section className={namespace}>
-      <Result result={''}/>
+      <Result result={result}/>
       <Input textGiven={textGiven} readOnly={true}/>
     </section>
   )
