@@ -1,1 +1,171 @@
-[{"id":"pr1m3r0","category":"Postres","title":"Tarta de Manzana","firstIngredient":"Manzanas","secondIngredient":"Harina","thirdIngredient":"Azúcar","fourthIngredient":"Huevos","fifthIngredient":"Levadura","sixthIngredient":"Canela","numberPeople":{"max":8,"min":6},"cookingTime":45,"level":"Fácil","cost":30000,"steps":["Pelar y cortar las manzanas en rodajas finas.","En un tazón grande, mezclar la harina, el azúcar, los huevos y la levadura.","Agregar las rodajas de manzana a la mezcla y añadir canela al gusto.","Verter la mezcla en un molde para tarta y hornear a 180°C durante 35-40 minutos.","Dejar enfriar antes de servir. ¡Disfruta de tu deliciosa tarta de manzana!"],"tips":"Puedes servir la tarta de manzana con una bola de helado de vainilla para un toque extra delicioso."},{"id":"s3gund0","category":"Postres","title":"Tarta de pera","firstIngredient":"peras","secondIngredient":"Harina","thirdIngredient":"Azúcar","fourthIngredient":"Huevos","fifthIngredient":"Levadura","sixthIngredient":"Canela","numberPeople":{"max":8,"min":6},"cookingTime":45,"level":"Fácil","cost":30000,"steps":["Pelar y cortar las peras en rodajas finas.","En un tazón grande, mezclar la harina, el azúcar, los huevos y la levadura.","Agregar las rodajas de pera a la mezcla y añadir canela al gusto.","Verter la mezcla en un molde para tarta y hornear a 180°C durante 35-40 minutos.","Dejar enfriar antes de servir. ¡Disfruta de tu deliciosa tarta de pera!"],"tips":"Puedes servir la tarta de pera con una bola de helado de vainilla para un toque extra delicioso."},{"id":"t3rc3r0","category":"Postres","title":"Tarta de melocoton","firstIngredient":"melocotones","secondIngredient":"Harina","thirdIngredient":"Azúcar","fourthIngredient":"Huevos","fifthIngredient":"Levadura","sixthIngredient":"Canela","numberPeople":{"max":8,"min":6},"cookingTime":45,"level":"Fácil","cost":30000,"steps":["Pelar y cortar los melocotones en rodajas finas.","En un tazón grande, mezclar la harina, el azúcar, los huevos y la levadura.","Agregar las rodajas de melocoton a la mezcla y añadir canela al gusto.","Verter la mezcla en un molde para tarta y hornear a 180°C durante 35-40 minutos.","Dejar enfriar antes de servir. ¡Disfruta de tu deliciosa tarta de melocoton!"],"tips":"Puedes servir la tarta de melocoton con una bola de helado de vainilla para un toque extra delicioso."},{"category":"caliente","title":"pollo","firstIngredient":"sdafdsaf","secondIngredient":"asdfas","thirdIngredient":"asdf","fourthIngredient":"asdf","fifthIngredient":"sdfas","sixthIngredient":"asdf","numberPeople":{"max":15,"min":12},"cookingTime":12,"level":"on","cost":"normal","steps":"dsfq","tips":"dsfsg"},{"category":"caliente","title":"pollo","firstIngredient":"azucar","secondIngredient":"parmessano","thirdIngredient":"Mantequilla","fourthIngredient":"Mantequilla","fifthIngredient":"mostaza","sixthIngredient":"tomate","numberPeople":{"max":6,"min":2},"cookingTime":15,"level":"on","cost":"cheap","steps":"dsafasdf","tips":"asfdas","id":"2ad4db41-e9fe-4f07-887e-e0e01bad5e68"},{"category":"caliente","title":"pollo","firstIngredient":"adsf","secondIngredient":"dsf","thirdIngredient":"sdf","fourthIngredient":"sdf","fifthIngredient":"sdg","sixthIngredient":"sdg","numberPeople":{"max":4,"min":2},"cookingTime":15,"level":"on","cost":"expensive","steps":"sdfsdfg","tips":"dsgdf","id":"c246561d-7197-4bfd-9de2-b602fd6e040e"}]
+[
+    {
+        "id": "pr1m3r0",
+        "category": "Postres",
+        "title": "Tarta de Manzana",
+        "firstIngredient": "Manzanas",
+        "secondIngredient": "Harina",
+        "thirdIngredient": "Azúcar",
+        "fourthIngredient": "Huevos",
+        "fifthIngredient": "Levadura",
+        "sixthIngredient": "Canela",
+        "numberPeople": {
+            "max": 8,
+            "min": 6
+        },
+        "cookingTime": 45,
+        "level": "Fácil",
+        "cost": 30000,
+        "steps": [
+            "Pelar y cortar las manzanas en rodajas finas.",
+            "En un tazón grande, mezclar la harina, el azúcar, los huevos y la levadura.",
+            "Agregar las rodajas de manzana a la mezcla y añadir canela al gusto.",
+            "Verter la mezcla en un molde para tarta y hornear a 180°C durante 35-40 minutos.",
+            "Dejar enfriar antes de servir. ¡Disfruta de tu deliciosa tarta de manzana!"
+        ],
+        "tips": "Puedes servir la tarta de manzana con una bola de helado de vainilla para un toque extra delicioso."
+    },
+    {
+        "id": "s3gund0",
+        "category": "Postres",
+        "title": "Tarta de pera",
+        "firstIngredient": "peras",
+        "secondIngredient": "Harina",
+        "thirdIngredient": "Azúcar",
+        "fourthIngredient": "Huevos",
+        "fifthIngredient": "Levadura",
+        "sixthIngredient": "Canela",
+        "numberPeople": {
+            "max": 8,
+            "min": 6
+        },
+        "cookingTime": 45,
+        "level": "Fácil",
+        "cost": 30000,
+        "steps": [
+            "Pelar y cortar las peras en rodajas finas.",
+            "En un tazón grande, mezclar la harina, el azúcar, los huevos y la levadura.",
+            "Agregar las rodajas de pera a la mezcla y añadir canela al gusto.",
+            "Verter la mezcla en un molde para tarta y hornear a 180°C durante 35-40 minutos.",
+            "Dejar enfriar antes de servir. ¡Disfruta de tu deliciosa tarta de pera!"
+        ],
+        "tips": "Puedes servir la tarta de pera con una bola de helado de vainilla para un toque extra delicioso."
+    },
+    {
+        "id": "t3rc3r0",
+        "category": "Postres",
+        "title": "Tarta de melocoton",
+        "firstIngredient": "melocotones",
+        "secondIngredient": "Harina",
+        "thirdIngredient": "Azúcar",
+        "fourthIngredient": "Huevos",
+        "fifthIngredient": "Levadura",
+        "sixthIngredient": "Canela",
+        "numberPeople": {
+            "max": 8,
+            "min": 6
+        },
+        "cookingTime": 45,
+        "level": "Fácil",
+        "cost": 30000,
+        "steps": [
+            "Pelar y cortar los melocotones en rodajas finas.",
+            "En un tazón grande, mezclar la harina, el azúcar, los huevos y la levadura.",
+            "Agregar las rodajas de melocoton a la mezcla y añadir canela al gusto.",
+            "Verter la mezcla en un molde para tarta y hornear a 180°C durante 35-40 minutos.",
+            "Dejar enfriar antes de servir. ¡Disfruta de tu deliciosa tarta de melocoton!"
+        ],
+        "tips": "Puedes servir la tarta de melocoton con una bola de helado de vainilla para un toque extra delicioso."
+    },
+    {
+        "category": "caliente",
+        "title": "pollo",
+        "firstIngredient": "sdafdsaf",
+        "secondIngredient": "asdfas",
+        "thirdIngredient": "asdf",
+        "fourthIngredient": "asdf",
+        "fifthIngredient": "sdfas",
+        "sixthIngredient": "asdf",
+        "numberPeople": {
+            "max": 15,
+            "min": 12
+        },
+        "cookingTime": 12,
+        "level": "on",
+        "cost": "normal",
+        "steps": "dsfq",
+        "tips": "dsfsg"
+    },
+    {
+        "category": "caliente",
+        "title": "pollo",
+        "firstIngredient": "azucar",
+        "secondIngredient": "parmessano",
+        "thirdIngredient": "Mantequilla",
+        "fourthIngredient": "Mantequilla",
+        "fifthIngredient": "mostaza",
+        "sixthIngredient": "tomate",
+        "numberPeople": {
+            "max": 6,
+            "min": 2
+        },
+        "cookingTime": 15,
+        "level": "on",
+        "cost": "cheap",
+        "steps": "dsafasdf",
+        "tips": "asfdas",
+        "id": "2ad4db41-e9fe-4f07-887e-e0e01bad5e68"
+    },
+    {
+        "category": "caliente",
+        "title": "pollo",
+        "firstIngredient": "adsf",
+        "secondIngredient": "dsf",
+        "thirdIngredient": "sdf",
+        "fourthIngredient": "sdf",
+        "fifthIngredient": "sdg",
+        "sixthIngredient": "sdg",
+        "numberPeople": {
+            "max": 4,
+            "min": 2
+        },
+        "cookingTime": 15,
+        "level": "on",
+        "cost": "expensive",
+        "steps": "sdfsdfg",
+        "tips": "dsgdf",
+        "id": "c246561d-7197-4bfd-9de2-b602fd6e040e"
+    },
+    {
+        "category": "frios",
+        "title": "helado de coco",
+        "firstIngredient": "coco",
+        "secondIngredient": "helado",
+        "thirdIngredient": "leche",
+        "fourthIngredient": "leche",
+        "fifthIngredient": "",
+        "sixthIngredient": "",
+        "numberPeople": {
+            "max": 30,
+            "min": 12
+        },
+        "cookingTime": 25,
+        "level": "on",
+        "cost": "normal",
+        "steps": "sdfksmf",
+        "tips": "sjfnskdj",
+        "id": "eb9c061a-64b7-4b7b-963c-42025593a392"
+    },
+    {
+        "id": "d976f2b3-c1c7-4bd6-bef0-c14c3fc64767"
+    },
+    {
+        "id": "d49a5857-d84c-4ddb-bcd6-47559f5b0a03"
+    },
+    {
+        "id": "aaf1a025-e533-463c-9e0a-9ca00b0c0cc5"
+    },
+    {
+        "id": "4727b441-c176-412a-aa4c-095f9f6db0d1"
+    }
+]

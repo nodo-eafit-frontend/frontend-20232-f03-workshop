@@ -65,14 +65,18 @@ var carro = /** @class */ (function (_super) {
 }(vehicles));
 var moto = /** @class */ (function (_super) {
     __extends(moto, _super);
-    function moto(marca, color, cadenas) {
+    function moto(marca, color, cadenas, nudosPorSeg) {
         var _this = _super.call(this, marca, color) || this;
         _this.cadenas = cadenas;
+        _this.nudosPorSeg = nudosPorSeg ? nudosPorSeg : 0;
         return _this;
     }
     ;
     moto.prototype.presentarse = function () {
         return "Hola soy una ".concat(this.laMarca, " de color ").concat(this.elColor, " con cadena de marca ").concat(this.cadenas);
+    };
+    moto.prototype.mostrarVelocidadMax = function (metros) {
+        return this.nudosPorSeg * metros;
     };
     return moto;
 }(vehicles));
@@ -80,8 +84,10 @@ var miCarro = new carro('amarok', 'plata', 5);
 var miCarro1 = new carro('golf', 'dorado', 3);
 var miCarro2 = new carro('twingo', 'azul', 5);
 var mimoto = new moto('suzuki', 'amarillo', 'shark');
+var mimotoAcuatica = new moto('suzuki', 'amarillo', 'shark', 6);
 console.log(mimoto.presentarse());
-concesionario.push(miCarro, miCarro1, miCarro2, mimoto);
+console.log(mimotoAcuatica.mostrarVelocidadMax(10));
+concesionario.push(miCarro, miCarro1, miCarro2, mimoto, mimotoAcuatica);
 console.log(concesionario);
 /*
 const vehiculo = new vehicles('mazda', 'blue');

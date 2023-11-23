@@ -1,0 +1,8 @@
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+};
+
+.keyboard__equal {
+    grid-area: 5 / 3 / 6 / span 2;
+};
