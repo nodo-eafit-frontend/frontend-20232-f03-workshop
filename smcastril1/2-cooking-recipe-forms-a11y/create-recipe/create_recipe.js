@@ -58,7 +58,6 @@
 
 let data;
 
-
 function validate(inputID) {
   const input = document.querySelector(inputID);
   const validityState = input.validity;
@@ -76,10 +75,9 @@ function validate(inputID) {
   input.reportValidity();
 }
 
-
 function onSubmit(event) {
   let isValid = true;
-  let msg = '';
+  let msg = "";
 
   event.preventDefault(); //No redirecciona
   data = Object.fromEntries(new FormData(event.target));
@@ -88,10 +86,10 @@ function onSubmit(event) {
   //VALIDACIONES
   if (data.title.length > 20) {
     isValid = false;
-    msg += 'ERROR: Title too long.';
-    const fieldsetEl = document.querySelector('#title-recipe');
-    const messageErrorEl = document.createElement('span');
-    messageErrorEl.className = 'error-message';
+    msg += "ERROR: Title too long.";
+    const fieldsetEl = document.querySelector("#title-recipe");
+    const messageErrorEl = document.createElement("span");
+    messageErrorEl.className = "error-message";
     messageErrorEl.textContent = msg;
 
     fieldsetEl.appendChild(messageErrorEl);
@@ -100,19 +98,65 @@ function onSubmit(event) {
   if (data.min_people >= data.max_people) {
     // console.log('ENTRÉ');
     isValid = false;
-    msg += 'ERROR: The minimum of people has to be shorter than the maximum.';
+    msg += "ERROR: The minimum of people has to be shorter than the maximum.";
 
-    const fieldsetEl = document.querySelector('fieldset.people-amount');
-    const messageErrorEl = document.createElement('span');
-    messageErrorEl.className = 'error-message';
+    const fieldsetEl = document.querySelector("fieldset.people-amount");
+    const messageErrorEl = document.createElement("span");
+    messageErrorEl.className = "error-message";
     messageErrorEl.textContent = msg;
 
     fieldsetEl.appendChild(messageErrorEl);
   }
 
-  validate("#title-recipe")
+  validate("#title-recipe");
 
   if (!isValid) {
     alert(msg);
   }
+}
+
+// Hacer una petición
+// function getRecipe(){
+//   const configuration = {
+//     method: 'GET',
+//     mode: 'cors',
+//     // cache: 'no-cache',
+//     // credentials: 'same-origin',
+//   }
+
+//   console.log("GET RECIPE");
+//   // LA PROMESA ESPERA QUE LA RESPUESTA LLEGUE
+//   const response_promise = fetch("https://localhost:3002/recipe", configuration);
+
+//   const raw_promise = response_promise.then(raw_response => raw_response.json());
+
+//   raw_promise.then(data => {
+//     console.log(data);
+
+//     const code_element = document.querySelector('section code');
+//     const data_element = document.createTextNode(JSON.stringify(data, null, 2));
+//     code_element.appendChild(data_element)
+//   })
+
+// }
+
+function getRecipe() {
+  console.log("GET RECIPE");
+
+  // LA PROMESA ESPERA QUE LA RESPUESTA LLEGUE
+  fetch("http://localhost:3002/recipe", {
+    method: "GET",
+    mode: "cors",
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+
+      const code_element = document.querySelector("section code");
+      const data_element = document.createTextNode(
+        JSON.stringify(data, null, 2)
+      );
+      code_element.appendChild(data_element);
+    })
+    .catch((error) => console.error("Error:", error));
 }

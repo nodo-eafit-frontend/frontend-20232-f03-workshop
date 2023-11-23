@@ -1,3 +1,14 @@
-{
-    "title": "Kiwi Jam"
-}
+[
+    {
+        "id": "0",
+        "title": "Kiwi Jam"
+    },
+    {
+        "id": "1",
+        "title": "Sandwich"
+    },
+    {
+        "id": "2",
+        "title": "Coconut-butter"
+    }
+]

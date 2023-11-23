@@ -1,16 +1,15 @@
-const express = require("express"); 
-const router = express.Router()
+const express = require("express");
+const router = express.Router();
 
-const {get_recipe} = require("./recipe/get")
-const {post_recipe} = require("./recipe/post")
-const {put_recipe} = require("./recipe/put")
-const {delete_recipe} = require("./recipe/delete")
+const { get_recipe, get_recipe_by_id } = require("./recipe/get");
+const { post_recipe } = require("./recipe/post");
+const { put_recipe } = require("./recipe/put");
+const { delete_recipe } = require("./recipe/delete");
 
-
-router.get("/recipe", get_recipe)
-router.post("/recipe", post_recipe)
-router.put("/recipe", put_recipe)
-router.delete("/recipe", delete_recipe)
-
+router.get("/recipe", get_recipe);
+router.get("/recipe/:id", get_recipe_by_id);
+router.post("/recipe", post_recipe);
+router.put("/recipe", put_recipe);
+router.delete("/recipe", delete_recipe);
 
 module.exports = router;
