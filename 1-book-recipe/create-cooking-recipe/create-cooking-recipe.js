@@ -34,3 +34,17 @@ function onSubmit(event) {
     window.location.href = 'http://127.0.0.1:3000/1-book-recipe/1-cooking-recipe-html-css/cooking-recipe.html';
     document.getElementById('recipe_form').reset();
 }
+
+
+function getRecipes() {
+    const responsePromise = fetch(constants.URL_SERVER);
+    const rawProimise = responsePromise.then((raw) => raw.json());
+    rawProimise.then((data) => {
+      console.log(data);
+  
+      const codeEl = document.querySelector('section code');
+      const dataEl = document.createTextNode(JSON.stringify(data, null, 2));
+  
+      codeEl.appendChild(dataEl);
+    });
+  }

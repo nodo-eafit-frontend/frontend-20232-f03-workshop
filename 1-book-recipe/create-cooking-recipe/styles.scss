@@ -1,31 +1,36 @@
 @import"../sass/index.scss";
 
+
 .fondo {
     display: flex;
-    background-color: rgb(138, 150, 158);
+    background-color: rgb(119, 99, 186);
     background-size: contain;
-    margin:100px;
+    margin: 100px;
     padding: 50px;
     border: 3px solid;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
-}
+    &__title {
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;
+        background-color:rgb(143, 169, 160);
+        text-align: center;
+        border-radius: 15px;
+        z-index: 10;
+    }
 
+    &__form {
+        font-size: 20px;
+        font-family:serif;
+    }
+}
 
 
 input {
-    box-shadow:  3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
     margin: 5px;
 }
 
-.fondo__title {
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Oswald', sans-serif;
-    background-color: rgba(31, 141, 168, 0.699);
-    text-align: center;
-    border-radius: 15px;
-    z-index: 10;
-}

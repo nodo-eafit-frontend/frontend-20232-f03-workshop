@@ -88,7 +88,7 @@ button:focus-visible {
 .cards-container{
   width: 1000px;
   height: 600px;
-  border: 1px solid white;
+  border: 3px solidrgb(60, 110, 203);
 }
 
 .card {
@@ -107,4 +107,6 @@ button:focus-visible {
 .card-image {
   height: calc(200px - 10px);
   width: calc(250px - 10px);
+  border: 3px solid rgb(128, 34, 242);
 }
+
