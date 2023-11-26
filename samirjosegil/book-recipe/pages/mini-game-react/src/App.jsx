@@ -96,7 +96,7 @@ const App = () => {
             setCards(generateCards());
             setScore(0);
             setFlippedCards(new Set());
-          }}
+          }} 
         />
       </header>
       {gameStarted && (
