@@ -1,6 +1,6 @@
 //callback
-const put_recipe = (req, res) =>{
-    res.send("Recipe created from put");
-}
+const add_recipe = (req, res) => {
+  res.send("Recipe created from put");
+};
 
-module.exports = { put_recipe };
+module.exports = { add_recipe };
