@@ -1,0 +1,15 @@
+.app {
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__main {
+    min-height: 100vh;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: end;
+  }
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width", initial-scale=1.0">
+  <meta name="viewport" content="width=device-width" initial-scale="1.0">
   <title>Crear Receta Cocina</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="/sofiarestrepol/cooking-recipe/img/favicon.ico
@@ -10,36 +10,43 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Crear Receta</h1>
-  <form onsubmit="onSubmit(event)" action="../receta/receta.html"> <!-- ejecuta la funcion onSubmit when click en submit -->
-    <label for="title">Titulo de la Receta</label>
-    <input id="title" type="text" required>
+  <article class="form">
+    <h1>Crear Receta</h1>
+    <form onsubmit="onSubmit(event)" action="../receta/receta.html"> <!-- ejecuta la funcion onSubmit when click en submit -->
+      <label for="title">Titulo de la Receta</label>
+      <input id="title" type="text" required>
+      <hr>
+      <label for="portions">Numero de Porciones</label>
+      <input id="portions" type="number" min="1" required>
+      <hr>
+      <label for="prep-time">Tiempo de preparacion</label>
+      <input id="prep-time" type="number" min="1" required>
+      <hr>
+      <fieldset>
+        <legend>Dificultad</legend>
+        <input id="alto" name="level" type="radio" value="alto">
+        <label for="alto">Alto</label>
+        <input id="medio" name="level" type="radio" value="medio">
+        <label for="medio">Medio</label>
+        <input id="bajo" name="level" type="radio" value="bajo">
+        <label for="bajo">Bajo</label>
+      </fieldset>
+      <br>
+      <legend>Pasos</legend>
+      <textarea id="steps" name="steps" rows="2" cols="20" required></textarea>
+      <br>
+      <br>
+      <label for=""></label>
+      <input id="button" type="submit" value="Crear receta">
+    </form>
     <hr>
-    <label for="portions">Numero de Porciones</label>
-    <input id="portions" type="number" min="1" required>
-    <hr>
-    <label for="prep-time">Tiempo de preparacion</label>
-    <input id="prep-time" type="number" min="1" required>
-    <hr>
-    <fieldset>
-      <legend>Dificultad</legend>
-      <input id="alto" name="level" type="radio" value="alto">
-      <label for="alto">Alto</label>
-      <input id="medio" name="level" type="radio" value="medio">
-      <label for="medio">Medio</label>
-      <input id="bajo" name="level" type="radio" value="bajo">
-      <label for="bajo">Bajo</label>
-    </fieldset>
-    <br>
-    <legend>Pasos</legend>
-    <textarea id="steps" name="steps" rows="2" cols="20" required></textarea>
-    <br>
-    <br>
-    <label for=""></label>
-    <input id="button" type="submit" value="Crear receta">
-  </form>
-</body>
-<script src="./create-receta.js"></script>
+    <section>
+      <button onclick="getRecipes()"></button>
+      <code></code>
+    </section>
+  </body>
+  <script src="./create-receta.js"></script>
+</article>
 </html>
 
 

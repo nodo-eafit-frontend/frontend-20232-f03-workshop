@@ -4,9 +4,96 @@
  *
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
  */
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+=======
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+>>>>>>> fc3687920e7e20886fa324bc7fdd37a3352d333e
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,7 +102,22 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   vertical-align: baseline;
 }
 
+<<<<<<< HEAD
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+=======
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+>>>>>>> fc3687920e7e20886fa324bc7fdd37a3352d333e
   display: block;
 }
 
@@ -27,6 +129,7 @@ body {
   line-height: 1;
 }
 
+<<<<<<< HEAD
 menu, ol, ul {
   list-style: none;
 }
@@ -37,6 +140,24 @@ blockquote, q {
 
 blockquote:after, blockquote:before, q:after, q:before {
   content: "";
+=======
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+>>>>>>> fc3687920e7e20886fa324bc7fdd37a3352d333e
   content: none;
 }
 
@@ -45,9 +166,14 @@ table {
   border-spacing: 0;
 }
 
+<<<<<<< HEAD
 
 @font-face {
   font-family: "oswald";
+=======
+@font-face {
+  font-family: 'oswald';
+>>>>>>> fc3687920e7e20886fa324bc7fdd37a3352d333e
   src: url(../fonts/Oswald-VariableFont_wght.ttf);
   font-weight: 400;
 }
@@ -56,6 +182,7 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   background-color: rgba(214, 209, 200, 0.849);
 }
 body .content-block {
@@ -138,6 +265,39 @@ body .content-block form .steps-tips {
   text-align: center;
   gap: 0 1.5rem;
   padding-bottom: 5px;
+=======
+  background-color: aqua;
+}
+body h1 {
+  font-size: 4rem;
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+}
+body form {
+  text-align: center;
+  width: 30vw;
+  height: 70%;
+  margin: auto;
+}
+body form .recipe_title_category {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body form .ingredients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  margin: 1rem;
+}
+body form .ingredients legend {
+  font-size: 2rem;
+  margin: 1rem;
+}
+body form .ingredients label {
+  text-align: start;
+  font-size: 1.5rem;
+>>>>>>> fc3687920e7e20886fa324bc7fdd37a3352d333e
 }
 
 /*# sourceMappingURL=styles.css.map */

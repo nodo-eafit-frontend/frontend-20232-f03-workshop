@@ -1,0 +1,32 @@
+<main class="app">
+  <mat-toolbar color="primary" class="app__heading">
+    <app-image routerLink="/"></app-image>
+    <h1>{{ this.titlePage }}</h1>
+
+    <button mat-fab extended routerLink="/edit">
+      Crear Receta
+      <mat-icon>add</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <main class="app__main">
+    <router-outlet></router-outlet>
+  </main>
+
+  <mat-toolbar color="accent" class="app__footer">
+    <button
+      mat-icon-button
+      class="example-icon favorite-icon"
+      aria-label="Example icon-button with heart icon"
+    >
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with share icon"
+    >
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+</main>
