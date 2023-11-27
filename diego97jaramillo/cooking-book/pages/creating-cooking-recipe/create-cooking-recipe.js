@@ -11,7 +11,7 @@ const baseUrl = 'http://localhost:3000';
 // que lo necesitemos
 function getIngredients(formEvent, idString) {
     return formEvent.querySelector(`${idString}`).value;
-}
+
 
 /* function validate(inputID) {
   const input = document.getElementById(inputID);
