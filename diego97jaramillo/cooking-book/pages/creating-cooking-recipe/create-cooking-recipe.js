@@ -1,13 +1,42 @@
-const baseUrl = 'http://localhost:3000';
+
 
 // Se crea esta función para recoger los datos de todos los rabio-buttons que puedan haber en el formulario
 function getRadioResult(element, name) {
-  return element.querySelector(`input[name="${name}"]:checked`)?.value;
-}
+    return element.querySelector(`input[name="${name}"]:checked`)?.value;
+};
+
+const baseUrl = 'http://localhost:3000';
 
 // se crea la funcion para recoger todos los ingredientes y no tener que hacer esto para cada linea, simplemente se llama la función, la ocasiones
 // que lo necesitemos
 function getIngredients(formEvent, idString) {
+    return formEvent.querySelector(`${idString}`).value;
+
+
+/* function validate(inputID) {
+  const input = document.getElementById(inputID);
+  const validityState = input.validity;
+
+  if (validityState.valueMissing) {
+    input.setCustomValidity("You gotta fill this out, yo!");
+  } else if (validityState.rangeUnderflow) {
+    input.setCustomValidity("We need a higher number!");
+  } else if (validityState.rangeOverflow) {
+    input.setCustomValidity("That's too high!");
+  } else {
+    input.setCustomValidity("");
+  }
+
+  input.reportValidity();
+} */
+
+/* document.getElementById('steps')
+input.setCustomValidity('por favor llenar los pasos de la receta')
+
+document.getElementById('tips')
+input.setCustomValidity('por favor llenar los tips de la receta')
+ */
+
   return formEvent.querySelector(`${idString}`).value;
 }
 
@@ -160,6 +189,7 @@ function onSubmit(event) {
   }
 }
 
+
 function getRecipes() {
   const recipePromise = fetch(`${baseUrl}/recipe`);
   rawPromise = recipePromise.then((raw) => raw.json());
@@ -171,7 +201,7 @@ function getRecipes() {
 
     codeEl.appendChild(TextEl);
   });
-}
+};
 
 function getRecipe(idRecipe) {
   const recipePromise = fetch(`${baseUrl}/recipe/${idRecipe}`);
