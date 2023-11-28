@@ -1,14 +1,12 @@
 [
-    {
-        "id": "0",
-        "title": "Kiwi Jam"
-    },
-    {
-        "id": "1",
-        "title": "Sandwich"
-    },
-    {
-        "id": "2",
-        "title": "Coconut-butter"
-    }
+  {
+    "title": "Kiwi Jam",
+    "min_people": "1",
+    "max_people": "20",
+    "cost": "low",
+    "type": "desserts",
+    "level": "low",
+    "steps": "fdgerfdg",
+    "image": "File"
+  }
 ]

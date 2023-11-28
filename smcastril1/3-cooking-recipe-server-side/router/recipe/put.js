@@ -13,8 +13,10 @@ const add_recipe = (req, res) => {
   } else {
     console.log(my_body);
     data.push(my_body);
+    my_json.json_writer(RECIPE_PATH, data);
 
     res.status(201).send(my_body);
+    console.log(data);
   }
 };
 
