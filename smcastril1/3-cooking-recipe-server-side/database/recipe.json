@@ -1,12 +1,46 @@
 [
   {
+    "id": "091c6f5f-44c9-4b7a-b3dc-5d68ea84388d",
     "title": "Kiwi Jam",
     "min_people": "1",
     "max_people": "20",
     "cost": "low",
     "type": "desserts",
     "level": "low",
-    "steps": "fdgerfdg",
-    "image": "File"
+    "steps": "Steps",
+    "image": {}
+  },
+  {
+    "id": "bf5c8d1f-18fc-419a-8abf-a08d325e32a2",
+    "title": "Kiwi Jam2",
+    "min_people": "1",
+    "max_people": "20",
+    "cost": "low",
+    "type": "desserts",
+    "level": "low",
+    "steps": "Steps2",
+    "image": {}
+  },
+  {
+    "id": "9fca667f-7939-4a0a-b162-e1ae3eb21290",
+    "title": "Sandwich",
+    "min_people": "4",
+    "max_people": "26",
+    "cost": "low",
+    "type": "hot-dishes",
+    "level": "low",
+    "steps": "Cook your sandwich",
+    "image": {}
+  },
+  {
+    "id": "74be54d9-0ca1-4bda-a100-249925091a7e",
+    "title": "Sandwich",
+    "min_people": "1",
+    "max_people": "16",
+    "cost": "low",
+    "type": "hot-dishes",
+    "level": "low",
+    "steps": "Cook your sandwich",
+    "image": {}
   }
 ]

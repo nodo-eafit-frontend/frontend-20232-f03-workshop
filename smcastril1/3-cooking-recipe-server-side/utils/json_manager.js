@@ -14,7 +14,7 @@ function json_writer(filepath, data) {
   try {
     data = JSON.stringify(data, null, 2);
     const content = fs.writeFileSync(filepath, data, "utf8");
-    return true;
+    return data.id;
   } catch (error) {
     console.error("Error al leer el archivo JSON:", error);
     return error;
