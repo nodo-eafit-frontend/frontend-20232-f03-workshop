@@ -1,4 +1,4 @@
-const router = require('./router');
+const recipeRouter = require('./router');
 
 const express = require('express');
 const cors = require('cors');
@@ -10,6 +10,6 @@ const { PORT } = process.env;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(router);
+app.use('/recipe', recipeRouter);
 
 app.listen(PORT, () => console.log('...running on port ' + PORT));

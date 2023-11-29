@@ -1,5 +1,5 @@
-const deleteEnergy = (req, res) => {
+const deleteRecipe = (req, res) => {
     res.status(200).send('DELETE Method');
   };
   
-  module.exports = {deleteEnergy};
+  module.exports = {deleteRecipe};

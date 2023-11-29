@@ -2,7 +2,7 @@ const { leerJsonEnergia } = require('../../utils/json-update');
 require('dotenv').config();
 const { ENERGY_PATH } = process.env;
 
-const readEnergy = (req, res) => {
+const readRecipe = (req, res) => {
   const { year, month } = req.params;
 
   try {
@@ -30,4 +30,4 @@ const readEnergy = (req, res) => {
   }
 };
 
-module.exports = { readEnergy };
+module.exports = { readRecipe };

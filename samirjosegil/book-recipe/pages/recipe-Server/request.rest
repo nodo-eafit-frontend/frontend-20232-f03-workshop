@@ -1,0 +1,16 @@
+GET http://localhost:4001/recipe
+
+###
+
+POST http://localhost:4001/recipe 
+content-type: application/json
+
+{"message": "pancito"}
+
+###
+
+PUT http://localhost:4001/recipe
+
+###
+
+DELETE http://localhost:4001/recipe

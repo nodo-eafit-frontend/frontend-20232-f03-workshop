@@ -48,7 +48,7 @@ return null;
 function handleSubmit(event) {
   event.preventDefault();
 
-  var recipe = {
+  const recipe = {
     title: title.value,
     peopleAmount: {
       min: minPeople.value,
@@ -58,6 +58,15 @@ function handleSubmit(event) {
     level: getRadioValue('level'),
     steps: steps.value,
   };
-  
-console.log(recipe);
+
+fetch('http://localhost:4001/recipe',
+{
+  method:'POST',
+  body: JSON.stringify(recipe),
+  headers: {"Content-type": "application/json; charset=UTF-8"}
+})
+.then(res => res.json())
+.then(res => {
+  console.log (res)
+})
 }

@@ -1,5 +1,5 @@
-const updateEnergy = (req, res) => {
+const updateRecipe = (req, res) => {
     res.status(200).send('PUT Method');
   };
   
-  module.exports = {updateEnergy};
+  module.exports = {updateRecipe};
