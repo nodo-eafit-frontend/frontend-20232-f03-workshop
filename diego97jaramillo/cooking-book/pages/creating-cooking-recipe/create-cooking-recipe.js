@@ -206,5 +206,25 @@ function deleteRecipe(idRecipe) {
 
     fetch(`${baseUrl}/recipe/${idRecipe}`, options).then((raw) => raw.json()).then((data) => {
         console.log(data);
+        const codeEldel = document.querySelector('.deletedRecipe code');
+        const deletedMsg = document.createTextNode(`la receta ${idRecipe} ha sido eliminada.`);
+        codeEldel.appendChild(deletedMsg);
     });
 };
+
+function updateRecipe() {
+    const options = {
+        method: "DELETE",
+        body: JSON.stringify(recipe),
+        headers: {
+            "content-Type": "application/json",
+        },
+        id: document.querySelector('#recipeID').value
+    }
+
+    fetch(`${baseUrl}/recipe/`, options).then((raw) => raw.json()).then((data) => {
+        console.log(data);
+    });
+
+
+}
