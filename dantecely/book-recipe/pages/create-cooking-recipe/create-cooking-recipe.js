@@ -1,8 +1,13 @@
-const baseUrl = "http://localhost:3002";
-
 function getRadioResult(element, name) {
   return element.querySelector(`input[name="${name}"]:checked`)?.value;
 }
+
+const constants = {
+  MESSAGE_ERROR_GENERIC: "Formulario inválido: ",
+  URL_SERVER: "http://localhost:3006/recipe",
+  BASE_URL: "http://localhost:3002",
+  getPathRecipe: (baseUrl, idRecipe) => `${baseUrl}/recipe/${idRecipe}`,
+};
 
 const recipe = {
   title: undefined,
@@ -46,7 +51,7 @@ function onSubmit(event) {
   }
 
   if (!validation.isValid) {
-    alert("Formulario inválido: " + validation.message);
+    alert(constants.MESSAGE_ERROR_GENERIC + validation.message);
   } else {
     const options = {
       method: "PUT",
@@ -78,7 +83,7 @@ function onSubmit(event) {
 }
 
 function getRecipes() {
-  const responsePromise = fetch("http://localhost:3002/recipe");
+  const responsePromise = fetch(constants.URL_SERVER);
   const rawProimise = responsePromise.then((raw) => raw.json());
   rawProimise.then((data) => {
     console.log(data);
@@ -91,7 +96,7 @@ function getRecipes() {
 }
 
 function getRecipe(idRecipe) {
-  fetch(`${baseUrl}/recipe/${idRecipe}`)
+  fetch(constants.getPathRecipe(constants.BASE_URL, idRecipe))
     .then((raw) => raw.json())
     .then((data) => {
       console.log(data);

@@ -1,16 +1,34 @@
+import PropTypes from 'prop-types';
 import Button from '../../atoms/Button/Button';
-import keyBoards from '../../../json/key-boards.json'
+import './styles.scss';
+import { useEffect, useState } from 'react';
 
 const namespace = 'keyboard';
 
-const Keyboard = () => {
-  return (
-    <article className={namespace}>
-      {keyBoards.map(({ text, class_name }, index) => (
-        <Button key={`button-${index}-${text}`} text={text} className={class_name} />
-      ))}
-    </article>
-  )
-}
+const Keyboard = ({ onClick }) => {
+  const [keyBoards, setkeyBoards] = useState([]);
 
-export default Keyboard
+  useEffect(() => {
+    fetch('http://localhost:3006/calculator')
+      .then((raw) => raw.json())
+      .then((data) => {
+        console.log(data);
+
+        setkeyBoards(data);
+      });
+  }, []);
+
+  const renderKeboards = () => {
+    return keyBoards.map(({ text, classname }, index) => {
+      return <Button key={`button-${index}-${text}`} text={text} className={classname} onClick={onClick} />;
+    });
+  };
+
+  return <article className={namespace}>{keyBoards.length ? renderKeboards() : 'Server not available'}</article>;
+};
+
+Keyboard.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
+
+export default Keyboard;

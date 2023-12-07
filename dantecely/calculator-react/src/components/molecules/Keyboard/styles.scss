@@ -1,3 +1,5 @@
+@import "../../../sass/";
+
 .keyboard {
   display: grid;
   grid-template-columns: 3rem 3rem 3rem 3rem;
@@ -8,59 +10,15 @@
     "four five six minus"
     "one two three plus"
     "zero dot enter enter";
+  gap: 0.5rem;
 
-  &__clear {
-    grid-area: clear;
-  }
-  &__back {
-    grid-area: back;
-  }
-  &__module {
-    grid-area: module;
-  }
-  &__divide {
-    grid-area: divide;
-  }
-  &__seven {
-    grid-area: seven;
-  }
-  &__eight {
-    grid-area: eight;
-  }
-  &__nine {
-    grid-area: nine;
-  }
-  &__multiply {
-    grid-area: multiply;
-  }
-  &__four {
-    grid-area: four;
-  }
-  &__six {
-    grid-area: six;
-  }
-  &__minus {
-    grid-area: minus;
-  }
-  &__one {
-    grid-area: one;
-  }
-  &__two {
-    grid-area: two;
-  }
-  &__three {
-    grid-area: three;
-  }
-  &__plus {
-    grid-area: plus;
-  }
-  &__zero {
-    grid-area: zero;
-  }
-  &__dot {
-    grid-area: dot;
-  }
-  &__enter {
-    grid-area: enter;
+  @each $button in $buttons {
+    &__#{$button} {
+      grid-area: $button;
+
+      &--operator {
+        background-color: $color-navy-blue;
+      }
+    }
   }
 }

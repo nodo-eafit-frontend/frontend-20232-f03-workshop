@@ -1,15 +1,19 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
-const Button = ({ text, className }) => {
-  const handleClick = () => console.log(text);
+const namespace = 'button';
 
-  return <button className={className} onClick={() => handleClick()}>{text}</button>;
+const Button = ({ text, className, onClick }) => {
+  return (
+    <button className={`${namespace} ${className}`} onClick={() => onClick(text)}>
+      {text}
+    </button>
+  );
 };
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
-}
+  onClick: PropTypes.func.isRequired,
+};
 
 export default Button;
-

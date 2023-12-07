@@ -1,0 +1,38 @@
+[
+  { 
+  "id": "1",
+  "title": "Receta 1", 
+  "portions": 2,
+  "time": 120,
+  "level": "Medio",
+  "pasos": [
+    "xxx",
+    "yyy",
+    "zzz"
+    ]
+  },
+  {
+  "id": "2",
+  "title": "Receta 2", 
+  "portions": 2,
+  "time": 120,
+  "level": "Medio",
+  "pasos": [
+    "xxx",
+    "yyy",
+    "zzz"
+    ]
+  },
+  {
+  "id": "3",
+  "title": "Receta 3", 
+  "portions": 2,
+  "time": 120,
+  "level": "Medio",
+  "pasos": [
+    "xxx",
+    "yyy",
+    "zzz"
+    ]
+  }
+]
