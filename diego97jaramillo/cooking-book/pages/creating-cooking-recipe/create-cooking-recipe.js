@@ -225,6 +225,4 @@ function updateRecipe() {
     fetch(`${baseUrl}/recipe/`, options).then((raw) => raw.json()).then((data) => {
         console.log(data);
     });
-
-
 }
