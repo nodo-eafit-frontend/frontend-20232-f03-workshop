@@ -1,0 +1,78 @@
+[
+    {
+        "text": "AC",
+        "classname": "keyboard_ac"
+    },
+    {
+        "text": "-",
+        "classname": "keyboard_minus"
+    },
+    {
+        "text": "+",
+        "classname": "keyboard_sum"
+    },
+    {
+        "text": "*",
+        "classname": "keyboard_multiply"
+    },
+    {
+        "text": "1",
+        "classname": "keyboard_one"
+    },
+    {
+        "text": "2",
+        "classname": "keyboard_two"
+    },
+    {
+        "text": "3",
+        "classname": "keyboard_three"
+    },
+    {
+        "text": "/",
+        "classname": "keyboard_divide"
+    },
+    {
+        "text": "4",
+        "classname": "keyboard_four"
+    },
+    {
+        "text": "5",
+        "classname": "keyboard_five"
+    },
+    {
+        "text": "6",
+        "classname": "keyboard_six"
+    },
+    {
+        "text": "%",
+        "classname": "keyboard_module"
+    },
+    {
+        "text": "7",
+        "classname": "keyboard_seven"
+    },
+    {
+        "text": "8",
+        "classname": "keyboard_eight"
+    },
+    {
+        "text": "9",
+        "classname": "keyboard_nine"
+    },
+    {
+        "text": "Back",
+        "classname": "keyboard_back"
+    },
+    {
+        "text": ".",
+        "classname": "keyboard_dot"
+    },
+    {
+        "text": "0",
+        "classname": "keyboard_zero"
+    },
+    {
+        "text": "=",
+        "classname": "keyboard_equal"
+    }
+]
