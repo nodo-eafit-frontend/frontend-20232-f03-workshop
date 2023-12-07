@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./create-cooking-recipe.css">
+
+    <title>Formulario recipe</title>
+</head>
+<body id="body">
+<h1 id="h1">form recipe</h1>
+<form action="../cooking-recipe/cooking-recipe.html" method="post">
+    
+    <div class="nombre">
+        <label for="title-recipe" id="label-grade">nombre de la receta</label>
+        <input type="text" id="title-recipe" placeholder="Ingresa el nombre de la receta" />
+    </div>
+    
+    <fieldset>
+    <legend>costos</legend>
+    <div>
+    <input type="radio" name="cost" id="cost-high" value="hight"checked></input>
+    <label for="cost-high">alto</label>
+
+    <input type="radio" name="cost" id="cost-medium" value="medium"checked></input>
+    <label for="cost-medium">medio</label>
+
+    <input type="radio" name="cost" id="cost-low" value="low" checked></input>
+    <label for="cost-low">bajo</label>
+    </div>
+    </fieldset>
+     
+    
+    <div class="radio column">
+        <label for="level" id="label-question">¿que tanta experiencia tienes en la cocina?</label>
+        <select name="level" id="level">
+            <option value="alta">tengo experiencia</option>
+            <option value="media">tengo conocimientos basicos y poca experiencia</option>
+            <option value="baja">tengo conocimientos basicos</option>
+            </select>
+    </div>
+ 
+
+     
+    <div class="form-control">
+            <label for="people" id="label-numero de personas">numero de personas para la receta</label>
+            <input type="number" id="people"  maxlength="2" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" 
+            placeholder="numero de personas" >
+            </div>
+            
+
+            <div class="form-control">
+                <label for="time" id="label-tiempo">¿cuanto quieres que se demore la receta en minutos?</label>
+                <input type="number" id="time"  maxlength="2" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" 
+                placeholder="duracion de la receta" >
+                </div>
+    
+            
+    
+    <div class="form-control">
+        <label for="comment">escribe algunos ingredientes que te gustaria ver en la receta</label>
+        <textarea name="comment" id="comment" placeholder="Ingresa tu respuesta aqui" rows="10"></textarea>
+    </div>
+
+    
+     
+
+    <button type="submit" value="validar">
+        crear receta
+    </button>
+</form>
+<section>
+    <button onclick="getRecipes"> Mostrar Recetas</button>
+    <code>
+    </code>
+</section>
+<script src="./create-cooking-recipe.js"></script>
+</body>
+</html >       
