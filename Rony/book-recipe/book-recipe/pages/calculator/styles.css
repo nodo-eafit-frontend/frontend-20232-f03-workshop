@@ -1,0 +1,110 @@
+@import url("https://fonts.google.com/specimen/Playpen+Sans");
+@font-face {
+  font-family: "MPLUS 1P";
+  src: url("./MPLUS1p/MPLUS1p-Thin.ttf");
+  font-weight: 100;
+  font-display: swap;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #16a4c7;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calculator {
+  background-color: #251212;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+}
+
+.display {
+  background-color: pink;
+  padding: 10px;
+  text-align: right;
+}
+.display input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+}
+.buttons button {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 1px solid black;
+  background-color: red;
+  color: gold;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background-color: #cc0000;
+}
+.buttons button:active {
+  transform: scale(0.98);
+}
+.buttons button.operator {
+  background-color: #3498db;
+  color: gold;
+}
+
+/*# sourceMappingURL=styles.css.map */

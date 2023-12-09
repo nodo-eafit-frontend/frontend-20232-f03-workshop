@@ -1,0 +1,68 @@
+@import "../../../sass/";
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #16a4c7;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calculator {
+  background-color: #251212;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+}
+
+.display {
+  background-color: pink;
+  padding: 10px;
+  text-align: right;
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+  }
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+
+  button {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid $button-border;
+    background-color: $button-background;
+    color: $button-text;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($button-background, 10%);
+    }
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+
+  button.operator {
+    background-color: $primary-color;
+    color: $button-text;
+  }
+}
