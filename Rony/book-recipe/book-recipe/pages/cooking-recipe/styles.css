@@ -1,83 +1,127 @@
-/* Estilos para el contenedor de la imagen y superposición */
-/* Estilos generales para el cuerpo del documento */
-body {
-  background-color: #f5e3b6; /* Fondo color café claro */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-/* Estilos para el contenedor de la imagen */
-.contenedor-imagen {
-  position: relative;
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin-left: 18rem;
+  margin-right: 18rem;
+  background-image: url(./img/upPart.jpg), url(./img/mainPart.jpg), url(./img/mainPart.jpg), url(./img/dowPart.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 70%, 70%, 70%, 69%;
+  background-position: center 0%, center 12%, center 85%, center 95%;
+  background-attachment: scroll;
+}
+
+header {
+  z-index: 10;
+  height: 8rem;
+  margin-top: 2rem;
+}
+header h1 {
+  font-size: 5rem;
   text-align: center;
+  color: aliceblue;
+  margin-top: 10rem;
+}
+header h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: -1rem;
 }
 
-/* Estilos para la imagen de fondo */
-.contenedor-imagen img {
-  width: 115%; /* La imagen ocupará todo el ancho del contenedor */
+main {
+  z-index: 1;
 }
-
-/* Estilos para la superposición */
-.superposicion {
+main .ingredients {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 3rem;
+}
+main .ingredients li {
+  padding-top: 0.4rem;
+}
+main h3 {
+  font-size: 1.8rem;
+  color: rgb(121, 0, 0);
+  margin-top: 3rem;
+  font-weight: 600;
+  margin-left: 3rem;
+}
+main .chocolate {
+  z-index: 0;
   position: absolute;
-  top: 53%;
-  left: 36%;
-  transform: translate(-50%, -50%);
-  background-color: hsla(170, 170%, 0.5);
-  color: white;
-  padding: 20px;
-  -webkit-text-stroke: 2px black; /* Borde blanco de 2px alrededor del texto */
- 
+  top: 17rem;
+  right: 8rem;
+}
+main .preparation {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+main .preparation li {
+  padding-bottom: 2.6rem;
 }
 
-/* Estilos para los encabezados */
-.superposicion h1 {
-  font-size: 60px;
-  color: azure;
-}
-
-.superposicion h2 {
-  font-size: 53px;
-  color: #804008;
-}
-
-/* Estilos para las secciones de ingredientes y relleno */
-.ingredientes, .relleno {
-  text-align: left;
-  margin: 20px;
-}
-
-.ingredientes h3, .relleno h3 {
-  font-size: 20px;
-  color: red;
-  text-align: left;
-}
-
-/* Estilos para las listas de ingredientes y relleno */
-ul {
-  
-  padding-left: 0px;
-}
-
-/* Estilos para el párrafo de preparación */
-.superposicion p {
-  font-size: 14px;
-  color:black;
-  text-align: right;
-}
-
-/* Estilos para los elementos footer */
 footer {
-  display: flex; /* Utilizar el modelo de caja flexible */
-  justify-content: left; /* Centrar el contenido horizontalmente */
-  background-color: hsla(120, 120%, 0.5); /* Fondo semi-transparente
-  color: white; /* Color del texto */
-  padding: 3px; /* Espacio interno */
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+footer .dulce {
+  position: absolute;
+  bottom: -45rem;
+  width: 20rem;
+  height: 20rem;
+  right: 10rem;
+  z-index: 0;
+}
+footer .chocolateDulce {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+footer .cristinaTitle {
+  color: aliceblue;
+  font-size: 1.5rem;
+  z-index: 10;
+  bottom: -10rem;
+  left: -1rem;
+  position: absolute;
 }
 
-/* Estilos para las imágenes dentro de los elementos footer */
-footer img {
-  max-width: 1130px; /* Tamaño máximo de la imagen */
-  height: 40; /* Ajustar la altura automáticamente */
-  margin: 3.5px; /* Espacio alrededor de la imagen */
-}
+/*# sourceMappingURL=styles.css.map */

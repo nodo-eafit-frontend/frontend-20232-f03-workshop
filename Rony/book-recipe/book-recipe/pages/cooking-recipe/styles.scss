@@ -1,89 +1,101 @@
-@import"../../../sass/index.scss";
+@import "../../../sass/base.scss";
+
 body {
-    background-color: #3d341e; /* Fondo color café claro */
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin-left: 18rem;
+    margin-right: 18rem;
+    background-image: url(./img/upPart.jpg), url(./img/mainPart.jpg), url(./img/mainPart.jpg), url(./img/dowPart.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 70%, 70%, 70%, 69%;
+    background-position: center 0%, center 12%, center 85%, center 95%;
+    background-attachment: scroll;
 }
 
-/* Estilos para el contenedor de la imagen */
-.contenedor-imagen {
-    position: relative;
-    text-align: center;
+header {
+    z-index: 10;
+    height: 8rem;
+    margin-top: 2rem;
+
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+        color: aliceblue;
+        margin-top: 10rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+        text-align: center;
+        margin-top: -1rem;
+    }
 }
 
-/* Estilos para la imagen de fondo */
-.contenedor-imagen img {
-    width: 115%; /* La imagen ocupará todo el ancho del contenedor */
+main {
+    z-index: 1;
+
+    .ingredients {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-left: 3rem;
+
+        li {
+            padding-top: 0.4rem;
+        }
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        color: rgb(121, 0, 0);
+        margin-top: 3rem;
+        font-weight: 600;
+        margin-left: 3rem;
+    }
+
+    .chocolate {
+        z-index: 0;
+        position: absolute;
+        top: 17rem;
+        right: 8rem;
+
+    }
+
+    .preparation {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-left: 3rem;
+        margin-right: 2rem;
+
+        li {
+            padding-bottom: 2.6rem;
+        }
+    }
 }
 
-/* Estilos para la superposición */
-.superposicion {
-    position: absolute;
-    top: 53%;
-    left: 36%;
-    transform: translate(-50%, -50%);
-    background-color: hsla(170, 170%, 0.5);
-    color: white;
-    padding: 20px;
-    -webkit-text-stroke: 2px black; /* Borde blanco de 2px alrededor del texto */
-   
-}
-
-/* Estilos para los encabezados */
-.superposicion h1 {
-    font-size: 60px;
-    color: azure;
-}
-
-.superposicion h2 {
-    font-size: 53px;
-    color: #804008;
-}
-
-/* Estilos para las secciones de ingredientes y relleno */
-.ingredientes, .relleno {
-    text-align: left;
-    margin: 20px;
-}
-
-.ingredientes h3, .relleno h3 {
-    font-size: 20px;
-    color: hwb(61 0% 0%);
-    text-align: left;
-}
-
-/* Estilos para las listas de ingredientes y relleno */
-ul {
-    
-    padding-left: 0px;
-}
-
-/* Estilos para el párrafo de preparación */
-.superposicion p {
-    font-size: 14px;
-    color:black;
-    text-align: right;
-}
-
-/* Estilos para los elementos footer */
 footer {
-    display: flex; /* Utilizar el modelo de caja flexible */
-    justify-content: left; /* Centrar el contenido horizontalmente */
-    background-color: hsla(120, 120%, 0.5); /* Fondo semi-transparente
-    color: white; /* Color del texto */
-    padding: 3px; /* Espacio interno */
-}
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
 
-/* Estilos para las imágenes dentro de los elementos footer */
-footer img {
-    max-width: 1130px; /* Tamaño máximo de la imagen */
-    height: 40; /* Ajustar la altura automáticamente */
-    margin: 3.5px; /* Espacio alrededor de la imagen */
-}
+    .dulce {
+        position: absolute;
+        bottom: -45rem;
+        width: 20rem;
+        height: 20rem;
+        right: 10rem;
+        z-index: 0;
+    }
 
-.tipos > h2 {
-    color: brown;
-    font-family: 'MPLUS1p',Arial, Helvetica, sans-serif;
-    font-size: 5rem;
-    font-weight: 900;
+    .chocolateDulce {
+        color: aliceblue;
+        font-size: 1.5rem;
+
+    }
+
+    .cristinaTitle {
+        color: aliceblue;
+        font-size: 1.5rem;
+        z-index: 10;
+        bottom: -10rem;
+        left: -1rem;
+        position: absolute;
+    }
 }
